@@ -6,11 +6,15 @@
 
 ## Contents
 
-| | | |
-| --- | --- | --- |
-| [🔧 语音基础模型与框架](#语音基础模型与框架) | [🔊 文本转语音 TTS](#文本转语音-tts) | [🎤 自动语音识别 ASR](#自动语音识别-asr) |
-| [🎭 声音克隆 Voice Cloning](#声音克隆-voice-cloning) | [✨ 音频增强](#音频增强) | [🔧 音频工程与开发工具](#音频工程与开发工具) |
-| [📊 数据集与评测基准](#数据集与评测基准) | [🤖 语音大模型与实时系统](#语音大模型与实时系统) | [📄 论文 Papers](#论文-papers) |
+- [语音基础模型与框架](#语音基础模型与框架)
+- [文本转语音 TTS](#文本转语音-tts)
+- [自动语音识别 ASR](#自动语音识别-asr)
+- [声音克隆 Voice Cloning](#声音克隆-voice-cloning)
+- [音频增强](#音频增强)
+- [音频工程与开发工具](#音频工程与开发工具)
+- [数据集与评测基准](#数据集与评测基准)
+- [语音大模型与实时系统](#语音大模型与实时系统)
+- [论文 Papers](#论文-papers)
 
 ---
 
@@ -335,86 +339,86 @@
 
 ### Papers > 基础模型
 
-- **MMS: Scaling Speech Technology to 1,000+ Languages** (2023), Pratap et al. [[pdf]](https://arxiv.org/pdf/2305.13516) [[code]](https://github.com/facebookresearch/fairseq) - 超大规模多语种语音模型与 recipes（ASR/TTS/LID）。
-- **SeamlessM4T** (2023), Meta AI [[pdf]](https://arxiv.org/abs/2308.11596) [[code]](https://github.com/facebookresearch/seamless_communication) - 语音-文本多任务翻译/转写基础模型.
-- **Whisper** (2022), Radford et al. [[pdf]](https://arxiv.org/abs/2212.04356) [[code]](https://github.com/openai/whisper) - 大规模弱监督多语种ASR/翻译基础模型.
-- **XLS-R** (2021), Babu et al. [[pdf]](https://arxiv.org/abs/2111.09296) [[code]](https://github.com/facebookresearch/fairseq) - 大规模跨语种语音表征学习（wav2vec 2.0 系列）。
-- **WavLM** (2021), Chen et al. [[pdf]](https://arxiv.org/abs/2110.13900) [[code]](https://github.com/microsoft/unispeech) - 鲁棒语音预训练，强调噪声/说话人鲁棒性.
-- **HuBERT** (2021), Hsu et al. [[pdf]](https://arxiv.org/abs/2106.07447) [[code]](https://github.com/facebookresearch/fairseq) - 自监督语音预训练（离散伪标签）经典方法.
-- **wav2vec 2.0** (2020), Baevski et al. [[pdf]](https://arxiv.org/abs/2006.11477) [[code]](https://github.com/facebookresearch/fairseq) - 自监督语音预训练基线，用于表征学习.
+- **MMS: Scaling Speech Technology to 1,000+ Languages** (2023), Pratap et al. [pdf](https://arxiv.org/pdf/2305.13516) [code](https://github.com/facebookresearch/fairseq) - 超大规模多语种语音模型与 recipes（ASR/TTS/LID）。
+- **SeamlessM4T** (2023), Meta AI [pdf](https://arxiv.org/abs/2308.11596) [code](https://github.com/facebookresearch/seamless_communication) - 语音-文本多任务翻译/转写基础模型.
+- **Whisper** (2022), Radford et al. [pdf](https://arxiv.org/abs/2212.04356) [code](https://github.com/openai/whisper) - 大规模弱监督多语种ASR/翻译基础模型.
+- **XLS-R** (2021), Babu et al. [pdf](https://arxiv.org/abs/2111.09296) [code](https://github.com/facebookresearch/fairseq) - 大规模跨语种语音表征学习（wav2vec 2.0 系列）。
+- **WavLM** (2021), Chen et al. [pdf](https://arxiv.org/abs/2110.13900) [code](https://github.com/microsoft/unispeech) - 鲁棒语音预训练，强调噪声/说话人鲁棒性.
+- **HuBERT** (2021), Hsu et al. [pdf](https://arxiv.org/abs/2106.07447) [code](https://github.com/facebookresearch/fairseq) - 自监督语音预训练（离散伪标签）经典方法.
+- **wav2vec 2.0** (2020), Baevski et al. [pdf](https://arxiv.org/abs/2006.11477) [code](https://github.com/facebookresearch/fairseq) - 自监督语音预训练基线，用于表征学习.
 
 ### Papers > TTS
 
-- **Fast F5-TTS / EPSS** (2025), [[pdf]](https://arxiv.org/pdf/2505.19931) - 通过步数剪枝实现 Flow-Matching TTS 的无训练加速.
-- **DiTTo-TTS** (2025), ICLR, [[pdf]](https://proceedings.iclr.cc/paper_files/paper/2025/file/80e77d9ed2f74dcaf1a42cb1a2593559-Paper-Conference.pdf) - 基于 DiT 的 TTS，可扩展到大数据无需音素/时长依赖.
-- **CosyVoice 2** (2024), Du et al. [[pdf]](https://arxiv.org/abs/2412.10117) [[code]](https://github.com/FunAudioLLM/CosyVoice) - 可扩展流式/非流式 LLM-TTS（低延迟）。
-- **VALL-E 2** (2024), Chen et al. [[pdf]](https://arxiv.org/abs/2406.05370) - Neural codec LM 零样本 TTS 达到“human parity”（研究里程碑）。
-- **ARDiT-TTS** (2024), Liu et al. [[pdf]](https://arxiv.org/html/2406.05551v1) - 自回归扩散 Transformer 的低延迟 TTS.
-- **Parler-TTS** (2024), Lyth et al. [[pdf]](https://arxiv.org/abs/2402.01912) [[code]](https://github.com/huggingface/parler-tts) - 自然语言提示控制的高保真 TTS.
-- **Latent Space of Diffusion TTS** (2024), Varshavsky-Hassid et al. [[pdf]](https://arxiv.org/html/2402.12423v2) - 探索扩散 TTS 语义潜空间用于免训练音频编辑.
-- **Voicebox** (2023), Meta, [[pdf]](https://export.arxiv.org/pdf/2306.15687v1.pdf) - 基于 Flow-Matching 的文本引导多语言通用语音生成.
-- **Audio Diffusion Survey** (2023), Liu et al. [[pdf]](https://arxiv.org/abs/2303.13336) - 音频扩散模型综述（TTS/增强）。
-- **StyleTTS 2** (2023), Li et al. [[pdf]](https://arxiv.org/abs/2306.07691) [[code]](https://github.com/yl4579/StyleTTS2) - 风格扩散+对抗训练的高质量TTS.
-- **VALL-E** (2023), Wang et al. [[pdf]](https://arxiv.org/abs/2301.02111) - 语言模型式零样本TTS（离散codec token）。
-- **VITS** (2021), Kim et al. [[pdf]](https://arxiv.org/abs/2106.06103) [[code]](https://github.com/jaywalnut310/vits) - 端到端TTS（VAE+flow+GAN）强基线.
-- **FastSpeech 2** (2020), Ren et al. [[pdf]](https://arxiv.org/abs/2006.04558) - 非自回归TTS（速度快，可控因素更多）。
-- **Tacotron 2** (2017), Shen et al. [[pdf]](https://arxiv.org/abs/1712.05884) - 经典神经TTS（文本到梅尔+神经声码器）。
+- **Fast F5-TTS / EPSS** (2025), [pdf](https://arxiv.org/pdf/2505.19931) - 通过步数剪枝实现 Flow-Matching TTS 的无训练加速.
+- **DiTTo-TTS** (2025), ICLR, [pdf](https://proceedings.iclr.cc/paper_files/paper/2025/file/80e77d9ed2f74dcaf1a42cb1a2593559-Paper-Conference.pdf) - 基于 DiT 的 TTS，可扩展到大数据无需音素/时长依赖.
+- **CosyVoice 2** (2024), Du et al. [pdf](https://arxiv.org/abs/2412.10117) [code](https://github.com/FunAudioLLM/CosyVoice) - 可扩展流式/非流式 LLM-TTS（低延迟）。
+- **VALL-E 2** (2024), Chen et al. [pdf](https://arxiv.org/abs/2406.05370) - Neural codec LM 零样本 TTS 达到“human parity”（研究里程碑）。
+- **ARDiT-TTS** (2024), Liu et al. [pdf](https://arxiv.org/html/2406.05551v1) - 自回归扩散 Transformer 的低延迟 TTS.
+- **Parler-TTS** (2024), Lyth et al. [pdf](https://arxiv.org/abs/2402.01912) [code](https://github.com/huggingface/parler-tts) - 自然语言提示控制的高保真 TTS.
+- **Latent Space of Diffusion TTS** (2024), Varshavsky-Hassid et al. [pdf](https://arxiv.org/html/2402.12423v2) - 探索扩散 TTS 语义潜空间用于免训练音频编辑.
+- **Voicebox** (2023), Meta, [pdf](https://export.arxiv.org/pdf/2306.15687v1.pdf) - 基于 Flow-Matching 的文本引导多语言通用语音生成.
+- **Audio Diffusion Survey** (2023), Liu et al. [pdf](https://arxiv.org/abs/2303.13336) - 音频扩散模型综述（TTS/增强）。
+- **StyleTTS 2** (2023), Li et al. [pdf](https://arxiv.org/abs/2306.07691) [code](https://github.com/yl4579/StyleTTS2) - 风格扩散+对抗训练的高质量TTS.
+- **VALL-E** (2023), Wang et al. [pdf](https://arxiv.org/abs/2301.02111) - 语言模型式零样本TTS（离散codec token）。
+- **VITS** (2021), Kim et al. [pdf](https://arxiv.org/abs/2106.06103) [code](https://github.com/jaywalnut310/vits) - 端到端TTS（VAE+flow+GAN）强基线.
+- **FastSpeech 2** (2020), Ren et al. [pdf](https://arxiv.org/abs/2006.04558) - 非自回归TTS（速度快，可控因素更多）。
+- **Tacotron 2** (2017), Shen et al. [pdf](https://arxiv.org/abs/1712.05884) - 经典神经TTS（文本到梅尔+神经声码器）。
 
 ### Papers > ASR
 
-- **Uni-ASR** (2026), Xia et al. [[pdf]](https://arxiv.org/abs/2603.11123) - 统一 LLM-ASR 框架：同时支持非流式与流式识别.
-- **Codec-ASR** (2024), Dhawan et al. [[pdf]](https://arxiv.org/html/2407.03495v1) - 使用离散 codec 表征训练 ASR 的系统性研究与 pipeline.
-- **Streaming Decoder-Only ASR** (2024), Chen et al. [[pdf]](https://arxiv.org/abs/2406.18862) - 离散语音单元 + decoder-only 的流式识别.
-- **Speech ReaLLM** (2024), Seide et al. [[pdf]](https://arxiv.org/abs/2406.09569) - 面向实时连续输入的 decoder-only 流式 ASR 范式.
-- **Simul-Whisper** (2024), Gaido et al. [[pdf]](https://arxiv.org/abs/2406.10052) - 无需微调的 Whisper 流式 ASR.
-- **WeNet / U2** (2021), Zhang et al. [[pdf]](https://arxiv.org/abs/2102.01547) [[code]](https://github.com/wenet-e2e/wenet) - 统一流式/非流式两阶段端到端 ASR 框架.
-- **Transformer Transducer** (2020), Zhang et al. [[pdf]](https://arxiv.org/abs/2002.02562) - 可流式 Transformer-RNNT.
-- **Conformer** (2020), Gulati et al. [[pdf]](https://arxiv.org/abs/2005.08100) - 卷积增强的 Transformer ASR 架构.
-- **Emformer** (2020), Shi et al. [[pdf]](https://arxiv.org/abs/2010.10759) - 低延迟流式 ASR 的高效记忆 Transformer.
+- **Uni-ASR** (2026), Xia et al. [pdf](https://arxiv.org/abs/2603.11123) - 统一 LLM-ASR 框架：同时支持非流式与流式识别.
+- **Codec-ASR** (2024), Dhawan et al. [pdf](https://arxiv.org/html/2407.03495v1) - 使用离散 codec 表征训练 ASR 的系统性研究与 pipeline.
+- **Streaming Decoder-Only ASR** (2024), Chen et al. [pdf](https://arxiv.org/abs/2406.18862) - 离散语音单元 + decoder-only 的流式识别.
+- **Speech ReaLLM** (2024), Seide et al. [pdf](https://arxiv.org/abs/2406.09569) - 面向实时连续输入的 decoder-only 流式 ASR 范式.
+- **Simul-Whisper** (2024), Gaido et al. [pdf](https://arxiv.org/abs/2406.10052) - 无需微调的 Whisper 流式 ASR.
+- **WeNet / U2** (2021), Zhang et al. [pdf](https://arxiv.org/abs/2102.01547) [code](https://github.com/wenet-e2e/wenet) - 统一流式/非流式两阶段端到端 ASR 框架.
+- **Transformer Transducer** (2020), Zhang et al. [pdf](https://arxiv.org/abs/2002.02562) - 可流式 Transformer-RNNT.
+- **Conformer** (2020), Gulati et al. [pdf](https://arxiv.org/abs/2005.08100) - 卷积增强的 Transformer ASR 架构.
+- **Emformer** (2020), Shi et al. [pdf](https://arxiv.org/abs/2010.10759) - 低延迟流式 ASR 的高效记忆 Transformer.
 
 ### Papers > Voice Cloning
 
-- **ClonEval** (2025), Cai et al. [[pdf]](https://arxiv.org/abs/2504.20581) [[code]](https://github.com/amu-cai/cloneval) - voice cloning 系统评测基准.
-- **OpenVoice** (2023), MyShell AI [[pdf]](https://arxiv.org/abs/2312.01479) [[code]](https://github.com/myshell-ai/OpenVoice) - 灵活风格控制的即时语音克隆.
+- **ClonEval** (2025), Cai et al. [pdf](https://arxiv.org/abs/2504.20581) [code](https://github.com/amu-cai/cloneval) - voice cloning 系统评测基准.
+- **OpenVoice** (2023), MyShell AI [pdf](https://arxiv.org/abs/2312.01479) [code](https://github.com/myshell-ai/OpenVoice) - 灵活风格控制的即时语音克隆.
 
 ### Papers > 音频增强
 
-- **Vox-Profile** (2025), [[pdf]](https://arxiv.org/html/2505.14648v1) - 语音基础模型说话人特性评估基准.
-- **Towards Real-Time Generative Speech Restoration with Flow-Matching** (2026), Microsoft Research [[pdf]](https://www.microsoft.com/en-us/research/publication/towards-real-time-generative-speech-restoration-with-flow-matching/) - ICASSP 2026，基于 Flow-Matching 的实时语音修复/增强/去混响论文.。
-- **AudioLDM 2** (2024), Liu et al. [[pdf]](https://arxiv.org/abs/2308.05734) [[code]](https://github.com/haoheliu/AudioLDM2) - 文本到音频生成增强版（引入自监督预训练）。
-- **DNSMOS Pro** (2024), Cumlin et al. [[pdf]](https://www.isca-archive.org/interspeech_2024/cumlin24_interspeech.pdf) - 改进版 DNSMOS 语音增强评估指标.
-- **MusicGen** (2023), Copet et al. [[pdf]](https://arxiv.org/abs/2306.05284) [[code]](https://github.com/facebookresearch/audiocraft) - 可控文本到音乐生成.
-- **MusicLM** (2023), Agostinelli et al. [[pdf]](https://arxiv.org/abs/2301.11325) - 高保真文本到音乐生成（模型/权重未完全开源）。
-- **AudioLDM** (2023), Liu et al. [[pdf]](https://arxiv.org/abs/2301.12503) [[code]](https://github.com/haoheliu/AudioLDM) - Latent Diffusion 文本到音频生成.
-- **AudioGen** (2022), Kreuk et al. [[pdf]](https://arxiv.org/abs/2209.15352) [[code]](https://github.com/facebookresearch/audiocraft) - 文本引导音频生成（text-to-sound）。
-- **DNSMOS** (2020), Reddy et al. [[pdf]](https://arxiv.org/pdf/2010.15258) - 无参考语音质量评价指标（噪声抑制常用）。
+- **Vox-Profile** (2025), [pdf](https://arxiv.org/html/2505.14648v1) - 语音基础模型说话人特性评估基准.
+- **Towards Real-Time Generative Speech Restoration with Flow-Matching** (2026), Microsoft Research [pdf](https://www.microsoft.com/en-us/research/publication/towards-real-time-generative-speech-restoration-with-flow-matching/) - ICASSP 2026，基于 Flow-Matching 的实时语音修复/增强/去混响论文.。
+- **AudioLDM 2** (2024), Liu et al. [pdf](https://arxiv.org/abs/2308.05734) [code](https://github.com/haoheliu/AudioLDM2) - 文本到音频生成增强版（引入自监督预训练）。
+- **DNSMOS Pro** (2024), Cumlin et al. [pdf](https://www.isca-archive.org/interspeech_2024/cumlin24_interspeech.pdf) - 改进版 DNSMOS 语音增强评估指标.
+- **MusicGen** (2023), Copet et al. [pdf](https://arxiv.org/abs/2306.05284) [code](https://github.com/facebookresearch/audiocraft) - 可控文本到音乐生成.
+- **MusicLM** (2023), Agostinelli et al. [pdf](https://arxiv.org/abs/2301.11325) - 高保真文本到音乐生成（模型/权重未完全开源）。
+- **AudioLDM** (2023), Liu et al. [pdf](https://arxiv.org/abs/2301.12503) [code](https://github.com/haoheliu/AudioLDM) - Latent Diffusion 文本到音频生成.
+- **AudioGen** (2022), Kreuk et al. [pdf](https://arxiv.org/abs/2209.15352) [code](https://github.com/facebookresearch/audiocraft) - 文本引导音频生成（text-to-sound）。
+- **DNSMOS** (2020), Reddy et al. [pdf](https://arxiv.org/pdf/2010.15258) - 无参考语音质量评价指标（噪声抑制常用）。
 
 ### Papers > 语音大模型
 
-- **DuplexCascade** (2026), [[pdf]](https://arxiv.org/html/2603.09180v1) - VAD-free cascaded 全双工 S2S 对话（micro-turn 优化）。
-- **Privacy-Preserving End-to-End Full-Duplex Speech Dialogue Models** (2026), [[pdf]](https://arxiv.org/html/2603.08179v1) - 全双工对话隐私泄露分析与流式匿名化.
-- **VoxEval** (2025), Huang et al. [[pdf]](https://arxiv.org/abs/2501.04962) [[code]](https://github.com/dreamtheater123/VoxEval) - Spoken LM 评测基准（SpeechQA）。
-- **SLAM-LLM** (2025), Chen et al. [[pdf]](https://arxiv.org/abs/2601.09385) [[code]](https://github.com/X-LANCE/SLAM-LLM) - 语音/语言/音频/音乐多模态 LLM 训练框架。
-- **SALMONN-omni** (2025), Bytedance [[pdf]](https://arxiv.org/html/2505.17060v1) - 单模型全双工 Speech LLM（无需 codec 注入）。
-- **SpiRit-LM** (2025), TACL, Hassid et al. [[pdf]](https://arxiv.org/abs/2402.05755) [[code]](https://github.com/facebookresearch/spiritlm) - 语音与文本 token 交错训练的 SpeechLM。
-- **VoiceBench** (2024), Wang et al. [[pdf]](https://arxiv.org/abs/2410.17196) [[code]](https://github.com/MatthewCYM/VoiceBench) - LLM 语音助手评测基准。
-- **Moshi** (2024), Kyutai [[pdf]](https://arxiv.org/abs/2410.00037) [[code]](https://github.com/kyutai-labs/moshi) - 实时全双工语音对话 Speech-Text 基础模型。
-- **Language Model Can Listen While Speaking** (2024), Chen et al. [[pdf]](https://arxiv.org/abs/2408.02622) - 让 SpeechLM 支持“边说边听”的全双工建模。
-- **MSLM-S2ST** (2024), [[pdf]](https://arxiv.org/abs/2403.12408) - 多任务 decoder-only SpeechLM：无文本 S2ST 与说话人风格保持。
-- **LTU** (2024), Gong et al. [[pdf]](https://arxiv.org/abs/2305.10790) [[code]](https://github.com/YuanGongND/ltu) - 具备感知与推理能力的音频/语音 LLM（ICLR 2024）。
-- **SALMONN** (2024), Bytedance [[pdf]](https://arxiv.org/abs/2310.13289) [[code]](https://github.com/bytedance/SALMONN) - 通用听觉能力的多模态LLM。
-- **AudioPaLM** (2023), Rubenstein et al. [[pdf]](https://arxiv.org/abs/2306.12925) - 融合 PaLM-2 与 AudioLM 的“能听能说”大模型.
-- **SpeechGPT** (2023), Zhang et al. [[pdf]](https://arxiv.org/abs/2305.11000) [[code]](https://github.com/0nutation/SpeechGPT) - 跨模态对话能力的 SpeechLM.
-- **AudioLM** (2022), Borsos et al. [[pdf]](https://arxiv.org/abs/2209.03143) - 音频 token + LM 生成式音频框架（无文本语音生成）。
-- **SpeechT5** (2022), Ao et al. [[pdf]](https://arxiv.org/abs/2110.07205) [[code]](https://github.com/microsoft/SpeechT5) - 统一语音/文本多任务预训练.
+- **DuplexCascade** (2026), [pdf](https://arxiv.org/html/2603.09180v1) - VAD-free cascaded 全双工 S2S 对话（micro-turn 优化）。
+- **Privacy-Preserving End-to-End Full-Duplex Speech Dialogue Models** (2026), [pdf](https://arxiv.org/html/2603.08179v1) - 全双工对话隐私泄露分析与流式匿名化.
+- **VoxEval** (2025), Huang et al. [pdf](https://arxiv.org/abs/2501.04962) [code](https://github.com/dreamtheater123/VoxEval) - Spoken LM 评测基准（SpeechQA）。
+- **SLAM-LLM** (2025), Chen et al. [pdf](https://arxiv.org/abs/2601.09385) [code](https://github.com/X-LANCE/SLAM-LLM) - 语音/语言/音频/音乐多模态 LLM 训练框架。
+- **SALMONN-omni** (2025), Bytedance [pdf](https://arxiv.org/html/2505.17060v1) - 单模型全双工 Speech LLM（无需 codec 注入）。
+- **SpiRit-LM** (2025), TACL, Hassid et al. [pdf](https://arxiv.org/abs/2402.05755) [code](https://github.com/facebookresearch/spiritlm) - 语音与文本 token 交错训练的 SpeechLM。
+- **VoiceBench** (2024), Wang et al. [pdf](https://arxiv.org/abs/2410.17196) [code](https://github.com/MatthewCYM/VoiceBench) - LLM 语音助手评测基准。
+- **Moshi** (2024), Kyutai [pdf](https://arxiv.org/abs/2410.00037) [code](https://github.com/kyutai-labs/moshi) - 实时全双工语音对话 Speech-Text 基础模型。
+- **Language Model Can Listen While Speaking** (2024), Chen et al. [pdf](https://arxiv.org/abs/2408.02622) - 让 SpeechLM 支持“边说边听”的全双工建模。
+- **MSLM-S2ST** (2024), [pdf](https://arxiv.org/abs/2403.12408) - 多任务 decoder-only SpeechLM：无文本 S2ST 与说话人风格保持。
+- **LTU** (2024), Gong et al. [pdf](https://arxiv.org/abs/2305.10790) [code](https://github.com/YuanGongND/ltu) - 具备感知与推理能力的音频/语音 LLM（ICLR 2024）。
+- **SALMONN** (2024), Bytedance [pdf](https://arxiv.org/abs/2310.13289) [code](https://github.com/bytedance/SALMONN) - 通用听觉能力的多模态LLM。
+- **AudioPaLM** (2023), Rubenstein et al. [pdf](https://arxiv.org/abs/2306.12925) - 融合 PaLM-2 与 AudioLM 的“能听能说”大模型.
+- **SpeechGPT** (2023), Zhang et al. [pdf](https://arxiv.org/abs/2305.11000) [code](https://github.com/0nutation/SpeechGPT) - 跨模态对话能力的 SpeechLM.
+- **AudioLM** (2022), Borsos et al. [pdf](https://arxiv.org/abs/2209.03143) - 音频 token + LM 生成式音频框架（无文本语音生成）。
+- **SpeechT5** (2022), Ao et al. [pdf](https://arxiv.org/abs/2110.07205) [code](https://github.com/microsoft/SpeechT5) - 统一语音/文本多任务预训练.
 
 ### Papers > 综述
 
-- **Recent Advances in Speech Language Models: A Survey (ACL 2025)** (2025), ACL, [[pdf]](https://aclanthology.org/2025.acl-long.682.pdf) - ACL 2025 SpeechLM 综述：架构、训练、评测与挑战。
-- **On The Landscape of Spoken Language Models** (2025), [[pdf]](https://arxiv.org/pdf/2504.08528) - Spoken LM 综述：术语体系与评测视角梳理。
-- **Towards Controllable Speech Synthesis in the Era of Large Language Models: A Survey** (2024), Li et al. [[pdf]](https://arxiv.org/abs/2412.06602) - 可控TTS综述（LLM/扩散/自然语言控制）。
-- **Recent Advances in Speech Language Models: A Survey** (2024), ACL, Wang et al. [[pdf]](https://arxiv.org/abs/2410.03751) - SpeechLM架构、训练、评测与挑战综述。
-- **A Survey on Speech Large Language Models for Understanding** (2024), Xu et al. [[pdf]](https://arxiv.org/abs/2410.18908) - Speech LLM（语音理解）综述与体系化分类。
+- **Recent Advances in Speech Language Models: A Survey (ACL 2025)** (2025), ACL, [pdf](https://aclanthology.org/2025.acl-long.682.pdf) - ACL 2025 SpeechLM 综述：架构、训练、评测与挑战。
+- **On The Landscape of Spoken Language Models** (2025), [pdf](https://arxiv.org/pdf/2504.08528) - Spoken LM 综述：术语体系与评测视角梳理。
+- **Towards Controllable Speech Synthesis in the Era of Large Language Models: A Survey** (2024), Li et al. [pdf](https://arxiv.org/abs/2412.06602) - 可控TTS综述（LLM/扩散/自然语言控制）。
+- **Recent Advances in Speech Language Models: A Survey** (2024), ACL, Wang et al. [pdf](https://arxiv.org/abs/2410.03751) - SpeechLM架构、训练、评测与挑战综述。
+- **A Survey on Speech Large Language Models for Understanding** (2024), Xu et al. [pdf](https://arxiv.org/abs/2410.18908) - Speech LLM（语音理解）综述与体系化分类。
 
 ---
 

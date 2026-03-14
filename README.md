@@ -6,11 +6,15 @@
 
 ## Contents
 
-|                                                                     |                                                             |                                                                      |
-| ------------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------- |
-| [🔧 Foundation Models & Frameworks](#foundation-models--frameworks) | [🔊 Text-to-Speech](#text-to-speech-tts)                    | [🎤 Automatic Speech Recognition](#automatic-speech-recognition-asr) |
-| [🎭 Voice Cloning](#voice-cloning)                                  | [✨ Audio Enhancement](#audio-enhancement)                  | [🔧 Audio Engineering Tools](#audio-engineering-tools)               |
-| [📊 Datasets & Benchmarks](#datasets--benchmarks)                   | [🤖 Speech LLM & Real-time](#speech-llm--real-time-systems) | [📄 Papers](#papers)                                                 |
+- [Foundation Models & Frameworks](#foundation-models--frameworks)
+- [Text-to-Speech (TTS)](#text-to-speech-tts)
+- [Automatic Speech Recognition (ASR)](#automatic-speech-recognition-asr)
+- [Voice Cloning](#voice-cloning)
+- [Audio Enhancement](#audio-enhancement)
+- [Audio Engineering Tools](#audio-engineering-tools)
+- [Datasets & Benchmarks](#datasets--benchmarks)
+- [Speech LLM & Real-time Systems](#speech-llm--real-time-systems)
+- [Papers](#papers)
 
 ---
 
@@ -113,10 +117,9 @@
 ### ASR > Multilingual
 
 - [SeamlessM4T](https://github.com/facebookresearch/seamless_communication) ![stars](https://img.shields.io/github/stars/facebookresearch/seamless_communication.svg?cacheSeconds=86400) - Multilingual multimodal translation model supporting speech-to-text and speech-to-speech.
-- [Vosk](https://github.com/alphacep/vosk-api) ![stars](https://img.shields.io/github/stars/alphacep/vosk-api.svg?cacheSeconds=86400) - Offline ASR API with multilingual support, small models, and streaming capabilities.
 - [sherpa-onnx omnilingual ASR](https://huggingface.co/csukuangfj2/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-v2-2026-02-05) - 1600+ language ASR weights for sherpa-onnx (on-device/offline inference).
 
-For multilingual ASR foundation models, see Whisper above.
+For multilingual ASR foundation models, see Whisper and Vosk above.
 
 ### ASR > VAD & Voice Activity Detection
 
@@ -152,13 +155,10 @@ For multilingual ASR foundation models, see Whisper above.
 ### Voice Cloning > Few-Shot Fine-tuning
 
 - [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) ![stars](https://img.shields.io/github/stars/RVC-Boss/GPT-SoVITS.svg?cacheSeconds=86400) - Few-shot TTS/VC WebUI for fast voice cloning and cross-lingual cloning.
-- [RVC WebUI](https://github.com/rvc-project/retrieval-based-voice-conversion-webui) ![stars](https://img.shields.io/github/stars/rvc-project/retrieval-based-voice-conversion-webui.svg?cacheSeconds=86400) - Retrieval-based Voice Conversion: Training + Real-time voice changing/singing voice conversion WebUI.
 
 ### Voice Cloning > Cross-Lingual
 
-- [VALL-E X](https://github.com/Plachtaa/VALL-E-X) ![stars](https://img.shields.io/github/stars/Plachtaa/VALL-E-X.svg?cacheSeconds=86400) - Zero-shot TTS reproduction (unofficial) supporting cross-lingual voice cloning.
-
-For more cross-lingual voice cloning options, see OpenVoice and GPT-SoVITS above.
+For cross-lingual voice cloning, see [VALL-E X](#tts--zero-shot--few-shot) and [OpenVoice](#voice-cloning--zero-shot) above.
 
 ### Voice Cloning > Singing Voice Conversion
 
@@ -335,86 +335,86 @@ For more cross-lingual voice cloning options, see OpenVoice and GPT-SoVITS above
 
 ### Papers > Foundation Models
 
-- **MMS: Scaling Speech Technology to 1,000+ Languages** (2023), Pratap et al. [[pdf]](https://arxiv.org/pdf/2305.13516) [[code]](https://github.com/facebookresearch/fairseq) - Massively multilingual speech models and recipes (ASR/TTS/LID at scale).
-- **SeamlessM4T** (2023), Meta AI [[pdf]](https://arxiv.org/abs/2308.11596) [[code]](https://github.com/facebookresearch/seamless_communication) - Speech-text multitask translation/transcription foundation model.
-- **Whisper** (2022), Radford et al. [[pdf]](https://arxiv.org/abs/2212.04356) [[code]](https://github.com/openai/whisper) - Large-scale weakly supervised multilingual ASR/translation foundation model.
-- **XLS-R** (2021), Babu et al. [[pdf]](https://arxiv.org/abs/2111.09296) [[code]](https://github.com/facebookresearch/fairseq) - Large-scale cross-lingual speech representation learning (wav2vec 2.0 family).
-- **WavLM** (2021), Chen et al. [[pdf]](https://arxiv.org/abs/2110.13900) [[code]](https://github.com/microsoft/unispeech) - Robust speech pretraining with noise/speaker robustness.
-- **HuBERT** (2021), Hsu et al. [[pdf]](https://arxiv.org/abs/2106.07447) [[code]](https://github.com/facebookresearch/fairseq) - Self-supervised speech pretraining with discrete pseudo-labels.
-- **wav2vec 2.0** (2020), Baevski et al. [[pdf]](https://arxiv.org/abs/2006.11477) [[code]](https://github.com/facebookresearch/fairseq) - Self-supervised speech pretraining baseline for representation learning.
+- **MMS: Scaling Speech Technology to 1,000+ Languages** (2023), Pratap et al. [pdf](https://arxiv.org/pdf/2305.13516) [code](https://github.com/facebookresearch/fairseq) - Massively multilingual speech models and recipes (ASR/TTS/LID at scale).
+- **SeamlessM4T** (2023), Meta AI [pdf](https://arxiv.org/abs/2308.11596) [code](https://github.com/facebookresearch/seamless_communication) - Speech-text multitask translation/transcription foundation model.
+- **Whisper** (2022), Radford et al. [pdf](https://arxiv.org/abs/2212.04356) [code](https://github.com/openai/whisper) - Large-scale weakly supervised multilingual ASR/translation foundation model.
+- **XLS-R** (2021), Babu et al. [pdf](https://arxiv.org/abs/2111.09296) [code](https://github.com/facebookresearch/fairseq) - Large-scale cross-lingual speech representation learning (wav2vec 2.0 family).
+- **WavLM** (2021), Chen et al. [pdf](https://arxiv.org/abs/2110.13900) [code](https://github.com/microsoft/unispeech) - Robust speech pretraining with noise/speaker robustness.
+- **HuBERT** (2021), Hsu et al. [pdf](https://arxiv.org/abs/2106.07447) [code](https://github.com/facebookresearch/fairseq) - Self-supervised speech pretraining with discrete pseudo-labels.
+- **wav2vec 2.0** (2020), Baevski et al. [pdf](https://arxiv.org/abs/2006.11477) [code](https://github.com/facebookresearch/fairseq) - Self-supervised speech pretraining baseline for representation learning.
 
 ### Papers > TTS
 
-- **Fast F5-TTS / EPSS** (2025), [[pdf]](https://arxiv.org/pdf/2505.19931) - Training-free acceleration for Flow-Matching TTS via step pruning.
-- **DiTTo-TTS** (2025), ICLR, [[pdf]](https://proceedings.iclr.cc/paper_files/paper/2025/file/80e77d9ed2f74dcaf1a42cb1a2593559-Paper-Conference.pdf) - DiT-based TTS scalable to large data without phoneme/duration dependencies.
-- **CosyVoice 2** (2024), Du et al. [[pdf]](https://arxiv.org/abs/2412.10117) [[code]](https://github.com/FunAudioLLM/CosyVoice) - Scalable streaming/non-streaming LLM-based TTS with low latency.
-- **VALL-E 2** (2024), Chen et al. [[pdf]](https://arxiv.org/abs/2406.05370) - Neural codec language model for zero-shot TTS reaching human parity (research milestone).
-- **ARDiT-TTS** (2024), Liu et al. [[pdf]](https://arxiv.org/html/2406.05551v1) - Autoregressive diffusion Transformer for low-latency TTS.
-- **Parler-TTS** (2024), Lyth et al. [[pdf]](https://arxiv.org/abs/2402.01912) [[code]](https://github.com/huggingface/parler-tts) - High-fidelity TTS with natural language prompting.
-- **Latent Space of Diffusion TTS** (2024), Varshavsky-Hassid et al. [[pdf]](https://arxiv.org/abs/2402.12423) - Exploring diffusion TTS latent space for training-free audio editing.
-- **Voicebox** (2023), Meta, [[pdf]](https://export.arxiv.org/pdf/2306.15687v1.pdf) - Text-guided multilingual universal speech generation via Flow-Matching and infilling.
-- **Audio Diffusion Survey** (2023), Liu et al. [[pdf]](https://arxiv.org/abs/2303.13336) - Comprehensive survey on audio diffusion models (TTS/enhancement).
-- **StyleTTS 2** (2023), Li et al. [[pdf]](https://arxiv.org/abs/2306.07691) [[code]](https://github.com/yl4579/StyleTTS2) - High-quality TTS via style diffusion + adversarial training.
-- **VALL-E** (2023), Wang et al. [[pdf]](https://arxiv.org/abs/2301.02111) - Language model-style zero-shot TTS with discrete codec tokens.
-- **VITS** (2021), Kim et al. [[pdf]](https://arxiv.org/abs/2106.06103) [[code]](https://github.com/jaywalnut310/vits) - End-to-end TTS (VAE+flow+GAN) strong baseline.
-- **FastSpeech 2** (2020), Ren et al. [[pdf]](https://arxiv.org/abs/2006.04558) - Non-autoregressive TTS with faster inference and more controllable factors.
-- **Tacotron 2** (2017), Shen et al. [[pdf]](https://arxiv.org/abs/1712.05884) - Classic neural TTS (text-to-mel + neural vocoder).
+- **Fast F5-TTS / EPSS** (2025), [pdf](https://arxiv.org/pdf/2505.19931) - Training-free acceleration for Flow-Matching TTS via step pruning.
+- **DiTTo-TTS** (2025), ICLR, [pdf](https://proceedings.iclr.cc/paper_files/paper/2025/file/80e77d9ed2f74dcaf1a42cb1a2593559-Paper-Conference.pdf) - DiT-based TTS scalable to large data without phoneme/duration dependencies.
+- **CosyVoice 2** (2024), Du et al. [pdf](https://arxiv.org/abs/2412.10117) [code](https://github.com/FunAudioLLM/CosyVoice) - Scalable streaming/non-streaming LLM-based TTS with low latency.
+- **VALL-E 2** (2024), Chen et al. [pdf](https://arxiv.org/abs/2406.05370) - Neural codec language model for zero-shot TTS reaching human parity (research milestone).
+- **ARDiT-TTS** (2024), Liu et al. [pdf](https://arxiv.org/html/2406.05551v1) - Autoregressive diffusion Transformer for low-latency TTS.
+- **Parler-TTS** (2024), Lyth et al. [pdf](https://arxiv.org/abs/2402.01912) [code](https://github.com/huggingface/parler-tts) - High-fidelity TTS with natural language prompting.
+- **Latent Space of Diffusion TTS** (2024), Varshavsky-Hassid et al. [pdf](https://arxiv.org/abs/2402.12423) - Exploring diffusion TTS latent space for training-free audio editing.
+- **Voicebox** (2023), Meta, [pdf](https://export.arxiv.org/pdf/2306.15687v1.pdf) - Text-guided multilingual universal speech generation via Flow-Matching and infilling.
+- **Audio Diffusion Survey** (2023), Liu et al. [pdf](https://arxiv.org/abs/2303.13336) - Comprehensive survey on audio diffusion models (TTS/enhancement).
+- **StyleTTS 2** (2023), Li et al. [pdf](https://arxiv.org/abs/2306.07691) [code](https://github.com/yl4579/StyleTTS2) - High-quality TTS via style diffusion + adversarial training.
+- **VALL-E** (2023), Wang et al. [pdf](https://arxiv.org/abs/2301.02111) - Language model-style zero-shot TTS with discrete codec tokens.
+- **VITS** (2021), Kim et al. [pdf](https://arxiv.org/abs/2106.06103) [code](https://github.com/jaywalnut310/vits) - End-to-end TTS (VAE+flow+GAN) strong baseline.
+- **FastSpeech 2** (2020), Ren et al. [pdf](https://arxiv.org/abs/2006.04558) - Non-autoregressive TTS with faster inference and more controllable factors.
+- **Tacotron 2** (2017), Shen et al. [pdf](https://arxiv.org/abs/1712.05884) - Classic neural TTS (text-to-mel + neural vocoder).
 
 ### Papers > ASR
 
-- **Uni-ASR** (2026), Xia et al. [[pdf]](https://arxiv.org/abs/2603.11123) - Unified LLM-ASR framework supporting both non-streaming and streaming recognition.
-- **Codec-ASR** (2024), Dhawan et al. [[pdf]](https://arxiv.org/html/2407.03495v1) - Systematic study of training ASR with discrete codec representations.
-- **Streaming Decoder-Only ASR** (2024), Chen et al. [[pdf]](https://arxiv.org/abs/2406.18862) - Streaming ASR using discrete speech units with decoder-only modeling.
-- **Speech ReaLLM** (2024), Seide et al. [[pdf]](https://arxiv.org/abs/2406.09569) - Decoder-only streaming ASR paradigm for real-time continuous input.
-- **Simul-Whisper** (2024), Interspeech, Gaido et al. [[pdf]](https://arxiv.org/abs/2406.10052) - Streaming Whisper ASR without fine-tuning via cross-attention alignment.
-- **WeNet / U2** (2021), Zhang et al. [[pdf]](https://arxiv.org/abs/2102.01547) [[code]](https://github.com/wenet-e2e/wenet) - Unified two-stage streaming/non-streaming end-to-end ASR framework.
-- **Transformer Transducer** (2020), Zhang et al. [[pdf]](https://arxiv.org/abs/2002.02562) - Streamable Transformer-RNNT for ASR.
-- **Conformer** (2020), Gulati et al. [[pdf]](https://arxiv.org/abs/2005.08100) - Convolution-augmented Transformer architecture for ASR.
-- **Emformer** (2020), Shi et al. [[pdf]](https://arxiv.org/abs/2010.10759) - Efficient memory Transformer for low-latency streaming ASR.
+- **Uni-ASR** (2026), Xia et al. [pdf](https://arxiv.org/abs/2603.11123) - Unified LLM-ASR framework supporting both non-streaming and streaming recognition.
+- **Codec-ASR** (2024), Dhawan et al. [pdf](https://arxiv.org/html/2407.03495v1) - Systematic study of training ASR with discrete codec representations.
+- **Streaming Decoder-Only ASR** (2024), Chen et al. [pdf](https://arxiv.org/abs/2406.18862) - Streaming ASR using discrete speech units with decoder-only modeling.
+- **Speech ReaLLM** (2024), Seide et al. [pdf](https://arxiv.org/abs/2406.09569) - Decoder-only streaming ASR paradigm for real-time continuous input.
+- **Simul-Whisper** (2024), Interspeech, Gaido et al. [pdf](https://arxiv.org/abs/2406.10052) - Streaming Whisper ASR without fine-tuning via cross-attention alignment.
+- **WeNet / U2** (2021), Zhang et al. [pdf](https://arxiv.org/abs/2102.01547) [code](https://github.com/wenet-e2e/wenet) - Unified two-stage streaming/non-streaming end-to-end ASR framework.
+- **Transformer Transducer** (2020), Zhang et al. [pdf](https://arxiv.org/abs/2002.02562) - Streamable Transformer-RNNT for ASR.
+- **Conformer** (2020), Gulati et al. [pdf](https://arxiv.org/abs/2005.08100) - Convolution-augmented Transformer architecture for ASR.
+- **Emformer** (2020), Shi et al. [pdf](https://arxiv.org/abs/2010.10759) - Efficient memory Transformer for low-latency streaming ASR.
 
 ### Papers > Voice Cloning
 
-- **ClonEval** (2025), Cai et al. [[pdf]](https://arxiv.org/abs/2504.20581) [[code]](https://github.com/amu-cai/cloneval) - Benchmark for evaluating voice cloning systems.
-- **OpenVoice** (2023), MyShell AI [[pdf]](https://arxiv.org/abs/2312.01479) [[code]](https://github.com/myshell-ai/OpenVoice) - Flexible instant voice cloning with style control.
+- **ClonEval** (2025), Cai et al. [pdf](https://arxiv.org/abs/2504.20581) [code](https://github.com/amu-cai/cloneval) - Benchmark for evaluating voice cloning systems.
+- **OpenVoice** (2023), MyShell AI [pdf](https://arxiv.org/abs/2312.01479) [code](https://github.com/myshell-ai/OpenVoice) - Flexible instant voice cloning with style control.
 
 ### Papers > Audio Enhancement
 
-- **Towards Real-Time Generative Speech Restoration with Flow-Matching** (2026), Microsoft Research [[pdf]](https://www.microsoft.com/en-us/research/publication/towards-real-time-generative-speech-restoration-with-flow-matching/) - ICASSP 2026 paper on flow-matching based real-time speech restoration/enhancement/dereverb.
-- **Vox-Profile** (2025), [[pdf]](https://arxiv.org/html/2505.14648v1) - Speaker characteristics evaluation benchmark for speech foundation models.
-- **AudioLDM 2** (2024), Liu et al. [[pdf]](https://arxiv.org/abs/2308.05734) [[code]](https://github.com/haoheliu/AudioLDM2) - Improved text-to-audio generation with self-supervised pretraining.
-- **DNSMOS Pro** (2024), Cumlin et al. [[pdf]](https://www.isca-archive.org/interspeech_2024/cumlin24_interspeech.pdf) - Improved DNSMOS model for speech enhancement assessment.
-- **MusicGen** (2023), Copet et al. [[pdf]](https://arxiv.org/abs/2306.05284) [[code]](https://github.com/facebookresearch/audiocraft) - Controllable text-to-music generation.
-- **MusicLM** (2023), Agostinelli et al. [[pdf]](https://arxiv.org/abs/2301.11325) - High-fidelity text-to-music generation (model/weights are not fully open-sourced).
-- **AudioLDM** (2023), Liu et al. [[pdf]](https://arxiv.org/abs/2301.12503) [[code]](https://github.com/haoheliu/AudioLDM) - Latent Diffusion for text-to-audio generation.
-- **AudioGen** (2022), Kreuk et al. [[pdf]](https://arxiv.org/abs/2209.15352) [[code]](https://github.com/facebookresearch/audiocraft) - Text-guided audio generation (text-to-sound).
-- **DNSMOS** (2020), Reddy et al. [[pdf]](https://arxiv.org/pdf/2010.15258) - No-reference speech quality assessment metric for noise suppression.
+- **Towards Real-Time Generative Speech Restoration with Flow-Matching** (2026), Microsoft Research [pdf](https://www.microsoft.com/en-us/research/publication/towards-real-time-generative-speech-restoration-with-flow-matching/) - ICASSP 2026 paper on flow-matching based real-time speech restoration/enhancement/dereverb.
+- **Vox-Profile** (2025), [pdf](https://arxiv.org/html/2505.14648v1) - Speaker characteristics evaluation benchmark for speech foundation models.
+- **AudioLDM 2** (2024), Liu et al. [pdf](https://arxiv.org/abs/2308.05734) [code](https://github.com/haoheliu/AudioLDM2) - Improved text-to-audio generation with self-supervised pretraining.
+- **DNSMOS Pro** (2024), Cumlin et al. [pdf](https://www.isca-archive.org/interspeech_2024/cumlin24_interspeech.pdf) - Improved DNSMOS model for speech enhancement assessment.
+- **MusicGen** (2023), Copet et al. [pdf](https://arxiv.org/abs/2306.05284) [code](https://github.com/facebookresearch/audiocraft) - Controllable text-to-music generation.
+- **MusicLM** (2023), Agostinelli et al. [pdf](https://arxiv.org/abs/2301.11325) - High-fidelity text-to-music generation (model/weights are not fully open-sourced).
+- **AudioLDM** (2023), Liu et al. [pdf](https://arxiv.org/abs/2301.12503) [code](https://github.com/haoheliu/AudioLDM) - Latent Diffusion for text-to-audio generation.
+- **AudioGen** (2022), Kreuk et al. [pdf](https://arxiv.org/abs/2209.15352) [code](https://github.com/facebookresearch/audiocraft) - Text-guided audio generation (text-to-sound).
+- **DNSMOS** (2020), Reddy et al. [pdf](https://arxiv.org/pdf/2010.15258) - No-reference speech quality assessment metric for noise suppression.
 
 ### Papers > Speech LLM
 
-- **DuplexCascade** (2026), [[pdf]](https://arxiv.org/html/2603.09180v1) - VAD-free cascaded full-duplex S2S dialogue with micro-turn optimization.
-- **Privacy-Preserving End-to-End Full-Duplex Speech Dialogue Models** (2026), [[pdf]](https://arxiv.org/html/2603.08179v1) - Privacy leakage analysis and streaming anonymization for full-duplex dialogue.
-- **VoxEval** (2025), Huang et al. [[pdf]](https://arxiv.org/abs/2501.04962) [[code]](https://github.com/dreamtheater123/VoxEval) - Spoken LM evaluation benchmark (SpeechQA).
-- **SLAM-LLM** (2025), Chen et al. [[pdf]](https://arxiv.org/abs/2601.09385) [[code]](https://github.com/X-LANCE/SLAM-LLM) - Speech/Language/Audio/Music multimodal LLM training framework.
-- **SALMONN-omni** (2025), Bytedance [[pdf]](https://arxiv.org/html/2505.17060v1) - Single-model full-duplex Speech LLM without codec injection.
-- **SpiRit-LM** (2025), TACL, Hassid et al. [[pdf]](https://arxiv.org/abs/2402.05755) [[code]](https://github.com/facebookresearch/spiritlm) - Speech-text interleaving training for SpeechLM.
-- **VoiceBench** (2024), Wang et al. [[pdf]](https://arxiv.org/abs/2410.17196) [[code]](https://github.com/MatthewCYM/VoiceBench) - Benchmark for evaluating LLM-based voice assistants.
-- **Moshi** (2024), Kyutai [[pdf]](https://arxiv.org/abs/2410.00037) [[code]](https://github.com/kyutai-labs/moshi) - Real-time full-duplex speech-to-speech dialogue Speech-Text foundation model.
-- **Language Model Can Listen While Speaking** (2024), Chen et al. [[pdf]](https://arxiv.org/abs/2408.02622) - Full-duplex modeling for speaking while listening.
-- **MSLM-S2ST** (2024), [[pdf]](https://arxiv.org/abs/2403.12408) - Multitask decoder-only SpeechLM for text-free speech-to-speech translation with speaker style preservation.
-- **LTU** (2024), Gong et al. [[pdf]](https://arxiv.org/abs/2305.10790) [[code]](https://github.com/YuanGongND/ltu) - Audio/speech LLM with perception and reasoning capabilities (ICLR 2024).
-- **SALMONN** (2024), Bytedance [[pdf]](https://arxiv.org/abs/2310.13289) [[code]](https://github.com/bytedance/SALMONN) - Multimodal LLM with universal auditory capabilities (speech+audio events+music).
-- **AudioPaLM** (2023), Rubenstein et al. [[pdf]](https://arxiv.org/abs/2306.12925) - Speech-capable large model combining PaLM-2 and AudioLM (S2ST/ASR).
-- **SpeechGPT** (2023), Zhang et al. [[pdf]](https://arxiv.org/abs/2305.11000) [[code]](https://github.com/0nutation/SpeechGPT) - SpeechLM with cross-modal dialogue capabilities (discrete speech representations + instruction tuning).
-- **AudioLM** (2022), Borsos et al. [[pdf]](https://arxiv.org/abs/2209.03143) - Audio token + LM generative audio framework (textless speech generation).
-- **SpeechT5** (2022), Ao et al. [[pdf]](https://arxiv.org/abs/2110.07205) [[code]](https://github.com/microsoft/SpeechT5) - Unified speech-text multitask pretraining (ASR/TTS/VC/enhancement).
+- **DuplexCascade** (2026), [pdf](https://arxiv.org/html/2603.09180v1) - VAD-free cascaded full-duplex S2S dialogue with micro-turn optimization.
+- **Privacy-Preserving End-to-End Full-Duplex Speech Dialogue Models** (2026), [pdf](https://arxiv.org/html/2603.08179v1) - Privacy leakage analysis and streaming anonymization for full-duplex dialogue.
+- **VoxEval** (2025), Huang et al. [pdf](https://arxiv.org/abs/2501.04962) [code](https://github.com/dreamtheater123/VoxEval) - Spoken LM evaluation benchmark (SpeechQA).
+- **SLAM-LLM** (2025), Chen et al. [pdf](https://arxiv.org/abs/2601.09385) [code](https://github.com/X-LANCE/SLAM-LLM) - Speech/Language/Audio/Music multimodal LLM training framework.
+- **SALMONN-omni** (2025), Bytedance [pdf](https://arxiv.org/html/2505.17060v1) - Single-model full-duplex Speech LLM without codec injection.
+- **SpiRit-LM** (2025), TACL, Hassid et al. [pdf](https://arxiv.org/abs/2402.05755) [code](https://github.com/facebookresearch/spiritlm) - Speech-text interleaving training for SpeechLM.
+- **VoiceBench** (2024), Wang et al. [pdf](https://arxiv.org/abs/2410.17196) [code](https://github.com/MatthewCYM/VoiceBench) - Benchmark for evaluating LLM-based voice assistants.
+- **Moshi** (2024), Kyutai [pdf](https://arxiv.org/abs/2410.00037) [code](https://github.com/kyutai-labs/moshi) - Real-time full-duplex speech-to-speech dialogue Speech-Text foundation model.
+- **Language Model Can Listen While Speaking** (2024), Chen et al. [pdf](https://arxiv.org/abs/2408.02622) - Full-duplex modeling for speaking while listening.
+- **MSLM-S2ST** (2024), [pdf](https://arxiv.org/abs/2403.12408) - Multitask decoder-only SpeechLM for text-free speech-to-speech translation with speaker style preservation.
+- **LTU** (2024), Gong et al. [pdf](https://arxiv.org/abs/2305.10790) [code](https://github.com/YuanGongND/ltu) - Audio/speech LLM with perception and reasoning capabilities (ICLR 2024).
+- **SALMONN** (2024), Bytedance [pdf](https://arxiv.org/abs/2310.13289) [code](https://github.com/bytedance/SALMONN) - Multimodal LLM with universal auditory capabilities (speech+audio events+music).
+- **AudioPaLM** (2023), Rubenstein et al. [pdf](https://arxiv.org/abs/2306.12925) - Speech-capable large model combining PaLM-2 and AudioLM (S2ST/ASR).
+- **SpeechGPT** (2023), Zhang et al. [pdf](https://arxiv.org/abs/2305.11000) [code](https://github.com/0nutation/SpeechGPT) - SpeechLM with cross-modal dialogue capabilities (discrete speech representations + instruction tuning).
+- **AudioLM** (2022), Borsos et al. [pdf](https://arxiv.org/abs/2209.03143) - Audio token + LM generative audio framework (textless speech generation).
+- **SpeechT5** (2022), Ao et al. [pdf](https://arxiv.org/abs/2110.07205) [code](https://github.com/microsoft/SpeechT5) - Unified speech-text multitask pretraining (ASR/TTS/VC/enhancement).
 
 ### Papers > Surveys
 
-- **Recent Advances in Speech Language Models: A Survey (ACL 2025)** (2025), ACL, [[pdf]](https://aclanthology.org/2025.acl-long.682.pdf) - ACL 2025 SpeechLM survey on architectures, training, evaluation and challenges.
-- **On The Landscape of Spoken Language Models** (2025), [[pdf]](https://arxiv.org/pdf/2504.08528) - SLM survey unifying terminology and evaluation perspectives across pure-speech LM, speech-text hybrid, and end-to-end dialogue.
-- **Towards Controllable Speech Synthesis in the Era of Large Language Models: A Survey** (2024), Li et al. [[pdf]](https://arxiv.org/abs/2412.06602) - Survey on controllable TTS with LLM/diffusion/natural language control.
-- **Recent Advances in Speech Language Models: A Survey** (2024), ACL, Wang et al. [[pdf]](https://arxiv.org/abs/2410.03751) - Comprehensive survey on SpeechLM architectures, training, evaluation and challenges.
-- **A Survey on Speech Large Language Models for Understanding** (2024), Xu et al. [[pdf]](https://arxiv.org/abs/2410.18908) - Survey and taxonomy of Speech LLM for understanding.
+- **Recent Advances in Speech Language Models: A Survey (ACL 2025)** (2025), ACL, [pdf](https://aclanthology.org/2025.acl-long.682.pdf) - ACL 2025 SpeechLM survey on architectures, training, evaluation and challenges.
+- **On The Landscape of Spoken Language Models** (2025), [pdf](https://arxiv.org/pdf/2504.08528) - SLM survey unifying terminology and evaluation perspectives across pure-speech LM, speech-text hybrid, and end-to-end dialogue.
+- **Towards Controllable Speech Synthesis in the Era of Large Language Models: A Survey** (2024), Li et al. [pdf](https://arxiv.org/abs/2412.06602) - Survey on controllable TTS with LLM/diffusion/natural language control.
+- **Recent Advances in Speech Language Models: A Survey** (2024), ACL, Wang et al. [pdf](https://arxiv.org/abs/2410.03751) - Comprehensive survey on SpeechLM architectures, training, evaluation and challenges.
+- **A Survey on Speech Large Language Models for Understanding** (2024), Xu et al. [pdf](https://arxiv.org/abs/2410.18908) - Survey and taxonomy of Speech LLM for understanding.
 
 ---
 
