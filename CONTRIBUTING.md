@@ -1,7 +1,5 @@
 # Contributing
 
-[简体中文](./CONTRIBUTING.zh.md) | **English**
-
 Thanks for contributing to Awesome Speech AI.
 
 ## Principles
@@ -33,7 +31,7 @@ Thanks for contributing to Awesome Speech AI.
 ### Papers
 
 ```markdown
-- **Paper Title** (Year), Authors et al. [[pdf]](link) [[code]](optional)
+- **Paper Title** (Year), Authors et al. [pdf](link) [code](optional)
 ```
 
 - Year is required; prefer arXiv or the publisher's official PDF.
