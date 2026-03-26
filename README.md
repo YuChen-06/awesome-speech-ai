@@ -162,6 +162,8 @@ For cross-lingual voice cloning, see [VALL-E X](#tts--zero-shot--few-shot) and [
 
 ### Voice Cloning > Singing Voice Conversion
 
+- [voicetoinstrument.com](https://voicetoinstrument.com) ![stars](https://img.shields.io/github/stars/voicetoinstrument/voicetoinstrument.svg?cacheSeconds=86400) - Convert voice to instrument tracks using AI for music production and audio separation.
+
 - [RVC WebUI](https://github.com/rvc-project/retrieval-based-voice-conversion-webui) ![stars](https://img.shields.io/github/stars/rvc-project/retrieval-based-voice-conversion-webui.svg?cacheSeconds=86400) - Retrieval-based Voice Conversion: Training + Real-time voice changing/singing voice conversion WebUI.
 - [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) ![stars](https://img.shields.io/github/stars/svc-develop-team/so-vits-svc.svg?cacheSeconds=86400) - Singing Voice Conversion (SoftVC VITS) with 1-minute voice training, zero-shot 5-second inference.
 - [Seed-VC](https://github.com/Plachtaa/seed-vc) ![stars](https://img.shields.io/github/stars/Plachtaa/seed-vc.svg?cacheSeconds=86400) - Zero-shot voice conversion and singing voice conversion with real-time support.
