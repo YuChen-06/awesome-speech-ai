@@ -1,0 +1,19 @@
+{
+  "name": "awesome-speech-ai-maintenance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Maintenance harness for the Awesome Speech AI repository.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint:awesome": "node scripts/run-awesome-lint.mjs",
+    "lint:docs": "node scripts/check-readme-structure.mjs",
+    "check:readme-structure": "node scripts/check-readme-structure.mjs",
+    "check:readme-entries": "node scripts/check-readme-entries.mjs",
+    "validate": "node scripts/validate-maintenance.mjs"
+  },
+  "devDependencies": {
+    "awesome-lint": "^2.2.3"
+  }
+}

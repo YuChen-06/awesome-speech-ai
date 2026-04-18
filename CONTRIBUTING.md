@@ -13,6 +13,43 @@ Thanks for contributing to Awesome Speech AI.
 - Keep entries in a section in a consistent order (recommended: alphabetical).
 - Prefer official sources (GitHub repo, official website, arXiv/publisher PDF) over re-uploads or aggregators.
 
+## Local Validation
+
+Before opening a PR, run:
+
+```bash
+npm install
+npm run validate
+```
+
+If your local shell wrapper around `npm` is unstable, run the same checks directly through Node:
+
+```bash
+node scripts/validate-maintenance.mjs
+```
+
+This repository validates:
+
+- awesome-list formatting via `awesome-lint`
+- README / README.zh structural isomorphism
+- duplicate README entries across sections
+
+## Repository Hygiene
+
+Track only the canonical repository assets:
+
+- `README.md` and `README.zh.md`
+- contributor and rules documents
+- lightweight maintenance assets such as `.github/` and `scripts/`
+- minimal package and lint configuration required to run validation
+
+Do not add local-only state or generated artifacts such as:
+
+- `.codex/` workspace files
+- dependency directories and caches
+- logs, temporary files, or downloaded intermediate data
+- one-off personal notes or ad-hoc script output
+
 ## Where to submit
 
 - Submit a Pull Request that updates `README.md`.
@@ -42,6 +79,7 @@ Before submitting, please check:
 
 - Whether the same repository already exists
 - Whether the same paper already exists (same title / same arXiv ID)
+- Whether the same entry is already linked in another section; prefer a cross-reference note over duplicating it
 
 ## Discussion
 
