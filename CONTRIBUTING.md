@@ -34,6 +34,34 @@ This repository validates:
 - README / README.zh structural isomorphism
 - duplicate README entries across sections
 
+## Local Hooks
+
+This repository can install a local `pre-commit` hook that runs the same maintenance harness before every commit.
+
+Install hooks manually with:
+
+```bash
+npm run hooks:install
+```
+
+Or rely on the automatic install path:
+
+```bash
+npm install
+```
+
+The `prepare` script configures:
+
+- `git config core.hooksPath .husky`
+- a local `.husky/pre-commit` hook that runs `node scripts/validate-maintenance.mjs`
+
+If you work in an unusual shell environment, you can still run the exact same guardrail manually:
+
+```bash
+node scripts/install-git-hooks.mjs
+node scripts/validate-maintenance.mjs
+```
+
 ## Repository Hygiene
 
 Track only the canonical repository assets:
@@ -46,6 +74,7 @@ Track only the canonical repository assets:
 Do not add local-only state or generated artifacts such as:
 
 - `.codex/` workspace files
+- `.husky/` locally generated hook files
 - dependency directories and caches
 - logs, temporary files, or downloaded intermediate data
 - one-off personal notes or ad-hoc script output

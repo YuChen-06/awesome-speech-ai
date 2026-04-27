@@ -39,7 +39,7 @@
 
 ### TTS > 基础模型
 
-- [Chatterbox](https://github.com/resemble-ai/chatterbox) ![stars](https://img.shields.io/github/stars/resemble-ai/chatterbox.svg?cacheSeconds=86400) - Resemble AI 开源的 TTS 模型。
+- [Chatterbox](https://github.com/resemble-ai/chatterbox) ![stars](https://img.shields.io/github/stars/resemble-ai/chatterbox.svg?cacheSeconds=86400) - Resemble AI 开源的 TTS 模型族，支持多语言、零样本克隆与副语言标签控制。
 - [Coqui TTS](https://github.com/coqui-ai/TTS) ![stars](https://img.shields.io/github/stars/coqui-ai/TTS.svg?cacheSeconds=86400) - 生产级开源 TTS 工具箱，含 XTTS 语音克隆能力。
 - [Bark](https://github.com/suno-ai/bark) ![stars](https://img.shields.io/github/stars/suno-ai/bark.svg?cacheSeconds=86400) - 文本提示驱动的语音/音频生成模型。
 - [StyleTTS 2](https://github.com/yl4579/StyleTTS2) ![stars](https://img.shields.io/github/stars/yl4579/StyleTTS2.svg?cacheSeconds=86400) - 基于 style diffusion + adversarial training 的 TTS 实现。
@@ -67,12 +67,15 @@
 - [F5-TTS](https://github.com/SWivid/F5-TTS) ![stars](https://img.shields.io/github/stars/SWivid/F5-TTS.svg?cacheSeconds=86400) - 基于 flow matching 的 TTS 实现。
 - [Matcha-TTS](https://github.com/shivammehta25/Matcha-TTS) ![stars](https://img.shields.io/github/stars/shivammehta25/Matcha-TTS.svg?cacheSeconds=86400) - Conditional flow matching TTS（ICASSP 2024 官方实现）。
 - [Grad-TTS](https://github.com/WelkinYang/GradTTS) ![stars](https://img.shields.io/github/stars/WelkinYang/GradTTS.svg?cacheSeconds=86400) - 扩散式 TTS（Grad-TTS）PyTorch 实现.
+- [RapFlow-TTS](https://github.com/naver-ai/RapFlow-TTS) ![stars](https://img.shields.io/github/stars/naver-ai/RapFlow-TTS.svg?cacheSeconds=86400) - Interspeech 2025 官方 TTS 实现，采用改进的一致性 flow matching，以更少步数实现快速高保真合成。
 
 ### TTS > 低延迟/实时
 
 - [Kyutai pocket-tts](https://github.com/kyutai-labs/pocket-tts) ![stars](https://img.shields.io/github/stars/kyutai-labs/pocket-tts.svg?cacheSeconds=86400) - CPU 友好的小型 TTS，适合端侧/低资源实时播放.
 - [Kyutai delayed-streams-modeling](https://github.com/kyutai-labs/delayed-streams-modeling) ![stars](https://img.shields.io/github/stars/kyutai-labs/delayed-streams-modeling.svg?cacheSeconds=86400) - 延迟流建模（DSM）：统一流式 STT/TTS 框架.
 - [Kyutai unmute](https://github.com/kyutai-labs/unmute) ![stars](https://img.shields.io/github/stars/kyutai-labs/unmute.svg?cacheSeconds=86400) - 语音接口层，为文本 LLM 添加听/说能力.
+- [LLMVoX](https://github.com/mbzuai-oryx/LLMVoX) ![stars](https://img.shields.io/github/stars/mbzuai-oryx/LLMVoX.svg?cacheSeconds=86400) - 面向 LLM 输出的自回归流式 TTS，支持 multi-queue 连续生成，端到端延迟低至 300ms。
+- [MOSS-TTS-Realtime](https://github.com/OpenMOSS/MOSS-TTS#moss-tts-realtime) ![stars](https://img.shields.io/github/stars/OpenMOSS/MOSS-TTS.svg?cacheSeconds=86400) - 面向低延迟语音 Agent 的多轮上下文感知实时流式 TTS，采用增量合成，TTFB 约 180ms。
 
 ### TTS > 服务端与部署
 
@@ -95,6 +98,8 @@
 ### ASR > 基础模型
 
 - [Whisper](https://github.com/openai/whisper) ![stars](https://img.shields.io/github/stars/openai/whisper.svg?cacheSeconds=86400) - 通用 ASR 基础模型，支持多语言和翻译能力.
+- [Canary-1B-v2](https://huggingface.co/nvidia/canary-1b-v2) - NVIDIA 官方多语言 ASR + 语音翻译基础模型，支持词级时间戳与语言识别。
+- [SenseVoice](https://github.com/FunAudioLLM/SenseVoice) ![stars](https://img.shields.io/github/stars/FunAudioLLM/SenseVoice.svg?cacheSeconds=86400) - 语音基础模型，支持多语言 ASR、语种识别、情感识别与音频事件检测，并强调低延迟推理。
 - [Kaldi](https://github.com/kaldi-asr/kaldi) ![stars](https://img.shields.io/github/stars/kaldi-asr/kaldi.svg?cacheSeconds=86400) - 经典 ASR 工具箱，学术/工业生态丰富.
 - [WeNet](https://github.com/wenet-e2e/wenet) ![stars](https://img.shields.io/github/stars/wenet-e2e/wenet.svg?cacheSeconds=86400) - 面向生产的端到端 ASR 工具箱，覆盖流式/非流式配方.
 - [Vosk](https://github.com/alphacep/vosk-api) ![stars](https://img.shields.io/github/stars/alphacep/vosk-api.svg?cacheSeconds=86400) - 离线 ASR API，多语言，小模型，支持流式.
@@ -112,6 +117,7 @@
 ### ASR > 端侧优化
 
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) ![stars](https://img.shields.io/github/stars/ggml-org/whisper.cpp.svg?cacheSeconds=86400) - C/C++ 端侧 Whisper 推理，CPU/Metal 支持，含实时麦克风示例.
+- [WhisperKit](https://github.com/argmaxinc/WhisperKit) ![stars](https://img.shields.io/github/stars/argmaxinc/WhisperKit.svg?cacheSeconds=86400) - 面向 Apple Silicon 的端侧语音 AI 工具栈，提供 WhisperKit 转写、本地流式推理与基于 CoreML 的部署能力。
 - [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) ![stars](https://img.shields.io/github/stars/k2-fsa/sherpa-onnx.svg?cacheSeconds=86400) - 端侧/离线/流式 ASR+TTS+VAD+增强一体化（ONNX，无需联网）。
 - [sherpa-ncnn](https://github.com/k2-fsa/sherpa-ncnn) ![stars](https://img.shields.io/github/stars/k2-fsa/sherpa-ncnn.svg?cacheSeconds=86400) - 端侧实时 ASR + VAD + TTS（ncnn，移动端友好，无需联网）。
 - [Moonshine](https://github.com/usefulsensors/moonshine) ![stars](https://img.shields.io/github/stars/usefulsensors/moonshine.svg?cacheSeconds=86400) - 面向端侧设备优化的 ASR 模型与工具.
@@ -119,6 +125,9 @@
 ### ASR > 多语言
 
 - [Omnilingual ASR](https://github.com/facebookresearch/omnilingual-asr) ![stars](https://img.shields.io/github/stars/facebookresearch/omnilingual-asr.svg?cacheSeconds=86400) - 面向 1600+ 语种的开源多语言 ASR 框架，提供 CTC/LLM-ASR 模型与推理工具。
+- [Parakeet-TDT-0.6B-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) - 面向 25 种欧洲语言的官方多语种语音转文本模型，支持自动语种识别与时间戳输出。
+- [Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR) ![stars](https://img.shields.io/github/stars/QwenLM/Qwen3-ASR.svg?cacheSeconds=86400) - 面向 52 种语言与方言的开源多语言 ASR 模型，支持语种识别、强制对齐，以及流式与离线统一推理。
+- [OWSM-CTC v4](https://huggingface.co/espnet/owsm_ctc_v4_1B) - 官方 open Whisper-style encoder-only 多语言 ASR 模型，采用非自回归 CTC 解码，并支持 ST/LID。
 - [SeamlessM4T](https://github.com/facebookresearch/seamless_communication) ![stars](https://img.shields.io/github/stars/facebookresearch/seamless_communication.svg?cacheSeconds=86400) - 多语言多模态翻译模型，支持语音到文本和语音到语音.
 - [sherpa-onnx omnilingual ASR](https://huggingface.co/csukuangfj2/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-v2-2026-02-05) - sherpa-onnx 1600+ 语种 ASR 权重（端侧/离线推理）。
 
@@ -126,12 +135,15 @@
 
 ### ASR > VAD 与语音活动检测
 
+- [inaSpeechSegmenter](https://github.com/ina-foss/inaSpeechSegmenter) ![stars](https://img.shields.io/github/stars/ina-foss/inaSpeechSegmenter.svg?cacheSeconds=86400) - 面向 VAD 与媒体音频切分的 CNN 语音/音乐/噪声分段工具。
 - [Silero VAD](https://github.com/snakers4/silero-vad) ![stars](https://img.shields.io/github/stars/snakers4/silero-vad.svg?cacheSeconds=86400) - 轻量高质量 VAD（PyTorch/ONNX），适合流式切分（含 v5 版本）。
 - [WebRTC VAD](https://github.com/wiseman/py-webrtcvad) ![stars](https://img.shields.io/github/stars/wiseman/py-webrtcvad.svg?cacheSeconds=86400) - 经典高性能 VAD（WebRTC 实现），适合端侧/流式切分.
 
 ### ASR > 说话人分离与 Diarization
 
 - [pyannote-audio](https://github.com/pyannote/pyannote-audio) ![stars](https://img.shields.io/github/stars/pyannote/pyannote-audio.svg?cacheSeconds=86400) - 说话人分离/变更/重叠检测工具箱，生态成熟.
+- [diart](https://github.com/juanmc2005/diart) ![stars](https://img.shields.io/github/stars/juanmc2005/diart.svg?cacheSeconds=86400) - 面向流式和低延迟音频应用的实时说话人分离工具包。
+- [simple_diarizer](https://github.com/cvqluu/simple_diarizer) ![stars](https://img.shields.io/github/stars/cvqluu/simple_diarizer.svg?cacheSeconds=86400) - 使用预训练 VAD 与说话人表示模型的极简说话人分离 pipeline，可快速把音频文件转成 diarized segments。
 - [diarize](https://github.com/FoxNoseTech/diarize) ![stars](https://img.shields.io/github/stars/FoxNoseTech/diarize.svg?cacheSeconds=86400) - CPU-only 说话人分离（who spoke when），ONNX 推理。
 
 ### ASR > 服务端/部署工具
@@ -147,20 +159,31 @@
 
 - [k2](https://github.com/k2-fsa/k2) ![stars](https://img.shields.io/github/stars/k2-fsa/k2.svg?cacheSeconds=86400) - 可微 FSA/FST 算法库（PyTorch 兼容），ASR recipes 基础组件.
 - [icefall](https://github.com/k2-fsa/icefall) ![stars](https://img.shields.io/github/stars/k2-fsa/icefall.svg?cacheSeconds=86400) - 基于 k2 + lhotse 的语音 recipes 集合（含流式 transducer/zipformer 等）。
+- [lhotse](https://github.com/lhotse-speech/lhotse) ![stars](https://img.shields.io/github/stars/lhotse-speech/lhotse.svg?cacheSeconds=86400) - 面向 ASR 训练的语音数据准备工具箱，提供 manifests、CutSet 抽象、dataset recipes 与采样工具。
 
 ## 声音克隆 Voice Cloning
 
 ### Voice Cloning > 零样本
 
+- [MeanVC](https://github.com/ASLP-lab/MeanVC) ![stars](https://img.shields.io/github/stars/ASLP-lab/MeanVC.svg?cacheSeconds=86400) - 轻量流式零样本语音转换系统，支持实时音色迁移与高效单步推理。
+- [NeuTTS](https://github.com/neuphonic/neutts) ![stars](https://img.shields.io/github/stars/neuphonic/neutts.svg?cacheSeconds=86400) - 面向端侧的 TTS 模型集合，支持 instant voice cloning、多语言变体与本地实时推理工作流。
 - [OpenVoice](https://github.com/myshell-ai/OpenVoice) ![stars](https://img.shields.io/github/stars/myshell-ai/OpenVoice.svg?cacheSeconds=86400) - 零样本跨语言语音克隆（风格可控）。
+- [Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning) ![stars](https://img.shields.io/github/stars/CorentinJ/Real-Time-Voice-Cloning.svg?cacheSeconds=86400) - 经典开源语音克隆方案：用几秒参考音频完成声音克隆，并生成任意文本语音。
+- [ZipVoice](https://github.com/k2-fsa/ZipVoice) ![stars](https://img.shields.io/github/stars/k2-fsa/ZipVoice.svg?cacheSeconds=86400) - 轻量高速的零样本语音克隆与 TTS，强调说话人相似度，并提供跨语言生成 demo。
 - [ZeroVOX](https://github.com/gooofy/zerovox) ![stars](https://img.shields.io/github/stars/gooofy/zerovox.svg?cacheSeconds=86400) - 零样本实时 TTS 系统，完全离线。
 
 ### Voice Cloning > 少样本微调
 
 - [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) ![stars](https://img.shields.io/github/stars/RVC-Boss/GPT-SoVITS.svg?cacheSeconds=86400) - 少样本 TTS/VC WebUI，支持快速声音克隆与跨语言克隆.
+- [MetaVoice-1B](https://github.com/metavoiceio/metavoice-src) ![stars](https://img.shields.io/github/stars/metavoiceio/metavoice-src.svg?cacheSeconds=86400) - 支持少样本微调与分钟级适配的语音克隆模型，并覆盖零样本克隆与跨语言克隆工作流。
+- [MOSS-TTS-Nano](https://github.com/OpenMOSS/MOSS-TTS-Nano) ![stars](https://img.shields.io/github/stars/OpenMOSS/MOSS-TTS-Nano.svg?cacheSeconds=86400) - 多语言小型语音生成模型，支持语音克隆、finetuning、低延迟 CPU 友好推理与长文本分块 voice cloning。
+- [VoxCPM2](https://huggingface.co/openbmb/VoxCPM2) - 无 tokenizer 多语言 TTS，支持可控语音克隆、SFT/LoRA 微调，以及 5-10 分钟音频级说话人适配。
 
 ### Voice Cloning > 跨语言
 
+- [OmniVoice](https://github.com/k2-fsa/OmniVoice) ![stars](https://img.shields.io/github/stars/k2-fsa/OmniVoice.svg?cacheSeconds=86400) - 支持 600+ 语言的大规模多语言零样本 TTS 模型，具备语音克隆与跨语种语音生成能力。
+- [Spark-TTS](https://github.com/SparkAudio/Spark-TTS) ![stars](https://img.shields.io/github/stars/SparkAudio/Spark-TTS.svg?cacheSeconds=86400) - 支持零样本跨语言语音克隆与 code-switching 语音生成，并提供官方 voice-cloning demo。
+- [XTTS v2](https://coqui-tts.readthedocs.io/en/latest/models/xtts.html) ![stars](https://img.shields.io/github/stars/coqui-ai/TTS.svg?cacheSeconds=86400) - 基于 3 秒参考音频的跨语言语音克隆，支持 17 种语言与流式推理。
 - [YourTTS](https://github.com/Edresson/YourTTS) ![stars](https://img.shields.io/github/stars/Edresson/YourTTS.svg?cacheSeconds=86400) - 多语种零样本多说话人 TTS 与零样本语音转换模型，适合低资源跨语言说话人迁移。
 
 更多跨语言语音克隆选项请参见上方的 VALL-E X、OpenVoice 与 GPT-SoVITS。
@@ -168,8 +191,11 @@
 ### Voice Cloning > 歌声转换
 
 - [RVC WebUI](https://github.com/rvc-project/retrieval-based-voice-conversion-webui) ![stars](https://img.shields.io/github/stars/rvc-project/retrieval-based-voice-conversion-webui.svg?cacheSeconds=86400) - 基于检索的语音转换：训练 + 实时变声/歌声转换 WebUI.
+- [DDSP-SVC](https://github.com/yxlllc/DDSP-SVC) ![stars](https://img.shields.io/github/stars/yxlllc/DDSP-SVC.svg?cacheSeconds=86400) - 基于 DDSP 的端到端实时歌声转换系统，强调较低硬件成本。
+- [NeuCoSVC](https://github.com/thuhcsi/NeuCoSVC) ![stars](https://img.shields.io/github/stars/thuhcsi/NeuCoSVC.svg?cacheSeconds=86400) - 官方 any-to-any 歌声转换系统，结合 neural concatenative 建模与基于 WavLM 的特征匹配。
 - [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) ![stars](https://img.shields.io/github/stars/svc-develop-team/so-vits-svc.svg?cacheSeconds=86400) - 歌声转换 SVC（SoftVC VITS），1分钟语音训练，零样本5秒推理。
 - [Seed-VC](https://github.com/Plachtaa/seed-vc) ![stars](https://img.shields.io/github/stars/Plachtaa/seed-vc.svg?cacheSeconds=86400) - 零样本语音转换与歌声转换，支持实时.
+- [SoulX-Singer-SVC](https://github.com/Soul-AILab/SoulX-Singer) ![stars](https://img.shields.io/github/stars/Soul-AILab/SoulX-Singer.svg?cacheSeconds=86400) - 零样本歌声转换模型，支持多语言音色/风格迁移与免转录 audio-to-audio 推理。
 
 ## 音频增强
 
@@ -178,9 +204,12 @@
 - [RNNoise](https://github.com/xiph/rnnoise) ![stars](https://img.shields.io/github/stars/xiph/rnnoise.svg?cacheSeconds=86400) - 经典实时语音降噪库（C 实现，端侧友好）。
 - [DeepFilterNet](https://github.com/Rikorose/DeepFilterNet) ![stars](https://img.shields.io/github/stars/Rikorose/DeepFilterNet.svg?cacheSeconds=86400) - 基于深度滤波的噪声抑制模型.
 - [DCCRN](https://github.com/wangtianrui/DCCRN) ![stars](https://img.shields.io/github/stars/wangtianrui/DCCRN.svg?cacheSeconds=86400) - 相位感知语音增强（Deep Complex CRN）参考实现.
+- [MP-SENet](https://github.com/yxlu-0102/MP-SENet) ![stars](https://img.shields.io/github/stars/yxlu-0102/MP-SENet.svg?cacheSeconds=86400) - 面向高质量单通道语音增强的并行幅度谱与相位谱去噪模型。
+- [FullSubNet+](https://github.com/RookieJunChen/FullSubNet-plus) ![stars](https://img.shields.io/github/stars/RookieJunChen/FullSubNet-plus.svg?cacheSeconds=86400) - 带通道注意力的 FullSubNet 语音增强模型，提供训练、推理与评测工具，适用于带噪语音恢复。
 - [CleanUNet](https://github.com/NVIDIA/CleanUNet) ![stars](https://img.shields.io/github/stars/NVIDIA/CleanUNet.svg?cacheSeconds=86400) - 波形域语音去噪模型（ICASSP 2022）。
 - [Enhanced-RNNoise](https://github.com/tannu64/Enhanced-RNNoise-Real-time-Audio-Noise-Suppression) ![stars](https://img.shields.io/github/stars/tannu64/Enhanced-RNNoise-Real-time-Audio-Noise-Suppression.svg?cacheSeconds=86400) - 增强版 RNNoise（反馈抑制+去混响+降噪）。
 - [FastEnhancer](https://github.com/aask1357/fastenhancer) ![stars](https://img.shields.io/github/stars/aask1357/fastenhancer.svg?cacheSeconds=86400) - 速度优化的流式神经语音增强网络。
+- [GTCRN](https://github.com/Xiaobin-Rong/gtcrn) ![stars](https://img.shields.io/github/stars/Xiaobin-Rong/gtcrn.svg?cacheSeconds=86400) - 面向实时降噪的超轻量语音增强模型，在低算力条件下表现强劲。
 
 ### 音频增强 > 音乐源分离
 
@@ -194,6 +223,7 @@
 ### 音频增强 > 语音增强/超分
 
 - [VoiceFixer](https://github.com/haoheliu/voicefixer) ![stars](https://img.shields.io/github/stars/haoheliu/voicefixer.svg?cacheSeconds=86400) - 通用语音修复/增强，适合历史音频/老录音修复。
+- [Resemble Enhance](https://github.com/resemble-ai/resemble-enhance) ![stars](https://img.shields.io/github/stars/resemble-ai/resemble-enhance.svg?cacheSeconds=86400) - 面向语音降噪、失真修复与带宽扩展的 AI 语音增强工具。
 - [NovaSR](https://github.com/ysharma3501/NovaSR) ![stars](https://img.shields.io/github/stars/ysharma3501/NovaSR.svg?cacheSeconds=86400) - 音频超分模型（16kHz->48kHz，超轻量级）。
 - [AP-BWE](https://github.com/yxlu-0102/AP-BWE) ![stars](https://img.shields.io/github/stars/yxlu-0102/AP-BWE.svg?cacheSeconds=86400) - 幅度与相位感知带宽扩展（BWE）用于音频超分.
 - [BAE-Net](https://github.com/yuguochencuc/BAE-Net) ![stars](https://img.shields.io/github/stars/yuguochencuc/BAE-Net.svg?cacheSeconds=86400) - 带宽扩展网络，提升音频质量.
@@ -206,6 +236,7 @@
 - [ViSQOL](https://github.com/google/visqol) ![stars](https://img.shields.io/github/stars/google/visqol.svg?cacheSeconds=86400) - Google 开源的全参考感知语音/音频质量指标，提供 MOS-LQO 评分、speech mode、CLI 与 C++/Python API。
 - [NISQA](https://github.com/gabrielmittag/NISQA) ![stars](https://img.shields.io/github/stars/gabrielmittag/NISQA.svg?cacheSeconds=86400) - 非侵入式语音质量评估框架，支持多维质量预测，并提供可复用的训练与微调流程。
 - [torchaudio SQUIM](https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.SQUIM_OBJECTIVE.html) - torchaudio 官方语音质量与可懂度估计工具，覆盖 objective / subjective 两类预测 bundle。
+- [SIG-Challenge](https://github.com/microsoft/SIG-Challenge) ![stars](https://img.shields.io/github/stars/microsoft/SIG-Challenge.svg?cacheSeconds=86400) - 官方实时语音信号改进 benchmark / challenge，提供测试资源与主观评测协议。
 
 ### 音频增强 > AEC 回声消除
 
@@ -214,6 +245,7 @@
 - [webrtcaec3.js](https://github.com/ennuicastr/webrtcaec3.js) ![stars](https://img.shields.io/github/stars/ennuicastr/webrtcaec3.js.svg?cacheSeconds=86400) - WebRTC AEC3 的 WebAssembly/JavaScript 移植。
 - [aec3-rs](https://github.com/RubyBit/aec3-rs) ![stars](https://img.shields.io/github/stars/RubyBit/aec3-rs.svg?cacheSeconds=86400) - WebRTC AEC3 的 Rust 移植。
 - [DTLN-aec](https://github.com/shiguredo/dtln-aec) ![stars](https://img.shields.io/github/stars/shiguredo/dtln-aec.svg?cacheSeconds=86400) - 基于深度学习的 AEC（浏览器端用例）。
+- [NKF-AEC](https://github.com/fjiang9/NKF-AEC) ![stars](https://img.shields.io/github/stars/fjiang9/NKF-AEC.svg?cacheSeconds=86400) - 官方低复杂度神经 Kalman filtering 声学回声消除实现，提供预训练推理代码。
 
 ### 音频增强 > 去混响 (Dereverb)
 
@@ -221,6 +253,7 @@
 - [StoRM](https://github.com/sp-uhh/storm) ![stars](https://img.shields.io/github/stars/sp-uhh/storm.svg?cacheSeconds=86400) - 基于扩散的语音增强与去混响。
 - [SGMSE](https://github.com/sp-uhh/sgmse) ![stars](https://img.shields.io/github/stars/sp-uhh/sgmse.svg?cacheSeconds=86400) - Score-based 生成式语音增强与去混响。
 - [Uformer](https://github.com/felixfuyihui/Uformer) ![stars](https://img.shields.io/github/stars/felixfuyihui/Uformer.svg?cacheSeconds=86400) - UNet + Conformer 用于语音增强与去混响。
+- [RVAE-EM](https://github.com/Audio-WestlakeU/RVAE-EM) ![stars](https://img.shields.io/github/stars/Audio-WestlakeU/RVAE-EM.svg?cacheSeconds=86400) - 基于 RVAE 语音先验与 CTF/EM 推断的生成式单通道语音去混响方法。
 - [Neural-Speech-Dereverberation](https://github.com/DiegoLeon96/Neural-Speech-Dereverberation) ![stars](https://img.shields.io/github/stars/DiegoLeon96/Neural-Speech-Dereverberation.svg?cacheSeconds=86400) - 语音去混响模型集合。
 
 ## 音频工程与开发工具
@@ -229,6 +262,7 @@
 
 - [python-soundfile](https://github.com/bastibe/python-soundfile) ![stars](https://img.shields.io/github/stars/bastibe/python-soundfile.svg?cacheSeconds=86400) - 基于 libsndfile 的音频 I/O（WAV/FLAC/OGG 等）。
 - [torchaudio](https://github.com/pytorch/audio) ![stars](https://img.shields.io/github/stars/pytorch/audio.svg?cacheSeconds=86400) - PyTorch 官方音频库（I/O/特征/数据集/模型）。
+- [FFmpeg](https://ffmpeg.org/) - 经典跨平台媒体工具链，覆盖录制、转换、流式传输、mux/demux 与容器/格式层音视频 I/O 工作流。
 - [ffmpeg-python](https://github.com/kkroening/ffmpeg-python) ![stars](https://img.shields.io/github/stars/kkroening/ffmpeg-python.svg?cacheSeconds=86400) - FFmpeg Python 绑定，支持复杂滤镜图.
 - [libsndfile](https://github.com/libsndfile/libsndfile) ![stars](https://img.shields.io/github/stars/libsndfile/libsndfile.svg?cacheSeconds=86400) - 跨平台 C 音频 I/O 库（WAV/AIFF/FLAC/OGG 等）。
 - [Symphonia](https://github.com/pdeljanov/Symphonia) ![stars](https://img.shields.io/github/stars/pdeljanov/Symphonia.svg?cacheSeconds=86400) - 纯 Rust 音频解封装/解码库.
@@ -237,6 +271,8 @@
 
 - [resampy](https://github.com/bmcfee/resampy) ![stars](https://img.shields.io/github/stars/bmcfee/resampy.svg?cacheSeconds=86400) - 高质量音频重采样（sinc 插值）。
 - [libsamplerate](https://github.com/libsndfile/libsamplerate) ![stars](https://img.shields.io/github/stars/libsndfile/libsamplerate.svg?cacheSeconds=86400) - 高质量采样率转换（SRC）。
+- [zita-resampler](https://kokkinizita.linuxaudio.org/linuxaudio/zita-resampler/resampler.html) - 面向实时处理的高质量 C++ 音频重采样库，提供固定比率与可变比率 SRC API。
+- [libsoxr](https://sourceforge.net/projects/soxr/) - 高质量 SoX 重采样库，面向 PCM 音频提供可配置的固定比率与可变比率采样率转换。
 - [python-soxr](https://github.com/dofuuz/python-soxr) ![stars](https://img.shields.io/github/stars/dofuuz/python-soxr.svg?cacheSeconds=86400) - libsoxr Python 封装（高质量/流式重采样）。
 
 ### 音频工程 > 歌声合成与制作（SVS/Vocal Synth）
@@ -251,6 +287,7 @@
 ### 音频工程 > 可视化与数据分析
 
 - [librosa](https://github.com/bmcfee/librosa) ![stars](https://img.shields.io/github/stars/bmcfee/librosa.svg?cacheSeconds=86400) - 音频/音乐分析库（特征提取/可视化/工具集）。
+- [openSMILE](https://github.com/audeering/opensmile) ![stars](https://img.shields.io/github/stars/audeering/opensmile.svg?cacheSeconds=86400) - 面向离线与实时处理的开源语音/音频特征提取与分析工具箱，适用于副语言分析与机器学习流程。
 - [Praat](https://github.com/praat/praat) ![stars](https://img.shields.io/github/stars/praat/praat.svg?cacheSeconds=86400) - 语音学“做语音分析的工具箱”，支持语音分析/标注/可视化。
 - [Parselmouth](https://github.com/YannickJadoul/Parselmouth) ![stars](https://img.shields.io/github/stars/YannickJadoul/Parselmouth.svg?cacheSeconds=86400) - Praat 的 Python 接口：以 Pythonic 方式调用 Praat 语音分析算法。
 - [Sonic Visualiser](https://github.com/sonic-visualiser/sonic-visualiser) ![stars](https://img.shields.io/github/stars/sonic-visualiser/sonic-visualiser.svg?cacheSeconds=86400) - 音频（含语音）可视化/分析/标注桌面工具。
@@ -259,16 +296,22 @@
 
 - [audiomentations](https://github.com/iver56/audiomentations) ![stars](https://img.shields.io/github/stars/iver56/audiomentations.svg?cacheSeconds=86400) - Python 音频数据增强库。
 - [torch-audiomentations](https://github.com/asteroid-team/torch-audiomentations) ![stars](https://img.shields.io/github/stars/asteroid-team/torch-audiomentations.svg?cacheSeconds=86400) - PyTorch 音频数据增强库。
+- [AugLy](https://github.com/facebookresearch/AugLy) ![stars](https://img.shields.io/github/stars/facebookresearch/AugLy.svg?cacheSeconds=86400) - Meta 开源的多模态增强库，含专门的音频模块、可组合变换与变换元数据，适合鲁棒性训练与评测。
+- [WavAugment](https://github.com/facebookresearch/WavAugment) ![stars](https://img.shields.io/github/stars/facebookresearch/WavAugment.svg?cacheSeconds=86400) - 已归档的 Meta 时域音频/语音数据增强库，基于 PyTorch 与 libsox。
 
 ### 音频工程 > 降噪插件
 
+- [DeepFilterNet LADSPA Plugin](https://github.com/Rikorose/DeepFilterNet/tree/master/ladspa) ![stars](https://img.shields.io/github/stars/Rikorose/DeepFilterNet.svg?cacheSeconds=86400) - 支持 PipeWire 虚拟麦克风集成的实时 LADSPA 降噪插件。
 - [noise-suppression-for-voice](https://github.com/werman/noise-suppression-for-voice) ![stars](https://img.shields.io/github/stars/werman/noise-suppression-for-voice.svg?cacheSeconds=86400) - 基于 RNNoise 的实时降噪插件（VST2/VST3/LV2/LADSPA/AU/AUv3）。
 - [IPlugRNNoise](https://github.com/olilarkin/IPlugRNNoise) ![stars](https://img.shields.io/github/stars/olilarkin/IPlugRNNoise.svg?cacheSeconds=86400) - iPlug2 框架 RNNoise 降噪插件.
 - [ReNameNoise](https://github.com/mumble-voip/ReNameNoise) ![stars](https://img.shields.io/github/stars/mumble-voip/ReNameNoise.svg?cacheSeconds=86400) - RNNoise fork，符号不冲突，CMake 支持。
 
 ### 音频工程 > 实时音频处理
 
+- [RTNeural](https://github.com/jatinchowdhury18/RTNeural) ![stars](https://img.shields.io/github/stars/jatinchowdhury18/RTNeural.svg?cacheSeconds=86400) - 面向实时音频处理与插件场景的轻量 C++ 神经网络推理引擎。
+- [Neutone SDK](https://github.com/Neutone/neutone_sdk) ![stars](https://img.shields.io/github/stars/Neutone/neutone_sdk.svg?cacheSeconds=86400) - 将 PyTorch 神经音频模型部署到实时/离线 DAW 宿主插件的开源框架。
 - [webrtc-audio-processing](https://github.com/alfatraining/webrtc-audio-processing) ![stars](https://img.shields.io/github/stars/alfatraining/webrtc-audio-processing.svg?cacheSeconds=86400) - WebRTC 音频处理（AEC/NS/AGC 3A）独立库.
+- [Lyra](https://github.com/google/lyra) ![stars](https://img.shields.io/github/stars/google/lyra.svg?cacheSeconds=86400) - Google 开源的超低码率实时语音编解码器，适用于实时语音通信与端侧场景。
 - [Opus codec](https://github.com/xiph/opus) ![stars](https://img.shields.io/github/stars/xiph/opus.svg?cacheSeconds=86400) - 低延迟音频编解码器，用于 VoIP/WebRTC 实时传输.
 
 ## 数据集与评测基准
@@ -281,10 +324,13 @@
 - [Common Voice](https://github.com/common-voice/common-voice) ![stars](https://img.shields.io/github/stars/common-voice/common-voice.svg?cacheSeconds=86400) - 社区驱动的多语种语音数据集。
 - [FLEURS](https://huggingface.co/datasets/google/fleurs) - 多语种语音数据集（覆盖多语言），常用于 ASR 评测.
 - [Multilingual LibriSpeech (MLS)](https://www.openslr.org/94) - 大规模多语种语音数据集（ASR）。
+- [VCTK Corpus](https://datashare.ed.ac.uk/handle/10283/3443) - 经典英语多说话人语音语料，覆盖 110 位不同口音说话人与约 400 句每人录音，常用于 TTS 与语音克隆。
 - [VoxPopuli](https://github.com/facebookresearch/voxpopuli) ![stars](https://img.shields.io/github/stars/facebookresearch/voxpopuli.svg?cacheSeconds=86400) - 多语种语音语料（欧盟议会录音），常用于 ASR/语音翻译研究.
 - [VoxpopuliTTS](https://voxpopulitts.github.io/) - 基于 VoxPopuli 精炼得到的 30K 小时多语种 TTS 语料，适用于零样本语音生成及相关合成任务。
 - [AISHELL-1](https://www.openslr.org/33) - 普通话语音识别数据集.
 - [GigaSpeech](https://github.com/SpeechColab/GigaSpeech) ![stars](https://img.shields.io/github/stars/SpeechColab/GigaSpeech.svg?cacheSeconds=86400) - 大规模英语语音语料，用于 ASR/SLU 研究.
+- [AMI Meeting Corpus](https://groups.inf.ed.ac.uk/ami/corpus/) - 100 小时多模态会议语料，包含近讲与远场音频以及丰富的会议标注。
+- [Switchboard-1 Release 2](https://catalog.ldc.upenn.edu/LDC97S62) - 经典英语电话会话语音语料，约 260 小时、2,400 通双声道通话，广泛用于 ASR 与说话人研究。
 - [VoxKnesset](https://huggingface.co/datasets/yanirmr/VoxKnesset) - 带年龄与人口统计元数据的希伯来语议会纵向语音数据集，适用于说话人与语音建模研究。
 - [GigaSpeech2](https://github.com/SpeechColab/GigaSpeech2) ![stars](https://img.shields.io/github/stars/SpeechColab/GigaSpeech2.svg?cacheSeconds=86400) - 面向低资源语言的官方大规模多领域 ASR 语料库，含自动爬取与转写修正流程。
 - [LEMAS](https://lemas-project.github.io/LEMAS-Project/) - 150K 小时多语种音频套件，带词级时间戳，适用于 TTS、语音编辑与生成式语音任务。
@@ -303,6 +349,7 @@
 - [RIR-Mega-Speech](https://huggingface.co/datasets/mandipgoswami/rir-mega-speech) - 带逐文件声学元数据的混响语音语料库，适合稳健 ASR 与去混响评测。
 - [URGENT 2026 Track 1](https://huggingface.co/datasets/lichenda/urgent26_track1_universal_se) - ICASSP 2026 URGENT 挑战 Track 1 的通用语音增强预模拟训练与验证集。
 - [VoiceBank + DEMAND (VBD)](https://datashare.ed.ac.uk/handle/10283/2791) - 经典成对干净/带噪数据集，常用于语音增强.
+- [LibriCSS](https://github.com/chenzhuo1011/libri_css) ![stars](https://img.shields.io/github/stars/chenzhuo1011/libri_css.svg?cacheSeconds=86400) - 面向长时重叠远场 LibriSpeech 风格录音的连续语音分离 benchmark 与评测流水线。
 - [LibriMix](https://github.com/JorisCos/LibriMix) ![stars](https://img.shields.io/github/stars/JorisCos/LibriMix.svg?cacheSeconds=86400) - 基于 LibriSpeech 与 WHAM 噪声构建的开源语音分离数据集，覆盖带噪双说话人与三说话人混合场景。
 - [MUSDB18](https://sigsep.github.io/datasets/musdb.html) - 音乐源分离评测数据集（人声/伴奏等）。
 
@@ -314,13 +361,24 @@
 - [MCL-MLAAD](https://github.com/xuanxixi/Multilingual-Source-Tracing) ![stars](https://img.shields.io/github/stars/xuanxixi/Multilingual-Source-Tracing.svg?cacheSeconds=86400) - 面向语音深伪源追踪的多语种基准，覆盖 6 种语言下的单语与跨语种评测协议。
 - [IndicSynth](https://github.com/vdivyas/IndicSynth) ![stars](https://img.shields.io/github/stars/vdivyas/IndicSynth.svg?cacheSeconds=86400) - 面向多语种深伪检测与反伪造研究的大规模合成语音数据集，覆盖 12 种低资源印度语言。
 - [XMAD-Bench](https://github.com/ristea/xmad-bench) ![stars](https://img.shields.io/github/stars/ristea/xmad-bench.svg?cacheSeconds=86400) - 跨域多语种音频深伪基准，训练/测试划分在说话人、生成器和真实音源上显式隔离，用于检验真实场景鲁棒性。
+- [ASVspoof](https://www.asvspoof.org/) - 语音深伪检测与防伪说话人验证领域的经典 anti-spoofing 基准与评测协议，配套官方 baseline 与 scoring package。
+- [TidyVoice 2026 Challenge](https://tidyvoice2026.github.io/) - 基于多语言 TidyVoiceX 数据集的 Interspeech 2026 跨语言说话人验证基准，提供公开评测协议、baseline 与 leaderboard。
 - [UltraEval-Audio](https://github.com/OpenBMB/UltraEval-Audio) ![stars](https://img.shields.io/github/stars/OpenBMB/UltraEval-Audio.svg?cacheSeconds=86400) - 面向语音理解与语音生成模型的统一评测框架，覆盖 34+ 基准任务。
+- [CV3-Eval](https://github.com/FunAudioLLM/CV3-Eval) ![stars](https://img.shields.io/github/stars/FunAudioLLM/CV3-Eval.svg?cacheSeconds=86400) - 面向真实场景零样本语音合成的开源评测基准与工具包，覆盖多语言、跨语言与情感克隆设置。
 - [Open ASR Leaderboard](https://github.com/huggingface/open_asr_leaderboard) ![stars](https://img.shields.io/github/stars/huggingface/open_asr_leaderboard.svg?cacheSeconds=86400) - 可复现 ASR 基准与排行榜，覆盖英语短音频、长音频和多语种赛道，并统一 WER / RTFx 评测。
+- [SCTK](https://github.com/usnistgov/SCTK) ![stars](https://img.shields.io/github/stars/usnistgov/SCTK.svg?cacheSeconds=86400) - NIST 官方评分工具箱，提供 `sclite`、`asclite`、`rover` 等 ASR 假设与参考文本比对评测工具。
+- [JiWER](https://github.com/jitsi/jiwer) ![stars](https://img.shields.io/github/stars/jitsi/jiwer.svg?cacheSeconds=86400) - 轻量级 Python ASR 误差评测工具，覆盖 WER、MER、WIL、WIP 与 CER，并基于快速最小编辑距离计算。
+- [MeetEval](https://github.com/fgnt/meeteval) ![stars](https://img.shields.io/github/stars/fgnt/meeteval.svg?cacheSeconds=86400) - 面向会议转写评测的工具箱，覆盖 cpWER、ORC WER、MIMO WER、时间约束变体与 DER 包装器。
+- [pyannote.metrics](https://github.com/pyannote/pyannote-metrics) ![stars](https://img.shields.io/github/stars/pyannote/pyannote-metrics.svg?cacheSeconds=86400) - 面向说话人分离系统的可复现评测、诊断与误差分析工具箱，覆盖检测、分段与 diarization 等任务。
+- [DIHARD Challenge](https://dihardchallenge.github.io/) - 说话人分离领域的经典 hard-domain benchmark/challenge 系列，覆盖多域音频、标准化评分协议与 shared-task 排行。
 - [VocalBench](https://github.com/SJTU-OmniAgent/VocalBench) ![stars](https://img.shields.io/github/stars/SJTU-OmniAgent/VocalBench.svg?cacheSeconds=86400) - 语音交互模型口语对话能力评测基准，覆盖语义、声学、聊天质量、鲁棒性与延迟。
+- [MMSU](https://huggingface.co/datasets/ddwang2000/MMSU) - 多任务口语理解与推理评测基准，覆盖 17 个语音数据集上的 47 项任务，包含指令跟随、知识理解、推理、安全与情感识别。
 - [VoiceBench](https://github.com/MatthewCYM/VoiceBench) ![stars](https://img.shields.io/github/stars/MatthewCYM/VoiceBench.svg?cacheSeconds=86400) - LLM语音助手综合评测基准.
 - [VoiceAssistant-Eval](https://github.com/mathllm/VoiceAssistant-Eval) ![stars](https://img.shields.io/github/stars/mathllm/VoiceAssistant-Eval.svg?cacheSeconds=86400) - 面向语音助手的评测基准与代码，覆盖听、说、看三类能力。
 - [VoiceAgentBench](https://huggingface.co/datasets/krutrim-ai-labs/VoiceAgentBench) - 面向语音助手 agentic 任务的评测基准，覆盖多语种口语工具调用、多轮工作流与安全请求。
+- [VoxEval](https://huggingface.co/datasets/qqjz/VoxEval) - 面向端到端 spoken language model 的纯语音知识理解基准，覆盖口语问答、口语数学推理，并提供公开数据与已发布评测代码。
 - [WildSpeech-Bench](https://huggingface.co/datasets/tencent/WildSpeech-Bench) - 面向端到端 Speech LLM 的真实场景评测基准，覆盖真实对话音频、语音特有现象与 query-aware 评测。
+- [LongSpeech](https://huggingface.co/datasets/AIDC-AI/Marco_Longspeech) - 面向长时语音理解的多任务 benchmark，覆盖十万级约 10 分钟音频，并统一评测 ASR、翻译、摘要、问答、说话人数统计与语言理解。
 - [MTalk-Bench](https://huggingface.co/datasets/FreedomIntelligence/MTalk-Bench) - 面向多轮 speech-to-speech 对话的评测基准，覆盖语义、副语言与环境声能力，并结合 arena 与 rubric 两类评测协议。
 - [EchoMind](https://huggingface.co/datasets/hlt-cuhksz/EchoMind) - 面向共情语音大模型的多层级评测基准，串联内容理解、声学线索感知、推理与响应生成。
 - [PARSA-Bench](https://huggingface.co/datasets/MohammadJRanjbar/PARSA-Bench) - 面向波斯语音频语言模型的综合评测基准，覆盖 16 个任务，横跨语音理解、副语言分析与文化音频推理。
@@ -339,6 +397,7 @@
 - [TTS General Benchmark](https://huggingface.co/datasets/sarvamai/tts-general-benchmark) - 覆盖 11 种印度语言的 TTS 多语种评测基准，含高质量与电话语音场景子集。
 - [TTS Robustness Benchmark](https://huggingface.co/datasets/sarvamai/tts-robustness-benchmark) - 面向多语种 TTS 鲁棒性的压力测试基准，覆盖数字、缩写、代码混合、命名实体、URL 等难例。
 - [TTSDS2](https://github.com/ttsds/ttsds) ![stars](https://img.shields.io/github/stars/ttsds/ttsds.svg?cacheSeconds=86400) - 持续更新的多语种 TTS 评测基准与工具链，结合主观评分、抗泄漏测试集与接近人类判断的综合评分。
+- [VoiceMOS Challenge](https://sites.google.com/view/voicemos-challenge/) - 面向合成语音自动 MOS 预测的官方评测基准系列，提供 shared task 赛道与语音质量评测协议。
 - [WSChuan-eval](https://github.com/ASLP-lab/WenetSpeech-Chuan#benchmark) ![stars](https://img.shields.io/github/stars/ASLP-lab/WenetSpeech-Chuan.svg?cacheSeconds=86400) - 面向四川话语音处理的综合评测基准，包含 ASR 与 TTS 子集。
 - [WSYue-eval](https://github.com/ASLP-lab/WenetSpeech-Yue#benchmark) ![stars](https://img.shields.io/github/stars/ASLP-lab/WenetSpeech-Yue.svg?cacheSeconds=86400) - 粤语综合评测基准，包含 ASR 与零样本 TTS 子集，覆盖代码混说与多样化场景。
 - [WenetSpeech-Wu-Bench](https://huggingface.co/datasets/ASLP-lab/WenetSpeech-Wu-Bench) - 吴语语音处理综合基准，覆盖 ASR、AST、说话人属性、情感识别、TTS 与指令 TTS。
@@ -348,6 +407,8 @@
 
 ### 语音大模型 > 端到端语音模型
 
+- [Mini-Omni2](https://github.com/gpt-omni/mini-omni2) ![stars](https://img.shields.io/github/stars/gpt-omni/mini-omni2.svg?cacheSeconds=86400) - 全模态交互模型，支持端到端语音对话、实时语音输出，以及可打断的 duplex 语音交互。
+- [Fun-Audio-Chat](https://github.com/FunAudioLLM/Fun-Audio-Chat) ![stars](https://img.shields.io/github/stars/FunAudioLLM/Fun-Audio-Chat.svg?cacheSeconds=86400) - 面向自然低延迟语音交互的大型音频语言模型，支持语音 function calling、音频理解与口语问答。
 - [Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni) ![stars](https://img.shields.io/github/stars/QwenLM/Qwen2.5-Omni.svg?cacheSeconds=86400) - 端到端多模态模型，支持实时流式语音生成.
 - [Baichuan-Audio](https://github.com/baichuan-inc/Baichuan-Audio) ![stars](https://img.shields.io/github/stars/baichuan-inc/Baichuan-Audio.svg?cacheSeconds=86400) - 端到端语音交互框架（理解+生成一体）。
 - [LLaMA-Omni](https://github.com/ictnlp/LLaMA-Omni) ![stars](https://img.shields.io/github/stars/ictnlp/LLaMA-Omni.svg?cacheSeconds=86400) - 基于 Llama-3.1 的低延迟端到端语音交互模型。
@@ -365,6 +426,8 @@
 
 ### 语音大模型 > 全双工对话系统
 
+- [Moshi](https://github.com/kyutai-labs/moshi) ![stars](https://img.shields.io/github/stars/kyutai-labs/moshi.svg?cacheSeconds=86400) - 语音-文本基础模型与全双工口语对话框架，面向实时语音对话，基于 Mimi 流式神经音频编解码器。
+- [ELLSA](https://github.com/bytedance/SALMONN/tree/ELLSA) ![stars](https://img.shields.io/github/stars/bytedance/SALMONN.svg?cacheSeconds=86400) - 流式全双工多模态交互模型，在端到端框架中统一语音、文本、视觉与动作。
 - [PersonaPlex](https://github.com/NVIDIA/personaplex) ![stars](https://img.shields.io/github/stars/NVIDIA/personaplex.svg?cacheSeconds=86400) - 全双工 speech-to-speech 对话模型（可控 voice + role）。
 - [J-Moshi](https://github.com/nu-dialogue/j-moshi) ![stars](https://img.shields.io/github/stars/nu-dialogue/j-moshi.svg?cacheSeconds=86400) - 日语全双工语音对话系统。
 - [FLM-Audio](https://github.com/cofe-ai/flm-audio) ![stars](https://img.shields.io/github/stars/cofe-ai/flm-audio.svg?cacheSeconds=86400) - 原生全双工音频-语言模型（同时听/说/内心独白）。
@@ -372,13 +435,19 @@
 
 ### 语音大模型 > 实时处理框架
 
+- [Agent Voice Response (AVR)](https://github.com/agentvoiceresponse/avr-infra) ![stars](https://img.shields.io/github/stars/agentvoiceresponse/avr-infra.svg?cacheSeconds=86400) - 面向 Asterisk AudioSocket 的电话系统优先实时语音 Agent 平台，支持可插拔 ASR、LLM、TTS 与 speech-to-speech 后端。
+- [FastRTC](https://github.com/gradio-app/fastrtc) ![stars](https://img.shields.io/github/stars/gradio-app/fastrtc.svg?cacheSeconds=86400) - 基于 WebRTC/WebSockets 的 Python 实时语音/视频应用框架，内建 turn taking。
 - [Pipecat](https://github.com/pipecat-ai/pipecat) ![stars](https://img.shields.io/github/stars/pipecat-ai/pipecat.svg?cacheSeconds=86400) - 实时语音/多模态 Agent 框架（编排 STT/LLM/TTS）。
 - [LiveKit Agents](https://github.com/livekit/agents) ![stars](https://img.shields.io/github/stars/livekit/agents.svg?cacheSeconds=86400) - 实时语音 AI Agent 框架（WebRTC + 多供应商集成）。
+- [TEN Framework](https://github.com/TEN-framework/ten-framework) ![stars](https://img.shields.io/github/stars/TEN-framework/ten-framework.svg?cacheSeconds=86400) - 面向实时会话式语音 Agent 的开源框架，支持 RTC/WebSocket 传输、回合检测与语音处理流水线。
 - [Vocode Core](https://github.com/vocodedev/vocode-core) ![stars](https://img.shields.io/github/stars/vocodedev/vocode-core.svg?cacheSeconds=86400) - 语音 Agent 编排库（电话/会议等实时语音应用）。
 
 ### 语音大模型 > 回合管理与生态组件
 
+- [LiveKit Adaptive Interruption Handling](https://docs.livekit.io/agents/logic/turns/adaptive-interruption-handling) - 用于区分真实打断与 backchannel 的自适应 interruption handling 组件。
 - [Smart Turn (Pipecat)](https://github.com/pipecat-ai/smart-turn) ![stars](https://img.shields.io/github/stars/pipecat-ai/smart-turn.svg?cacheSeconds=86400) - 端到端语义 VAD，用于回合结束检测（低误打断）。
+- [TEN VAD](https://github.com/TEN-framework/ten-vad) ![stars](https://img.shields.io/github/stars/TEN-framework/ten-vad.svg?cacheSeconds=86400) - 面向会话式语音 AI 与回合检测流水线的低延迟流式语音活动检测器。
+- [TEN Turn Detection](https://github.com/TEN-framework/ten-turn-detection) ![stars](https://img.shields.io/github/stars/TEN-framework/ten-turn-detection.svg?cacheSeconds=86400) - 官方双语语义回合检测组件，面向全双工语音对话中的 finished / unfinished / wait 三类状态。
 - [Mimi (Kyutai codec)](https://huggingface.co/kyutai/mimi) - 流式神经音频编解码器，Moshi/PersonaPlex 使用（语音分词器）。
 - [Full-Duplex-Bench](https://github.com/DanielLin94144/Full-Duplex-Bench) ![stars](https://img.shields.io/github/stars/DanielLin94144/Full-Duplex-Bench.svg?cacheSeconds=86400) - 全双工对话回合管理/打断/重叠评测基准.
 
@@ -408,6 +477,7 @@
 
 - **LEMAS** (2026), Zhao et al. [pdf](https://arxiv.org/abs/2601.04233) - 150K 小时多语种音频套件，含词级时间戳，并给出零样本 TTS 与语音编辑生成模型基线。
 - **NV-Bench** (2026), Ni et al. [pdf](https://arxiv.org/abs/2603.15352) - 首个面向表达型 TTS 非言语发声合成的基准，提供配对真人参考音频与双维度可控性/逼真度指标。
+- **MINT-Bench: A Comprehensive Multilingual Benchmark for Instruction-Following Text-to-Speech** (2026), Chen et al. [pdf](https://arxiv.org/abs/2604.17958) - 多语言 instruction-following TTS 基准，覆盖 10 种语言，并采用分层 taxonomy 与内容一致性、控制能力、感知质量的混合评测协议。
 - **CodecMOS-Accent** (2026), Huang et al. [pdf](https://arxiv.org/abs/2603.14328) - 面向神经 codec 重建与带口音 TTS 的 MOS 基准，覆盖 24 个系统、32 位说话人与 10 种英语口音。
 - **FlexiVoice** (2026), [pdf](https://arxiv.org/abs/2601.04656) - 支持自然语言指令与可选语音参考的零样本 TTS，实现风格、音色与内容的解耦控制。
 - **MOSS-TTSD** (2026), [pdf](https://arxiv.org/abs/2603.19739) - 面向长文本到口语对话生成的模型，支持富表现力多说话人对话 TTS 与零样本语音克隆。
@@ -422,7 +492,9 @@
 - **ARDiT-TTS** (2024), Liu et al. [pdf](https://arxiv.org/html/2406.05551v1) - 自回归扩散 Transformer 的低延迟 TTS.
 - **Parler-TTS** (2024), Lyth et al. [pdf](https://arxiv.org/abs/2402.01912) [code](https://github.com/huggingface/parler-tts) - 自然语言提示控制的高保真 TTS.
 - **Latent Space of Diffusion TTS** (2024), Varshavsky-Hassid et al. [pdf](https://arxiv.org/abs/2402.12423) - 探索扩散 TTS 语义潜空间用于免训练音频编辑.
+- **VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild** (2024), Peng et al. [pdf](https://arxiv.org/abs/2403.16973) [code](https://github.com/jasonppy/VoiceCraft) - 基于 token infilling 的 neural codec language model，面向真实世界音频场景下的零样本语音编辑与零样本 TTS。
 - **Voicebox** (2023), Meta, [pdf](https://export.arxiv.org/pdf/2306.15687v1.pdf) - 基于 Flow-Matching 的文本引导多语言通用语音生成.
+- **NaturalSpeech 2** (2023), Shen et al. [pdf](https://arxiv.org/abs/2304.09116) - 基于 latent diffusion 的零样本语音与歌声合成模型，强调说话人保真度、自然韵律与富表现力生成。
 - **Audio Diffusion Survey** (2023), Liu et al. [pdf](https://arxiv.org/abs/2303.13336) - 音频扩散模型综述（TTS/增强）。
 - **StyleTTS 2** (2023), Li et al. [pdf](https://arxiv.org/abs/2306.07691) [code](https://github.com/yl4579/StyleTTS2) - 风格扩散+对抗训练的高质量TTS.
 - **VALL-E** (2023), Wang et al. [pdf](https://arxiv.org/abs/2301.02111) - 语言模型式零样本TTS（离散codec token）。
@@ -462,10 +534,13 @@
 
 ### Papers > Voice Cloning
 
-- **PFluxTTS** (2026), [pdf](https://arxiv.org/abs/2602.04160) - 面向稳健跨语言语音克隆的混合 Flow-Matching TTS，并支持推理时模型融合。
-- **RVCBench: Benchmarking the Robustness of Voice Cloning Across Modern Audio Generation Models** (2026), Liao et al. [pdf](https://arxiv.org/abs/2602.00443) - 面向现代语音克隆模型的鲁棒性评测基准，覆盖输入扰动、生成挑战、后处理、对抗扰动与跨语言场景。
+- **X-VC: Zero-shot Streaming Voice Conversion in Codec Space** (2026), Zheng et al. [pdf](https://arxiv.org/abs/2604.12456) - 基于 codec space 的零样本流式语音转换方法，采用一步式转换，在同语种与跨语言场景下都强调说话人相似度与低时延推理。
+- **PFluxTTS** (2026), ICASSP, [pdf](https://arxiv.org/abs/2602.04160) - 面向稳健跨语言语音克隆的混合 Flow-Matching TTS，并支持推理时模型融合。
+- **RVCBench: Benchmarking the Robustness of Voice Cloning Across Modern Audio Generation Models** (2026), Liao et al. [pdf](https://arxiv.org/abs/2602.00443) [code](https://github.com/Nanboy-Ronan/RVCBench) - 面向现代语音克隆模型的鲁棒性评测基准，覆盖输入扰动、生成挑战、后处理、对抗扰动与跨语言场景。
+- **Mimic Blocker: Secure Zero-Shot Voice Conversion Against Unauthorized Voice Cloning** (2025), Yu et al. [pdf](https://www.isca-archive.org/interspeech_2025/yu25c_interspeech.pdf) [code](https://github.com/yugwangyeol/Mimic-Blocker) - 面向未授权语音克隆防护的零样本语音转换框架，在阻断声音滥用的同时尽量保留可懂度与转换可用性。
+- **EZ-VC: Easy Zero-shot Any-to-Any Voice Conversion** (2025), Joglekar et al. [pdf](https://aclanthology.org/2025.findings-emnlp.1077.pdf) [code](https://github.com/ez-vc/ez-vc) - 无文本零样本 any-to-any 语音转换方法，强调在未见语言与未见口音条件下仍保持较强说话人保真度。
 - **Cross-Lingual F5-TTS** (2025), Liu et al. [pdf](https://arxiv.org/abs/2509.14579) - 无需音频提示转录文本的跨语言语音克隆与语音合成方法。
-- **RT-VC: Real-Time Zero-Shot Voice Conversion with Speech Articulatory Coding** (2025), Liu et al. [pdf](https://arxiv.org/abs/2506.10289) - 基于发音器官编码的实时零样本语音转换，强调低延迟合成。
+- **RT-VC: Real-Time Zero-Shot Voice Conversion with Speech Articulatory Coding** (2025), ACL Demo, [pdf](https://aclanthology.org/2025.acl-demo.37.pdf) [code](https://github.com/Berkeley-Speech-Group/RT-VC) - 基于发音器官编码的实时零样本语音转换，强调低延迟合成。
 - **ClonEval** (2025), Cai et al. [pdf](https://arxiv.org/abs/2504.20581) [code](https://github.com/amu-cai/cloneval) - voice cloning 系统评测基准.
 - **OpenVoice** (2023), MyShell AI [pdf](https://arxiv.org/abs/2312.01479) [code](https://github.com/myshell-ai/OpenVoice) - 灵活风格控制的即时语音克隆.
 
@@ -521,10 +596,11 @@
 
 - **Automatic Speech Recognition in the Modern Era: Architectures, Training, and Evaluation** (2025), [pdf](https://arxiv.org/abs/2510.12827) - 现代 ASR 的综述，覆盖架构、训练流程、评测实践与开放挑战。
 - **Towards General Auditory Intelligence: Large Multimodal Models for Machine Listening and Speaking** (2025), [pdf](https://arxiv.org/abs/2511.01299) - 大规模多模态听觉模型综述，覆盖 machine listening、speaking 与音视频理解。
+- **Voice Cloning: Comprehensive Survey** (2025), [pdf](https://arxiv.org/abs/2505.00579) - 语音克隆综述，覆盖术语体系、speaker adaptation、few-shot/zero-shot/multilingual 设定、评测指标与数据集。
 - **Recent Advances in Speech Language Models: A Survey (ACL 2025)** (2025), ACL, [pdf](https://aclanthology.org/2025.acl-long.682.pdf) - ACL 2025 SpeechLM 综述：架构、训练、评测与挑战。
-- **On The Landscape of Spoken Language Models** (2025), [pdf](https://arxiv.org/pdf/2504.08528) - Spoken LM 综述：术语体系与评测视角梳理。
-- **Towards Controllable Speech Synthesis in the Era of Large Language Models: A Survey** (2024), Li et al. [pdf](https://arxiv.org/abs/2412.06602) - 可控TTS综述（LLM/扩散/自然语言控制）。
-- **A Survey on Speech Large Language Models for Understanding** (2024), Xu et al. [pdf](https://arxiv.org/abs/2410.18908) - Speech LLM（语音理解）综述与体系化分类。
+- **On The Landscape of Spoken Language Models: A Comprehensive Survey** (2025), TMLR, [pdf](https://openreview.net/forum?id=BvxaP3sVbA) - Spoken LM 综述：术语体系与评测视角梳理。
+- **Towards Controllable Speech Synthesis in the Era of Large Language Models: A Systematic Survey** (2025), EMNLP, [pdf](https://aclanthology.org/2025.emnlp-main.40.pdf) - 可控TTS综述（LLM/扩散/自然语言控制）。
+- **A Survey on Speech Large Language Models for Understanding** (2025), IEEE JSTSP, [pdf](https://doi.org/10.1109/JSTSP.2025.3640535) - Speech LLM（语音理解）综述与体系化分类。
 
 ---
 

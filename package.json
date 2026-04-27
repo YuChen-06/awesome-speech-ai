@@ -7,6 +7,8 @@
     "node": ">=22"
   },
   "scripts": {
+    "prepare": "node scripts/install-git-hooks.mjs",
+    "hooks:install": "node scripts/install-git-hooks.mjs",
     "lint:awesome": "node scripts/run-awesome-lint.mjs",
     "lint:docs": "node scripts/check-readme-structure.mjs",
     "check:readme-structure": "node scripts/check-readme-structure.mjs",
