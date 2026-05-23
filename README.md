@@ -49,6 +49,7 @@
 - [Parler-TTS](https://github.com/huggingface/parler-tts) ![stars](https://img.shields.io/github/stars/huggingface/parler-tts.svg?cacheSeconds=86400) - High-quality TTS with natural language prompting.
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS) ![stars](https://img.shields.io/github/stars/myshell-ai/MeloTTS.svg?cacheSeconds=86400) - Multilingual TTS library.
 - [Fish Speech](https://github.com/fishaudio/fish-speech) ![stars](https://img.shields.io/github/stars/fishaudio/fish-speech.svg?cacheSeconds=86400) - Multilingual expressive TTS.
+- [KittenTTS](https://github.com/KittenML/KittenTTS) ![stars](https://img.shields.io/github/stars/KittenML/KittenTTS.svg?cacheSeconds=86400) - Lightweight ONNX TTS library with small CPU-friendly models and built-in voices.
 - [Orpheus-TTS](https://github.com/canopyai/orpheus-tts) ![stars](https://img.shields.io/github/stars/canopyai/orpheus-tts.svg?cacheSeconds=86400) - Llama-3b based TTS with emotion control and streaming inference.
 - [MOSS-TTSD](https://github.com/OpenMOSS/MOSS-TTSD) ![stars](https://img.shields.io/github/stars/OpenMOSS/MOSS-TTSD.svg?cacheSeconds=86400) - Long-form spoken dialogue generation model for expressive multi-speaker synthesis and zero-shot voice cloning.
 
