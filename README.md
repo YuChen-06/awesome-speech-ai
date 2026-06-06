@@ -11,6 +11,7 @@
 - [Automatic Speech Recognition (ASR)](#automatic-speech-recognition-asr)
 - [Voice Cloning](#voice-cloning)
 - [Audio Enhancement](#audio-enhancement)
+- [Speech Emotion Recognition](#speech-emotion-recognition)
 - [Audio Engineering Tools](#audio-engineering-tools)
 - [Datasets & Benchmarks](#datasets--benchmarks)
 - [Speech LLM & Real-time Systems](#speech-llm--real-time-systems)
@@ -145,6 +146,7 @@ For multilingual ASR foundation models, see Whisper and Vosk above.
 - [diart](https://github.com/juanmc2005/diart) ![stars](https://img.shields.io/github/stars/juanmc2005/diart.svg?cacheSeconds=86400) - Real-time speaker diarization toolkit for streaming and other low-latency audio applications.
 - [simple_diarizer](https://github.com/cvqluu/simple_diarizer) ![stars](https://img.shields.io/github/stars/cvqluu/simple_diarizer.svg?cacheSeconds=86400) - Simplified speaker diarization pipeline using pretrained VAD and speaker embedding models to turn audio files into diarized segments quickly.
 - [diarize](https://github.com/FoxNoseTech/diarize) ![stars](https://img.shields.io/github/stars/FoxNoseTech/diarize.svg?cacheSeconds=86400) - CPU-only speaker diarization (who spoke when) with ONNX inference.
+- [3D-Speaker / CAM++](https://github.com/alibaba-damo-academy/3D-Speaker) ![stars](https://img.shields.io/github/stars/alibaba-damo-academy/3D-Speaker.svg?cacheSeconds=86400) - Large-scale speaker verification dataset and benchmark models (CAM++, ERes2Net) from Alibaba DAMO Academy.
 
 ### ASR > Server / Deployment Tools
 
@@ -256,7 +258,20 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - [RVAE-EM](https://github.com/Audio-WestlakeU/RVAE-EM) ![stars](https://img.shields.io/github/stars/Audio-WestlakeU/RVAE-EM.svg?cacheSeconds=86400) - Generative single-channel speech dereverberation based on an RVAE speech prior with CTF/EM inference.
 - [Neural-Speech-Dereverberation](https://github.com/DiegoLeon96/Neural-Speech-Dereverberation) ![stars](https://img.shields.io/github/stars/DiegoLeon96/Neural-Speech-Dereverberation.svg?cacheSeconds=86400) - Speech dereverberation model collection.
 
+## Speech Emotion Recognition
+
+- [emotion2vec](https://github.com/ddlBoJack/emotion2vec) ![stars](https://img.shields.io/github/stars/ddlBoJack/emotion2vec.svg?cacheSeconds=86400) - Self-supervised pre-trained universal speech emotion representation model (ACL 2024) for cross-dataset/multilingual SER.
+- [IEMOCAP](https://sail.usc.edu/iemocap/) - Interactive Emotional Dyadic Motion Capture database (USC SAIL): 12-hour multimodal benchmark for categorical emotion recognition.
+- [RAVDESS](https://zenodo.org/record/1188976) - Ryerson Audio-Visual Database of Emotional Speech and Song: 24-actor audiovisual dataset covering 8 emotions (CC BY-NC-NA 4.0).
+- [CREMA-D](https://github.com/CheyneyComputerScience/CREMA-D) - Crowd-sourced Emotional Multimodal Actors Dataset: 7,442 clips from 91 actors with 6 emotions and crowd-validated labels.
+
 ## Audio Engineering Tools
+
+### Audio Engineering > Audio Codec Models
+
+- [EnCodec](https://github.com/facebookresearch/encodec) ![stars](https://img.shields.io/github/stars/facebookresearch/encodec.svg?cacheSeconds=86400) - High-fidelity neural audio codec (Meta) supporting mono 24 kHz and stereo 48 kHz compression via RVQ.
+- [Descript Audio Codec (DAC)](https://github.com/descriptinc/descript-audio-codec) ![stars](https://img.shields.io/github/stars/descriptinc/descript-audio-codec.svg?cacheSeconds=86400) - High-fidelity neural audio codec with 90x compression factor for 44.1/24/16 kHz mono and stereo audio.
+- [SpeechTokenizer](https://github.com/zhangxinbo1993/SpeechTokenizer) ![stars](https://img.shields.io/github/stars/zhangxinbo1993/SpeechTokenizer.svg?cacheSeconds=86400) - Unified speech tokenizer (ICLR 2024) bridging semantic and acoustic representations via residual vector quantization.
 
 ### Audio Engineering > I/O & Format Processing
 
