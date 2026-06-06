@@ -44,5 +44,13 @@ coverage/
 .codex/
 .playwright-mcp/
 
+# Claude worktrees (ephemeral session artifacts)
+.claude/worktrees/
+
+# Lychee link-check output (local runs)
+lychee-report.json
+lychee-report.md
+lychee/
+
 # Local-only rules
 RULES.md

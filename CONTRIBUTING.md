@@ -110,6 +110,45 @@ Before submitting, please check:
 - Whether the same paper already exists (same title / same arXiv ID)
 - Whether the same entry is already linked in another section; prefer a cross-reference note over duplicating it
 
+## Adding a New Section
+
+1. Open an Issue first describing the proposed section and why it belongs in the list.
+2. Add the new `##` or `###` heading to **both** `README.md` and `README.zh.md` in the same position.
+3. Update the `Contents` table in `README.md` (and its Chinese counterpart in `README.zh.md`).
+4. If adding a Chinese heading, register its canonical mapping in `scripts/check-readme-structure.mjs`.
+5. Run `npm run validate` to confirm the bilingual structure check passes.
+
+## Bilingual Sync Requirements
+
+This repository maintains parallel English (`README.md`) and Chinese (`README.zh.md`) versions. CI enforces **structural isomorphism**: every heading in `README.md` must have a corresponding heading in `README.zh.md` at the same position and nesting level.
+
+Rules:
+
+- When you add, remove, or reorder a section in one file, do the same in the other.
+- New Chinese headings must be registered in the `zhToCanonical` map in `scripts/check-readme-structure.mjs`.
+- Entry counts per section do not need to match exactly, but headings must always be in sync.
+- The structure check runs automatically via `npm run validate` and in CI on every push/PR.
+
+## Link Check Policy
+
+Broken links are checked monthly via [lychee](https://github.com/lycheeverse/lychee) in CI (`link-check` workflow). This check is **advisory only** -- it does not block PRs.
+
+When broken links are found:
+
+1. Maintainers review the report artifact uploaded to the workflow run.
+2. Permanently dead links are replaced or removed in a follow-up PR.
+3. Temporarily unavailable links (429, 503) are monitored across runs before action.
+
+## Rate Limit Handling
+
+Some hosts aggressively rate-limit or block automated requests. The link checker pre-excludes these domains:
+
+- `shields.io` / `img.shields.io` (badge CDN returns 403 to CI)
+- `arxiv.org` (rate-limits aggressively)
+- `doi.org`, `scholar.google.com`, `ieeexplore.ieee.org`, `openreview.net`
+
+If you add links from a new rate-limited domain, add it to the `LYCHEE_EXCLUDE` pattern in `.github/workflows/link-check.yml`.
+
 ## Discussion
 
 - If you want to add a new subcategory, please open an Issue first.

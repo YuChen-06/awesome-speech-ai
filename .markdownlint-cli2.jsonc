@@ -1,0 +1,20 @@
+{
+  // markdownlint-cli2 configuration for awesome-speech-ai
+  // Docs: https://github.com/DavidAnson/markdownlint-cli2
+  "config": {
+    // Disable line-length rule (awesome lists often have long URLs)
+    "MD013": false,
+    // Allow inline HTML (badges, images with attributes)
+    "MD033": {
+      "allowed_elements": ["img", "br", "details", "summary"]
+    },
+    // First heading should be h1
+    "MD041": false,
+    // Allow duplicate headings in different sections
+    "MD024": {
+      "siblings_only": true
+    }
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules/**"]
+}

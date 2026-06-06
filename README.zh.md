@@ -11,6 +11,7 @@
 - [自动语音识别 ASR](#自动语音识别-asr)
 - [声音克隆 Voice Cloning](#声音克隆-voice-cloning)
 - [音频增强](#音频增强)
+- [语音情感识别](#语音情感识别)
 - [音频工程与开发工具](#音频工程与开发工具)
 - [数据集与评测基准](#数据集与评测基准)
 - [语音大模型与实时系统](#语音大模型与实时系统)
@@ -145,6 +146,7 @@
 - [diart](https://github.com/juanmc2005/diart) ![stars](https://img.shields.io/github/stars/juanmc2005/diart.svg?cacheSeconds=86400) - 面向流式和低延迟音频应用的实时说话人分离工具包。
 - [simple_diarizer](https://github.com/cvqluu/simple_diarizer) ![stars](https://img.shields.io/github/stars/cvqluu/simple_diarizer.svg?cacheSeconds=86400) - 使用预训练 VAD 与说话人表示模型的极简说话人分离 pipeline，可快速把音频文件转成 diarized segments。
 - [diarize](https://github.com/FoxNoseTech/diarize) ![stars](https://img.shields.io/github/stars/FoxNoseTech/diarize.svg?cacheSeconds=86400) - CPU-only 说话人分离（who spoke when），ONNX 推理。
+- [3D-Speaker / CAM++](https://github.com/alibaba-damo-academy/3D-Speaker) ![stars](https://img.shields.io/github/stars/alibaba-damo-academy/3D-Speaker.svg?cacheSeconds=86400) - 阿里 DAMO 大规模说话人验证数据集与基准模型（CAM++、ERes2Net），覆盖多设备多距离场景。
 
 ### ASR > 服务端/部署工具
 
@@ -256,7 +258,20 @@
 - [RVAE-EM](https://github.com/Audio-WestlakeU/RVAE-EM) ![stars](https://img.shields.io/github/stars/Audio-WestlakeU/RVAE-EM.svg?cacheSeconds=86400) - 基于 RVAE 语音先验与 CTF/EM 推断的生成式单通道语音去混响方法。
 - [Neural-Speech-Dereverberation](https://github.com/DiegoLeon96/Neural-Speech-Dereverberation) ![stars](https://img.shields.io/github/stars/DiegoLeon96/Neural-Speech-Dereverberation.svg?cacheSeconds=86400) - 语音去混响模型集合。
 
+## 语音情感识别
+
+- [emotion2vec](https://github.com/ddlBoJack/emotion2vec) ![stars](https://img.shields.io/github/stars/ddlBoJack/emotion2vec.svg?cacheSeconds=86400) - 自监督预训练的通用语音情感表征模型（ACL 2024），支持跨数据集与多语言 SER 任务。
+- [IEMOCAP](https://sail.usc.edu/iemocap/) - 南加州大学交互式情感双人动态捕捉数据库：12 小时多模态情感识别基准数据集。
+- [RAVDESS](https://zenodo.org/record/1188976) - 瑞尔森大学情感语音与歌声音视频数据库：24 位演员、8 种情绪的音视频数据集（CC BY-NC-NA 4.0 许可）。
+- [CREMA-D](https://github.com/CheyneyComputerScience/CREMA-D) - 众包情感多模态演员数据集：91 位演员的 7,442 条视频片段，覆盖 6 种情绪，标签经众包验证。
+
 ## 音频工程与开发工具
+
+### 音频工程 > 神经音频编解码器
+
+- [EnCodec](https://github.com/facebookresearch/encodec) ![stars](https://img.shields.io/github/stars/facebookresearch/encodec.svg?cacheSeconds=86400) - Meta 开源的高保真神经音频编解码器，支持 24 kHz 单声道与 48 kHz 立体声压缩（基于 RVQ）。
+- [Descript Audio Codec (DAC)](https://github.com/descriptinc/descript-audio-codec) ![stars](https://img.shields.io/github/stars/descriptinc/descript-audio-codec.svg?cacheSeconds=86400) - 高保真神经音频编解码器，支持 44.1/24/16 kHz 单声道与立体声，压缩倍率达 90 倍。
+- [SpeechTokenizer](https://github.com/zhangxinbo1993/SpeechTokenizer) ![stars](https://img.shields.io/github/stars/zhangxinbo1993/SpeechTokenizer.svg?cacheSeconds=86400) - 统一语音 tokenizer（ICLR 2024），通过残差向量量化桥接语义与声学表征。
 
 ### 音频工程 > I/O 与格式处理
 
