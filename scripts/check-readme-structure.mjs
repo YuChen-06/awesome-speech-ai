@@ -96,6 +96,24 @@ function formatHeading(heading) {
   return `${'#'.repeat(heading.level)} ${heading.text}`;
 }
 
+function normalizeUrl(value) {
+  const url = new URL(value);
+  url.hash = '';
+  url.hostname = url.hostname.toLowerCase().replace(/^www\./, '');
+  url.protocol = url.protocol.toLowerCase();
+  url.pathname = url.pathname.replace(/\/+$/, '') || '/';
+  url.searchParams.sort();
+  return url.toString();
+}
+
+function extractEntryUrls(content) {
+  return content
+    .split(/\r?\n/)
+    .map((line) => line.match(/^- \[[^\]]+\]\((https?:\/\/[^)]+)\)/i))
+    .filter(Boolean)
+    .map((match) => normalizeUrl(match[1]));
+}
+
 const [readmeEn, readmeZh] = await Promise.all([
   readFile('README.md', 'utf8'),
   readFile('README.zh.md', 'utf8'),
@@ -123,4 +141,21 @@ for (let index = 0; index < enHeadings.length; index += 1) {
   }
 }
 
-console.log(`README structure OK: ${enHeadings.length} headings aligned.`);
+const enEntryUrls = extractEntryUrls(readmeEn);
+const zhEntryUrls = extractEntryUrls(readmeZh);
+if (enEntryUrls.length !== zhEntryUrls.length) {
+  console.error(`README entry count mismatch: README.md=${enEntryUrls.length}, README.zh.md=${zhEntryUrls.length}`);
+  process.exit(1);
+}
+
+for (let index = 0; index < enEntryUrls.length; index += 1) {
+  if (enEntryUrls[index] !== zhEntryUrls[index]) {
+    console.error('README entry order mismatch detected.');
+    console.error(`At entry ${index + 1}:`);
+    console.error(`  README.md:    ${enEntryUrls[index]}`);
+    console.error(`  README.zh.md: ${zhEntryUrls[index]}`);
+    process.exit(1);
+  }
+}
+
+console.log(`README structure OK: ${enHeadings.length} headings and ${enEntryUrls.length} entries aligned.`);

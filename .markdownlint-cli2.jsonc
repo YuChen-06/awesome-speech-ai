@@ -16,5 +16,10 @@
     }
   },
   "globs": ["**/*.md"],
-  "ignores": ["node_modules/**"]
+  "ignores": [
+    "node_modules/**",
+    ".claude/**",
+    ".codex/**",
+    ".playwright-mcp/**"
+  ]
 }

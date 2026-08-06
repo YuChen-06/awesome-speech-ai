@@ -12,6 +12,7 @@ Thanks for contributing to Awesome Speech AI.
   - Correctly categorized (follow the README taxonomy)
 - Keep entries in a section in a consistent order (recommended: alphabetical).
 - Prefer official sources (GitHub repo, official website, arXiv/publisher PDF) over re-uploads or aggregators.
+- Treat X/Twitter, blogs, news, and community posts as discovery leads only; final entries need an official long-lived source plus a second official or near-official source.
 
 ## Local Validation
 
@@ -31,8 +32,10 @@ node scripts/validate-maintenance.mjs
 This repository validates:
 
 - awesome-list formatting via `awesome-lint`
-- README / README.zh structural isomorphism
+- README / README.zh structural isomorphism, including curated-entry URL order
 - duplicate README entries across sections
+- private candidate-ledger validation when `.codex/local/candidate-ledger.jsonl` exists
+- public-boundary validation for tracked or staged private maintenance paths
 
 ## Local Hooks
 
@@ -116,7 +119,7 @@ Before submitting, please check:
 2. Add the new `##` or `###` heading to **both** `README.md` and `README.zh.md` in the same position.
 3. Update the `Contents` table in `README.md` (and its Chinese counterpart in `README.zh.md`).
 4. If adding a Chinese heading, register its canonical mapping in `scripts/check-readme-structure.mjs`.
-5. Run `npm run validate` to confirm the bilingual structure check passes.
+5. Run `npm run validate` to confirm bilingual headings and curated-entry URL order pass.
 
 ## Bilingual Sync Requirements
 
@@ -126,7 +129,7 @@ Rules:
 
 - When you add, remove, or reorder a section in one file, do the same in the other.
 - New Chinese headings must be registered in the `zhToCanonical` map in `scripts/check-readme-structure.mjs`.
-- Entry counts per section do not need to match exactly, but headings must always be in sync.
+- Curated entries with `- [title](URL)` must keep normalized URL order aligned across both files; headings and entry counts must stay in sync.
 - The structure check runs automatically via `npm run validate` and in CI on every push/PR.
 
 ## Link Check Policy

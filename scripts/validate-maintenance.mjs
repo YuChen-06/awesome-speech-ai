@@ -2,6 +2,10 @@ import { spawnSync } from 'node:child_process';
 
 const checks = [
   {
+    label: 'candidate ledger',
+    script: 'scripts/check-candidate-ledger.mjs',
+  },
+  {
     label: 'awesome-lint',
     script: 'scripts/run-awesome-lint.mjs',
   },
@@ -12,6 +16,10 @@ const checks = [
   {
     label: 'README entries',
     script: 'scripts/check-readme-entries.mjs',
+  },
+  {
+    label: 'public boundary',
+    script: 'scripts/check-public-boundary.mjs',
   },
 ];
 

@@ -45,7 +45,7 @@ coverage/
 .playwright-mcp/
 
 # Claude worktrees (ephemeral session artifacts)
-.claude/worktrees/
+.claude/
 
 # Lychee link-check output (local runs)
 lychee-report.json
