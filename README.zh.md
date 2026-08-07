@@ -50,6 +50,7 @@
 - [Parler-TTS](https://github.com/huggingface/parler-tts) ![stars](https://img.shields.io/github/stars/huggingface/parler-tts.svg?cacheSeconds=86400) - 自然语言提示控制的 TTS 实现。
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS) ![stars](https://img.shields.io/github/stars/myshell-ai/MeloTTS.svg?cacheSeconds=86400) - 多语言 TTS 库。
 - [Fish Speech](https://github.com/fishaudio/fish-speech) ![stars](https://img.shields.io/github/stars/fishaudio/fish-speech.svg?cacheSeconds=86400) - 多语言/表现力 TTS。
+- [KittenTTS](https://github.com/KittenML/KittenTTS) ![stars](https://img.shields.io/github/stars/KittenML/KittenTTS.svg?cacheSeconds=86400) - 轻量级 ONNX TTS 库，提供适合 CPU 运行的小模型和内置声音。
 - [Orpheus-TTS](https://github.com/canopyai/orpheus-tts) ![stars](https://img.shields.io/github/stars/canopyai/orpheus-tts.svg?cacheSeconds=86400) - 基于 Llama-3b 的 TTS，支持情感控制与流式推理.
 - [MOSS-TTSD](https://github.com/OpenMOSS/MOSS-TTSD) ![stars](https://img.shields.io/github/stars/OpenMOSS/MOSS-TTSD.svg?cacheSeconds=86400) - 长时对话语音生成模型，支持多说话人表达式合成与零样本语音克隆。
 - [CSM](https://github.com/SesameAILabs/csm) ![stars](https://img.shields.io/github/stars/SesameAILabs/csm.svg?cacheSeconds=86400) - Sesame 对话式语音生成模型，基于文本与语音上下文，采用 Llama 主干和 Mimi 音频解码器。
