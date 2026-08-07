@@ -7,11 +7,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "prepare": "node scripts/install-git-hooks.mjs",
-    "hooks:install": "node scripts/install-git-hooks.mjs",
-    "lint:awesome": "node scripts/run-awesome-lint.mjs",
-    "lint:md": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
-    "lint:docs": "node scripts/check-readme-structure.mjs",
+    "lint:awesome": "awesome-lint README.md",
     "check:readme-structure": "node scripts/check-readme-structure.mjs",
     "check:readme-entries": "node scripts/check-readme-entries.mjs",
     "validate": "node scripts/validate-maintenance.mjs"

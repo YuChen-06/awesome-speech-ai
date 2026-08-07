@@ -14,14 +14,25 @@ Thanks for contributing to Awesome Speech AI.
 - Prefer official sources (GitHub repo, official website, arXiv/publisher PDF) over re-uploads or aggregators.
 - Treat X/Twitter, blogs, news, and community posts as discovery leads only; final entries need an official long-lived source plus a second official or near-official source.
 
+## Scope and Eligibility
+
+- Add public open-source projects, models, datasets, papers, and reusable tools that materially serve Speech AI.
+- A project may offer commercial hosting or support, but its qualifying core must have a verifiable official public source repository or other durable technical source with clear license or access information.
+- Do not submit a commercial-only landing page, directory, affiliate page, or product advertisement as an open-source project.
+- Use one canonical project URL. Prefer the upstream repository; use official documentation, model cards, dataset pages, or papers as supporting evidence.
+- Do not invent GitHub star badges. Add a star badge only when the canonical URL is a GitHub repository; omit it for websites, papers, and non-GitHub model or dataset pages.
+- Do not add an entry only because it is popular or newly announced. Explain its incremental value and why its category is the best fit.
+
 ## Local Validation
 
 Before opening a PR, run:
 
 ```bash
-npm install
+npm ci
 npm run validate
 ```
+
+`npm ci` is preferred because it follows the committed lockfile. Use `npm install` only when intentionally refreshing dependencies.
 
 If your local shell wrapper around `npm` is unstable, run the same checks directly through Node:
 
@@ -34,36 +45,18 @@ This repository validates:
 - awesome-list formatting via `awesome-lint`
 - README / README.zh structural isomorphism, including curated-entry URL order
 - duplicate README entries across sections
-- private candidate-ledger validation when `.codex/local/candidate-ledger.jsonl` exists
 - public-boundary validation for tracked or staged private maintenance paths
+
+If validation fails:
+
+- Leave the relevant validation checkbox unchecked.
+- Include the exact failing command, first actionable error, and the base commit in the PR description.
+- Separate a pre-existing baseline failure from a failure introduced by the PR; do not label a failed run as passed.
+- Do not weaken or bypass a gate to make a README-only change appear green.
 
 ## Local Hooks
 
-This repository can install a local `pre-commit` hook that runs the same maintenance harness before every commit.
-
-Install hooks manually with:
-
-```bash
-npm run hooks:install
-```
-
-Or rely on the automatic install path:
-
-```bash
-npm install
-```
-
-The `prepare` script configures:
-
-- `git config core.hooksPath .husky`
-- a local `.husky/pre-commit` hook that runs `node scripts/validate-maintenance.mjs`
-
-If you work in an unusual shell environment, you can still run the exact same guardrail manually:
-
-```bash
-node scripts/install-git-hooks.mjs
-node scripts/validate-maintenance.mjs
-```
+Git hooks are optional maintainer-local tooling and are not installed by `npm ci` or `npm install`. Contributors should rely on `npm run validate` and must not commit generated `.husky/` files.
 
 ## Repository Hygiene
 
@@ -76,7 +69,7 @@ Track only the canonical repository assets:
 
 Do not add local-only state or generated artifacts such as:
 
-- `.codex/` workspace files
+- local agent workspace files
 - `.husky/` locally generated hook files
 - dependency directories and caches
 - logs, temporary files, or downloaded intermediate data
@@ -85,7 +78,8 @@ Do not add local-only state or generated artifacts such as:
 ## Where to submit
 
 - Submit a Pull Request that updates `README.md`.
-- Maintainers will review the PR and may request additional details.
+- If the entry belongs in both language versions, update `README.md` and `README.zh.md` in the same PR.
+- Maintainers will review evidence, scope, duplication, category fit, bilingual alignment, and validation output; they may request details, defer, or reject an entry.
 
 ## Entry format
 

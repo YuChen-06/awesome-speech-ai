@@ -2,30 +2,30 @@ import { spawnSync } from 'node:child_process';
 
 const checks = [
   {
-    label: 'candidate ledger',
-    script: 'scripts/check-candidate-ledger.mjs',
-  },
-  {
     label: 'awesome-lint',
-    script: 'scripts/run-awesome-lint.mjs',
+    command: process.execPath,
+    args: ['node_modules/awesome-lint/cli.js', 'README.md'],
   },
   {
     label: 'README structure',
-    script: 'scripts/check-readme-structure.mjs',
+    command: process.execPath,
+    args: ['scripts/check-readme-structure.mjs'],
   },
   {
     label: 'README entries',
-    script: 'scripts/check-readme-entries.mjs',
+    command: process.execPath,
+    args: ['scripts/check-readme-entries.mjs'],
   },
   {
     label: 'public boundary',
-    script: 'scripts/check-public-boundary.mjs',
+    command: process.execPath,
+    args: ['scripts/check-public-boundary.mjs'],
   },
 ];
 
 for (const check of checks) {
   console.log(`==> ${check.label}`);
-  const result = spawnSync(process.execPath, [check.script], {
+  const result = spawnSync(check.command, check.args, {
     stdio: 'inherit',
   });
 

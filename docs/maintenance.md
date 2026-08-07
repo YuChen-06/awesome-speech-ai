@@ -59,15 +59,14 @@ Every run uploads a `link-check-report` artifact (retained 30 days). Review it t
 
 ### `quality` (on every push and PR)
 
-Runs `node scripts/validate-maintenance.mjs`, which chains five checks:
+Runs `node scripts/validate-maintenance.mjs`, which chains four public checks:
 
-1. **candidate ledger** -- when `.codex/local/candidate-ledger.jsonl` exists, checks candidate fields, evidence levels, normalized URLs, and that accepted candidates are present in both READMEs. CI skips this private local stage when `.codex/` is absent.
-2. **awesome-lint** -- enforces awesome-list formatting rules on `README.md`.
-3. **README structure** -- verifies `README.md` and `README.zh.md` have identical heading hierarchies and normalized curated-entry URL order (via canonical mapping).
-4. **README entries** -- checks for duplicate entries across sections.
-5. **Public boundary** -- rejects private maintenance paths in tracked or staged files, including `.codex/`, `.claude/`, and local reports.
+1. **awesome-lint** -- enforces awesome-list formatting rules on `README.md`.
+2. **README structure** -- verifies `README.md` and `README.zh.md` have identical heading hierarchies and normalized curated-entry URL order (via canonical mapping).
+3. **README entries** -- checks for duplicate entries across sections.
+4. **Public boundary** -- rejects private maintenance paths in tracked or staged files, including local-only tooling and reports.
 
-All five must pass for the workflow to succeed.
+All four must pass for the workflow to succeed.
 
 ### `link-check` (monthly + manual)
 
@@ -83,24 +82,4 @@ This repository does not use versioned releases or a changelog file. Updates are
 
 ## Local Hook Setup
 
-Pre-commit hooks run the same validation as CI:
-
-```bash
-npm install          # triggers prepare script -> installs hooks
-# or explicitly:
-npm run hooks:install
-```
-
-The hook executes `node scripts/validate-maintenance.mjs` before every commit.
-
-## Candidate Discovery and Evidence Workflow
-
-Candidate research uses a private JSONL ledger at `.codex/local/candidate-ledger.jsonl`.
-
-1. Read the current README headings and entries before searching.
-2. Normalize and deduplicate candidate URLs, titles, and GitHub owner/repository identities locally.
-3. Search in bounded lanes: official GitHub repositories, official documentation/papers/releases, and social posts as discovery leads.
-4. Treat X/Twitter, blogs, news, and community posts as discovery evidence only. Final entries require an official long-lived source and a second official or near-official source.
-5. Record `accepted`, `rejected`, `deferred`, or `recheck` status with overlap notes and decision reasons.
-6. Update both README files only after evidence and category fit are confirmed.
-7. Run `node scripts/validate-maintenance.mjs` before handing off the local diff.
+Git hooks are optional maintainer-local tooling. `npm ci` and `npm install` do not modify Git configuration or install hooks; generated `.husky/` state remains ignored and must not be committed. Contributors can run `npm run validate` directly.
