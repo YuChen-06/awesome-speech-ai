@@ -25,14 +25,14 @@
 
 - [ESPnet](https://github.com/espnet/espnet) ![stars](https://img.shields.io/github/stars/espnet/espnet.svg?cacheSeconds=86400) - End-to-end speech processing toolkit (ASR/TTS/translation/enhancement).
 - [FunASR](https://github.com/modelscope/FunASR) ![stars](https://img.shields.io/github/stars/modelscope/FunASR.svg?cacheSeconds=86400) - End-to-end speech toolkit covering ASR, VAD, punctuation, diarization, and deployment workflows.
-- [NVIDIA NeMo](https://github.com/NVIDIA-NeMo/NeMo) ![stars](https://img.shields.io/github/stars/NVIDIA-NeMo/NeMo.svg?cacheSeconds=86400) - NVIDIA speech AI framework (training + deployment for ASR/TTS/speaker).
+- [NVIDIA NeMo](https://github.com/NVIDIA-NeMo/Speech) ![stars](https://img.shields.io/github/stars/NVIDIA-NeMo/Speech.svg?cacheSeconds=86400) - NVIDIA speech AI framework (training + deployment for ASR/TTS/speaker).
 - [SpeechBrain](https://github.com/speechbrain/speechbrain) ![stars](https://img.shields.io/github/stars/speechbrain/speechbrain.svg?cacheSeconds=86400) - PyTorch-based speech toolkit (ASR/speaker/enhancement/separation and more).
 - [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech) ![stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleSpeech.svg?cacheSeconds=86400) - Speech toolkit covering ASR/TTS/speaker/KWS with recipes and deployment tools.
 
 ### Self-supervised Pretraining
 
 - [S3PRL](https://github.com/s3prl/s3prl) ![stars](https://img.shields.io/github/stars/s3prl/s3prl.svg?cacheSeconds=86400) - Self-supervised speech pretraining & representation learning toolkit.
-- [fairseq](https://github.com/facebookresearch/fairseq) ![stars](https://img.shields.io/github/stars/facebookresearch/fairseq.svg?cacheSeconds=86400) - Sequence modeling toolkit that includes common speech SSL implementations (e.g., wav2vec 2.0 / HuBERT).
+- [fairseq](https://github.com/facebookresearch/fairseq) ![stars](https://img.shields.io/github/stars/facebookresearch/fairseq.svg?cacheSeconds=86400) - Sequence modeling toolkit that includes common speech SSL implementations (e.g., wav2vec 2.0 / HuBERT) (Archived).
 - [UniSpeech](https://github.com/microsoft/UniSpeech) ![stars](https://img.shields.io/github/stars/microsoft/UniSpeech.svg?cacheSeconds=86400) - Microsoft speech SSL research codebase (UniSpeech / UniSpeech-SAT).
 - [WavLM (in UniLM)](https://github.com/microsoft/unilm/tree/master/wavlm) ![stars](https://img.shields.io/github/stars/microsoft/unilm.svg?cacheSeconds=86400) - WavLM code and resources (part of the UniLM repository).
 
@@ -46,7 +46,7 @@
 - [StyleTTS 2](https://github.com/yl4579/StyleTTS2) ![stars](https://img.shields.io/github/stars/yl4579/StyleTTS2.svg?cacheSeconds=86400) - TTS implementation based on style diffusion + adversarial training.
 - [Tortoise-TTS](https://github.com/neonbjb/tortoise-tts) ![stars](https://img.shields.io/github/stars/neonbjb/tortoise-tts.svg?cacheSeconds=86400) - Multi-speaker TTS reference implementation (slower inference).
 - [Amphion](https://github.com/open-mmlab/Amphion) ![stars](https://img.shields.io/github/stars/open-mmlab/Amphion.svg?cacheSeconds=86400) - Audio/Music/Speech Generation toolkit with multiple TTS recipes and models.
-- [CosyVoice](https://github.com/FunAudioLLM/CosyVoice) ![stars](https://img.shields.io/github/stars/FunAudioLLM/CosyVoice.svg?cacheSeconds=86400) - LLM-based multilingual/streaming TTS full-stack with training/inference/deployment.
+- [CosyVoice](https://github.com/QwenAudio/CosyVoice) ![stars](https://img.shields.io/github/stars/QwenAudio/CosyVoice.svg?cacheSeconds=86400) - LLM-based multilingual/streaming TTS full-stack with training/inference/deployment.
 - [Parler-TTS](https://github.com/huggingface/parler-tts) ![stars](https://img.shields.io/github/stars/huggingface/parler-tts.svg?cacheSeconds=86400) - High-quality TTS with natural language prompting.
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS) ![stars](https://img.shields.io/github/stars/myshell-ai/MeloTTS.svg?cacheSeconds=86400) - Multilingual TTS library.
 - [Fish Speech](https://github.com/fishaudio/fish-speech) ![stars](https://img.shields.io/github/stars/fishaudio/fish-speech.svg?cacheSeconds=86400) - Multilingual expressive TTS.
@@ -60,7 +60,7 @@
 ### TTS > Zero-Shot / Few-Shot
 
 - [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) ![stars](https://img.shields.io/github/stars/QwenLM/Qwen3-TTS.svg?cacheSeconds=86400) - Open-source TTS model with voice cloning and streaming/inference tooling.
-- [VALL-E X](https://github.com/Plachtaa/VALL-E-X) ![stars](https://img.shields.io/github/stars/Plachtaa/VALL-E-X.svg?cacheSeconds=86400) - Zero-shot TTS reproduction (unofficial) supporting cross-lingual voice cloning.
+- [VALL-E X](https://github.com/Plachtaa/VALL-E-X) ![stars](https://img.shields.io/github/stars/Plachtaa/VALL-E-X.svg?cacheSeconds=86400) - Zero-shot TTS reproduction (unofficial) supporting cross-lingual voice cloning (Archived).
 - [Zonos](https://github.com/Zyphra/Zonos) ![stars](https://img.shields.io/github/stars/Zyphra/Zonos.svg?cacheSeconds=86400) - Open multilingual TTS model with strong expressiveness.
 - [Index-TTS](https://github.com/index-tts/index-tts) ![stars](https://img.shields.io/github/stars/index-tts/index-tts.svg?cacheSeconds=86400) - Controllable zero-shot TTS.
 - [VoxCPM](https://github.com/OpenBMB/VoxCPM) ![stars](https://img.shields.io/github/stars/OpenBMB/VoxCPM.svg?cacheSeconds=86400) - Tokenizer-free TTS with continuous space modeling, 5-second voice cloning.
@@ -88,11 +88,11 @@
 - [parler-tts-fastapi](https://github.com/parisneo/parler-tts-fastapi) ![stars](https://img.shields.io/github/stars/parisneo/parler-tts-fastapi.svg?cacheSeconds=86400) - FastAPI service for Parler-TTS with streaming response.
 - [Qwen3-TTS OpenAI FastAPI](https://github.com/groxaxo/Qwen3-TTS-Openai-Fastapi) ![stars](https://img.shields.io/github/stars/groxaxo/Qwen3-TTS-Openai-Fastapi.svg?cacheSeconds=86400) - OpenAI-compatible API server for Qwen3-TTS (FastAPI-based).
 - [faster-qwen3-tts](https://github.com/andimarafioti/faster-qwen3-tts) ![stars](https://img.shields.io/github/stars/andimarafioti/faster-qwen3-tts.svg?cacheSeconds=86400) - Real-time Qwen3-TTS inference acceleration using CUDA Graph capture.
-- [Wyoming Piper](https://github.com/rhasspy/wyoming-piper) ![stars](https://img.shields.io/github/stars/rhasspy/wyoming-piper.svg?cacheSeconds=86400) - Wyoming protocol server for Piper (Home Assistant integration).
+- [Wyoming Piper](https://github.com/OHF-Voice/wyoming-piper) ![stars](https://img.shields.io/github/stars/OHF-Voice/wyoming-piper.svg?cacheSeconds=86400) - Wyoming protocol server for Piper (Home Assistant integration).
 - [TTS-WebUI](https://github.com/rsxdalv/TTS-WebUI) ![stars](https://img.shields.io/github/stars/rsxdalv/TTS-WebUI.svg?cacheSeconds=86400) - Unified WebUI aggregating multiple TTS/VC/Audio models (extensible).
 - [Mimic 3](https://github.com/MycroftAI/mimic3) ![stars](https://img.shields.io/github/stars/MycroftAI/mimic3.svg?cacheSeconds=86400) - Local neural TTS engine for voice assistant ecosystem (edge/offline friendly).
 - [Piper (maintained)](https://github.com/OHF-Voice/piper1-gpl) ![stars](https://img.shields.io/github/stars/OHF-Voice/piper1-gpl.svg?cacheSeconds=86400) - Fast local TTS engine.
-- [VibeVoice](https://github.com/vibevoice-community/VibeVoice) ![stars](https://img.shields.io/github/stars/vibevoice-community/VibeVoice.svg?cacheSeconds=86400) - Long-dialogue TTS supporting 90-minute conversations with 4 speakers.
+- [VibeVoice](https://github.com/microsoft/VibeVoice) ![stars](https://img.shields.io/github/stars/microsoft/VibeVoice.svg?cacheSeconds=86400) - Long-dialogue TTS supporting 90-minute conversations with 4 speakers.
 - [Parler-tts-streaming (SSE)](https://github.com/inferless/Parler-tts-streaming) ![stars](https://img.shields.io/github/stars/inferless/Parler-tts-streaming.svg?cacheSeconds=86400) - SSE streaming audio output example for Parler-TTS.
 - [Home Assistant Piper Add-on](https://github.com/home-assistant/addons/tree/master/piper) ![stars](https://img.shields.io/github/stars/home-assistant/addons.svg?cacheSeconds=86400) - Official Home Assistant add-on for Piper.
 - [StyleTTS-WebUI](https://github.com/JarodMica/StyleTTS-WebUI) ![stars](https://img.shields.io/github/stars/JarodMica/StyleTTS-WebUI.svg?cacheSeconds=86400) - WebUI wrapper for StyleTTS2.
@@ -104,7 +104,7 @@
 
 - [Whisper](https://github.com/openai/whisper) ![stars](https://img.shields.io/github/stars/openai/whisper.svg?cacheSeconds=86400) - General-purpose ASR foundation model with multilingual support and translation capabilities.
 - [Canary-1B-v2](https://huggingface.co/nvidia/canary-1b-v2) - Official NVIDIA multilingual ASR + speech translation foundation model with word-level timestamps and language-ID support.
-- [SenseVoice](https://github.com/FunAudioLLM/SenseVoice) ![stars](https://img.shields.io/github/stars/FunAudioLLM/SenseVoice.svg?cacheSeconds=86400) - Speech foundation model for multilingual ASR, spoken language identification, emotion recognition, and audio event detection with low-latency inference.
+- [SenseVoice](https://github.com/QwenAudio/SenseVoice) ![stars](https://img.shields.io/github/stars/QwenAudio/SenseVoice.svg?cacheSeconds=86400) - Speech foundation model for multilingual ASR, spoken language identification, emotion recognition, and audio event detection with low-latency inference.
 - [Kaldi](https://github.com/kaldi-asr/kaldi) ![stars](https://img.shields.io/github/stars/kaldi-asr/kaldi.svg?cacheSeconds=86400) - Classic ASR toolkit with rich research/production ecosystem.
 - [WeNet](https://github.com/wenet-e2e/wenet) ![stars](https://img.shields.io/github/stars/wenet-e2e/wenet.svg?cacheSeconds=86400) - Production-oriented end-to-end ASR toolkit with streaming/offline recipes.
 - [Vosk](https://github.com/alphacep/vosk-api) ![stars](https://img.shields.io/github/stars/alphacep/vosk-api.svg?cacheSeconds=86400) - Offline ASR API with multilingual support, small models, and streaming capabilities.
@@ -125,10 +125,10 @@
 ### ASR > On-Device / Edge
 
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) ![stars](https://img.shields.io/github/stars/ggml-org/whisper.cpp.svg?cacheSeconds=86400) - C/C++ on-device Whisper inference with CPU/Metal support and real-time microphone examples.
-- [WhisperKit](https://github.com/argmaxinc/WhisperKit) ![stars](https://img.shields.io/github/stars/argmaxinc/WhisperKit.svg?cacheSeconds=86400) - On-device speech AI toolkit for Apple Silicon with WhisperKit transcription, local streaming, and CoreML-based deployment.
+- [WhisperKit](https://github.com/argmaxinc/argmax-oss-swift) ![stars](https://img.shields.io/github/stars/argmaxinc/argmax-oss-swift.svg?cacheSeconds=86400) - On-device speech AI toolkit for Apple Silicon with WhisperKit transcription, local streaming, and CoreML-based deployment.
 - [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) ![stars](https://img.shields.io/github/stars/k2-fsa/sherpa-onnx.svg?cacheSeconds=86400) - On-device/offline/streaming ASR+TTS+VAD+enhancement all-in-one (ONNX runtime, no cloud needed).
 - [sherpa-ncnn](https://github.com/k2-fsa/sherpa-ncnn) ![stars](https://img.shields.io/github/stars/k2-fsa/sherpa-ncnn.svg?cacheSeconds=86400) - On-device real-time ASR + VAD + TTS (ncnn-based, mobile-friendly, no cloud needed).
-- [Moonshine](https://github.com/usefulsensors/moonshine) ![stars](https://img.shields.io/github/stars/usefulsensors/moonshine.svg?cacheSeconds=86400) - ASR model and tooling optimized for edge devices.
+- [Moonshine](https://github.com/moonshine-ai/moonshine) ![stars](https://img.shields.io/github/stars/moonshine-ai/moonshine.svg?cacheSeconds=86400) - ASR model and tooling optimized for edge devices.
 
 ### ASR > Multilingual
 
@@ -152,8 +152,8 @@ For multilingual ASR foundation models, see Whisper and Vosk above.
 - [pyannote-audio](https://github.com/pyannote/pyannote-audio) ![stars](https://img.shields.io/github/stars/pyannote/pyannote-audio.svg?cacheSeconds=86400) - Speaker diarization/speaker change/overlap detection toolkit with mature ecosystem.
 - [diart](https://github.com/juanmc2005/diart) ![stars](https://img.shields.io/github/stars/juanmc2005/diart.svg?cacheSeconds=86400) - Real-time speaker diarization toolkit for streaming and other low-latency audio applications.
 - [simple_diarizer](https://github.com/cvqluu/simple_diarizer) ![stars](https://img.shields.io/github/stars/cvqluu/simple_diarizer.svg?cacheSeconds=86400) - Simplified speaker diarization pipeline using pretrained VAD and speaker embedding models to turn audio files into diarized segments quickly.
-- [diarize](https://github.com/FoxNoseTech/diarize) ![stars](https://img.shields.io/github/stars/FoxNoseTech/diarize.svg?cacheSeconds=86400) - CPU-only speaker diarization (who spoke when) with ONNX inference.
-- [3D-Speaker / CAM++](https://github.com/alibaba-damo-academy/3D-Speaker) ![stars](https://img.shields.io/github/stars/alibaba-damo-academy/3D-Speaker.svg?cacheSeconds=86400) - Large-scale speaker verification dataset and benchmark models (CAM++, ERes2Net) from Alibaba DAMO Academy.
+- [diarize](https://github.com/notch-up/diarize) ![stars](https://img.shields.io/github/stars/notch-up/diarize.svg?cacheSeconds=86400) - CPU-only speaker diarization (who spoke when) with ONNX inference.
+- [3D-Speaker / CAM++](https://github.com/modelscope/3D-Speaker) ![stars](https://img.shields.io/github/stars/modelscope/3D-Speaker.svg?cacheSeconds=86400) - Large-scale speaker verification dataset and benchmark models (CAM++, ERes2Net) from Alibaba DAMO Academy.
 
 ### ASR > Server / Deployment Tools
 
@@ -202,8 +202,8 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - [RVC WebUI](https://github.com/rvc-project/retrieval-based-voice-conversion-webui) ![stars](https://img.shields.io/github/stars/rvc-project/retrieval-based-voice-conversion-webui.svg?cacheSeconds=86400) - Retrieval-based Voice Conversion: Training + Real-time voice changing/singing voice conversion WebUI.
 - [DDSP-SVC](https://github.com/yxlllc/DDSP-SVC) ![stars](https://img.shields.io/github/stars/yxlllc/DDSP-SVC.svg?cacheSeconds=86400) - Real-time end-to-end singing voice conversion system based on DDSP with lower hardware cost.
 - [NeuCoSVC](https://github.com/thuhcsi/NeuCoSVC) ![stars](https://img.shields.io/github/stars/thuhcsi/NeuCoSVC.svg?cacheSeconds=86400) - Official any-to-any singing voice conversion system with neural concatenative modeling and WavLM-based feature matching.
-- [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) ![stars](https://img.shields.io/github/stars/svc-develop-team/so-vits-svc.svg?cacheSeconds=86400) - Singing Voice Conversion (SoftVC VITS) with 1-minute voice training, zero-shot 5-second inference.
-- [Seed-VC](https://github.com/Plachtaa/seed-vc) ![stars](https://img.shields.io/github/stars/Plachtaa/seed-vc.svg?cacheSeconds=86400) - Zero-shot voice conversion and singing voice conversion with real-time support.
+- [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) ![stars](https://img.shields.io/github/stars/svc-develop-team/so-vits-svc.svg?cacheSeconds=86400) - Singing Voice Conversion (SoftVC VITS) with 1-minute voice training, zero-shot 5-second inference (Archived).
+- [Seed-VC](https://github.com/Plachtaa/seed-vc) ![stars](https://img.shields.io/github/stars/Plachtaa/seed-vc.svg?cacheSeconds=86400) - Zero-shot voice conversion and singing voice conversion with real-time support (Archived).
 - [SoulX-Singer-SVC](https://github.com/Soul-AILab/SoulX-Singer) ![stars](https://img.shields.io/github/stars/Soul-AILab/SoulX-Singer.svg?cacheSeconds=86400) - Zero-shot singing voice conversion model for multilingual timbre/style transfer with transcription-free audio-to-audio inference.
 
 ## Audio Enhancement
@@ -253,7 +253,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - [aec-rs](https://github.com/thewh1teagle/aec) ![stars](https://img.shields.io/github/stars/thewh1teagle/aec.svg?cacheSeconds=86400) - Rust AEC library based on speexdsp.
 - [webrtcaec3.js](https://github.com/ennuicastr/webrtcaec3.js) ![stars](https://img.shields.io/github/stars/ennuicastr/webrtcaec3.js.svg?cacheSeconds=86400) - WebRTC AEC3 port to WebAssembly/JavaScript.
 - [aec3-rs](https://github.com/RubyBit/aec3-rs) ![stars](https://img.shields.io/github/stars/RubyBit/aec3-rs.svg?cacheSeconds=86400) - WebRTC AEC3 port to Rust.
-- [DTLN-aec](https://github.com/shiguredo/dtln-aec) ![stars](https://img.shields.io/github/stars/shiguredo/dtln-aec.svg?cacheSeconds=86400) - Deep-learning-based AEC for browser usage.
+- [DTLN-aec](https://github.com/shiguredo/dtln-aec) ![stars](https://img.shields.io/github/stars/shiguredo/dtln-aec.svg?cacheSeconds=86400) - Deep-learning-based AEC for browser usage (Archived).
 - [NKF-AEC](https://github.com/fjiang9/NKF-AEC) ![stars](https://img.shields.io/github/stars/fjiang9/NKF-AEC.svg?cacheSeconds=86400) - Official low-complexity acoustic echo cancellation implementation with neural Kalman filtering and pretrained inference code.
 
 ### Audio Enhancement > Dereverb
@@ -278,7 +278,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 
 - [EnCodec](https://github.com/facebookresearch/encodec) ![stars](https://img.shields.io/github/stars/facebookresearch/encodec.svg?cacheSeconds=86400) - High-fidelity neural audio codec (Meta) supporting mono 24 kHz and stereo 48 kHz compression via RVQ.
 - [Descript Audio Codec (DAC)](https://github.com/descriptinc/descript-audio-codec) ![stars](https://img.shields.io/github/stars/descriptinc/descript-audio-codec.svg?cacheSeconds=86400) - High-fidelity neural audio codec with 90x compression factor for 44.1/24/16 kHz mono and stereo audio.
-- [SpeechTokenizer](https://github.com/zhangxinbo1993/SpeechTokenizer) ![stars](https://img.shields.io/github/stars/zhangxinbo1993/SpeechTokenizer.svg?cacheSeconds=86400) - Unified speech tokenizer (ICLR 2024) bridging semantic and acoustic representations via residual vector quantization.
+- [SpeechTokenizer](https://github.com/ZhangXInFD/SpeechTokenizer) ![stars](https://img.shields.io/github/stars/ZhangXInFD/SpeechTokenizer.svg?cacheSeconds=86400) - Unified speech tokenizer (ICLR 2024) bridging semantic and acoustic representations via residual vector quantization.
 - [SAC](https://github.com/Soul-AILab/SAC) ![stars](https://img.shields.io/github/stars/Soul-AILab/SAC.svg?cacheSeconds=86400) - Semantic-acoustic dual-stream neural speech codec with released training and inference resources for discrete speech representations across bitrates.
 - [SiTok](https://github.com/HeCheng0625/Diffusion-Speech-Tokenizer) ![stars](https://img.shields.io/github/stars/HeCheng0625/Diffusion-Speech-Tokenizer.svg?cacheSeconds=86400) - Diffusion autoencoder speech tokenizer with semantic-rich representations and an open implementation for scalable speech tokenization.
 
@@ -303,14 +303,14 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 
 - [DiffSinger](https://github.com/openvpi/DiffSinger) ![stars](https://img.shields.io/github/stars/openvpi/DiffSinger.svg?cacheSeconds=86400) - High-fidelity controllable SVS system with shallow diffusion mechanism.
 - [NNSVS](https://github.com/nnsvs/nnsvs) ![stars](https://img.shields.io/github/stars/nnsvs/nnsvs.svg?cacheSeconds=86400) - Research-oriented singing voice synthesis toolkit with complete recipes for building custom voicebanks.
-- [OpenUtau](https://github.com/stakira/OpenUtau) ![stars](https://img.shields.io/github/stars/stakira/OpenUtau.svg?cacheSeconds=86400) - Open-source UTAU editor/singing synthesis platform (cross-platform GUI) with DiffSinger integration support.
+- [OpenUtau](https://github.com/openutau/OpenUtau) ![stars](https://img.shields.io/github/stars/openutau/OpenUtau.svg?cacheSeconds=86400) - Open-source UTAU editor/singing synthesis platform (cross-platform GUI) with DiffSinger integration support.
 - [Sinsy](https://github.com/r9y9/sinsy) ![stars](https://img.shields.io/github/stars/r9y9/sinsy.svg?cacheSeconds=86400) - Classic HMM/DNN-based singing voice synthesis system (Sinsy family).
 - [TuneLab](https://github.com/LiuYunPlayer/TuneLab) ![stars](https://img.shields.io/github/stars/LiuYunPlayer/TuneLab.svg?cacheSeconds=86400) - Singing synthesis/tuning editor (engineering software tool for music production).
 - [utaformatix3](https://github.com/sdercolin/utaformatix3) ![stars](https://img.shields.io/github/stars/sdercolin/utaformatix3.svg?cacheSeconds=86400) - Multi-voice-synthesis software project format converter.
 
 ### Audio Engineering > Visualization & Data Analysis
 
-- [librosa](https://github.com/bmcfee/librosa) ![stars](https://img.shields.io/github/stars/bmcfee/librosa.svg?cacheSeconds=86400) - Audio/music analysis library (feature extraction, visualization, utilities).
+- [librosa](https://github.com/librosa/librosa) ![stars](https://img.shields.io/github/stars/librosa/librosa.svg?cacheSeconds=86400) - Audio/music analysis library (feature extraction, visualization, utilities).
 - [openSMILE](https://github.com/audeering/opensmile) ![stars](https://img.shields.io/github/stars/audeering/opensmile.svg?cacheSeconds=86400) - Open-source speech/audio feature extraction and analysis toolkit for offline and real-time processing across classic paralinguistic and ML workflows.
 - [Praat](https://github.com/praat/praat) ![stars](https://img.shields.io/github/stars/praat/praat.svg?cacheSeconds=86400) - Phonetics-by-computer tool for speech analysis, annotation, and visualization.
 - [Parselmouth](https://github.com/YannickJadoul/Parselmouth) ![stars](https://img.shields.io/github/stars/YannickJadoul/Parselmouth.svg?cacheSeconds=86400) - Praat in Python: Pythonic interface to Praat's speech analysis algorithms.
@@ -319,7 +319,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 ### Audio Engineering > Data Augmentation
 
 - [audiomentations](https://github.com/iver56/audiomentations) ![stars](https://img.shields.io/github/stars/iver56/audiomentations.svg?cacheSeconds=86400) - Python audio data augmentation library.
-- [torch-audiomentations](https://github.com/asteroid-team/torch-audiomentations) ![stars](https://img.shields.io/github/stars/asteroid-team/torch-audiomentations.svg?cacheSeconds=86400) - PyTorch audio data augmentation library.
+- [torch-audiomentations](https://github.com/iver56/torch-audiomentations) ![stars](https://img.shields.io/github/stars/iver56/torch-audiomentations.svg?cacheSeconds=86400) - PyTorch audio data augmentation library.
 - [AugLy](https://github.com/facebookresearch/AugLy) ![stars](https://img.shields.io/github/stars/facebookresearch/AugLy.svg?cacheSeconds=86400) - Meta's multimodal augmentation library with a dedicated audio module, composable transforms, and transform metadata for robustness workflows.
 - [WavAugment](https://github.com/facebookresearch/WavAugment) ![stars](https://img.shields.io/github/stars/facebookresearch/WavAugment.svg?cacheSeconds=86400) - Archived Meta time-domain audio and speech data augmentation library built on PyTorch and libsox.
 
@@ -344,12 +344,12 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 
 - [Emilia Dataset](https://huggingface.co/datasets/amphion/Emilia-Dataset) - Large-scale multilingual speech generation dataset (6 languages, 101k+ hours) with Emilia-Pipe preprocessing toolkit.
 - [LibriSpeech](https://www.openslr.org/12) - English ASR corpus (paired speech-text) commonly used for training and evaluation.
-- [Libri-Light](https://www.openslr.org/60) - Large-scale unlabeled English speech dataset for self-supervised learning.
+- [Libri-Light](https://github.com/facebookresearch/libri-light) ![stars](https://img.shields.io/github/stars/facebookresearch/libri-light.svg?cacheSeconds=86400) - Large-scale unlabeled English speech dataset for self-supervised learning (Archived).
 - [Common Voice](https://github.com/common-voice/common-voice) ![stars](https://img.shields.io/github/stars/common-voice/common-voice.svg?cacheSeconds=86400) - Community-driven multilingual speech dataset.
 - [FLEURS](https://huggingface.co/datasets/google/fleurs) - Multilingual speech dataset (many languages) for ASR evaluation.
 - [Multilingual LibriSpeech (MLS)](https://www.openslr.org/94) - Large-scale multilingual speech dataset for ASR.
 - [VCTK Corpus](https://datashare.ed.ac.uk/handle/10283/3443) - English multi-speaker speech corpus with 110 speakers, diverse accents, and roughly 400 utterances per speaker, widely used in TTS and voice cloning.
-- [VoxPopuli](https://github.com/facebookresearch/voxpopuli) ![stars](https://img.shields.io/github/stars/facebookresearch/voxpopuli.svg?cacheSeconds=86400) - Multilingual speech corpus from European Parliament recordings for ASR/ST research.
+- [VoxPopuli](https://github.com/facebookresearch/voxpopuli) ![stars](https://img.shields.io/github/stars/facebookresearch/voxpopuli.svg?cacheSeconds=86400) - Multilingual speech corpus from European Parliament recordings for ASR/ST research (Archived).
 - [VoxpopuliTTS](https://voxpopulitts.github.io/) - 30K-hour multilingual TTS-oriented corpus refined from VoxPopuli for zero-shot speech generation and related synthesis tasks.
 - [AISHELL-1](https://www.openslr.org/33) - Mandarin speech corpus for ASR.
 - [GigaSpeech](https://github.com/SpeechColab/GigaSpeech) ![stars](https://img.shields.io/github/stars/SpeechColab/GigaSpeech.svg?cacheSeconds=86400) - Large-scale English speech corpus for ASR/SLU research.
@@ -370,7 +370,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - [DNS Challenge](https://github.com/microsoft/DNS-Challenge) - Deep Noise Suppression challenge dataset for speech enhancement benchmarking.
 - [AEC Challenge](https://github.com/microsoft/AEC-Challenge) ![stars](https://img.shields.io/github/stars/microsoft/AEC-Challenge.svg?cacheSeconds=86400) - Official acoustic echo cancellation challenge datasets with real and synthetic recordings from thousands of devices, speakers, and environments.
 - [Clarity Enhancement Challenge (CEC)](https://claritychallenge.org/docs/cec3/cec3_intro) - Official hearing-aid speech enhancement challenge series with downloadable datasets, real/simulated scenes, and intelligibility/quality-oriented evaluation tracks.
-- [WHAM! / WHAMR!](https://wham.whisper.ai/) - Canonical noisy and reverberant speech separation datasets extending WSJ0-2mix with real ambient noise and room effects.
+- [WHAM! / WHAMR!](http://wham.whisper.ai/) - Canonical noisy and reverberant speech separation datasets extending WSJ0-2mix with real ambient noise and room effects.
 - [VoiceBank + DEMAND (VBD)](https://datashare.ed.ac.uk/handle/10283/2791) - Classic paired clean/noisy dataset widely used for speech enhancement.
 - [LibriCSS](https://github.com/chenzhuo1011/libri_css) ![stars](https://img.shields.io/github/stars/chenzhuo1011/libri_css.svg?cacheSeconds=86400) - Continuous speech separation benchmark and evaluation pipeline for long-form overlapping far-field LibriSpeech-based recordings.
 - [RIR-Mega-Speech](https://huggingface.co/datasets/mandipgoswami/rir-mega-speech) - Reverberant speech corpus with per-file acoustic metadata for robust ASR and dereverberation evaluation.
@@ -380,7 +380,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 
 ### Datasets & Benchmarks > Evaluation Metrics
 
-- [SUPERB](https://superbbenchmark.org/) - Benchmark suite for evaluating self-supervised speech representations across tasks.
+- [SUPERB](https://superbbenchmark.github.io/) - Benchmark suite for evaluating self-supervised speech representations across tasks.
 - [HEAR Benchmark](https://hearbenchmark.com/) - Benchmark suite for evaluating audio representations across downstream tasks.
 - [SpeechEval](https://huggingface.co/datasets/Hui519/SpeechEval) - Large-scale multilingual benchmark for interpretable speech quality evaluation, pairwise comparison, improvement suggestion, and deepfake detection.
 - [MCL-MLAAD](https://github.com/xuanxixi/Multilingual-Source-Tracing) ![stars](https://img.shields.io/github/stars/xuanxixi/Multilingual-Source-Tracing.svg?cacheSeconds=86400) - Multilingual speech deepfake source-tracing benchmark covering mono- and cross-lingual protocols across six languages.
@@ -389,13 +389,13 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - [ASVspoof](https://www.asvspoof.org/) - Canonical anti-spoofing benchmark and evaluation protocol for speech deepfake detection and spoofing-aware speaker verification, with official baselines and scoring packages.
 - [TidyVoice 2026 Challenge](https://tidyvoice2026.github.io/) - Interspeech 2026 cross-lingual speaker verification benchmark built on the multilingual TidyVoiceX dataset, with public protocols, baselines, and leaderboard.
 - [UltraEval-Audio](https://github.com/OpenBMB/UltraEval-Audio) ![stars](https://img.shields.io/github/stars/OpenBMB/UltraEval-Audio.svg?cacheSeconds=86400) - Unified evaluation framework for speech understanding and generation models across 34+ benchmarks.
-- [CV3-Eval](https://github.com/FunAudioLLM/CV3-Eval) ![stars](https://img.shields.io/github/stars/FunAudioLLM/CV3-Eval.svg?cacheSeconds=86400) - Open benchmark and evaluation toolkit for zero-shot speech synthesis in the wild, covering multilingual, cross-lingual, and emotion cloning settings.
+- [CV3-Eval](https://github.com/QwenAudio/CV3-Eval) ![stars](https://img.shields.io/github/stars/QwenAudio/CV3-Eval.svg?cacheSeconds=86400) - Open benchmark and evaluation toolkit for zero-shot speech synthesis in the wild, covering multilingual, cross-lingual, and emotion cloning settings.
 - [Open ASR Leaderboard](https://github.com/huggingface/open_asr_leaderboard) ![stars](https://img.shields.io/github/stars/huggingface/open_asr_leaderboard.svg?cacheSeconds=86400) - Reproducible ASR benchmark and leaderboard covering English short-form, long-form, and multilingual tracks with standardized WER and RTFx evaluation.
 - [SCTK](https://github.com/usnistgov/SCTK) ![stars](https://img.shields.io/github/stars/usnistgov/SCTK.svg?cacheSeconds=86400) - NIST scoring toolkit providing `sclite`, `asclite`, `rover`, and related utilities for ASR hypothesis/reference scoring and comparison.
 - [JiWER](https://github.com/jitsi/jiwer) ![stars](https://img.shields.io/github/stars/jitsi/jiwer.svg?cacheSeconds=86400) - Lightweight Python toolkit for ASR error metrics including WER, MER, WIL, WIP, and CER with fast minimum-edit-distance computation.
 - [MeetEval](https://github.com/fgnt/meeteval) ![stars](https://img.shields.io/github/stars/fgnt/meeteval.svg?cacheSeconds=86400) - Meeting transcription evaluation toolkit covering cpWER, ORC WER, MIMO WER, time-constrained variants, and DER wrappers.
 - [pyannote.metrics](https://github.com/pyannote/pyannote-metrics) ![stars](https://img.shields.io/github/stars/pyannote/pyannote-metrics.svg?cacheSeconds=86400) - Toolkit for reproducible evaluation, diagnostics, and error analysis of speaker diarization systems across detection, segmentation, and diarization tasks.
-- [DIHARD Challenge](https://dihardchallenge.github.io/) - Canonical hard-domain speaker diarization benchmark series with multi-domain audio, standardized scoring, and shared-task leaderboards.
+- [DIHARD Challenge](https://dihardchallenge.github.io/dihard3/) - Canonical hard-domain speaker diarization benchmark series with multi-domain audio, standardized scoring, and shared-task leaderboards.
 - [VocalBench](https://github.com/SJTU-OmniAgent/VocalBench) ![stars](https://img.shields.io/github/stars/SJTU-OmniAgent/VocalBench.svg?cacheSeconds=86400) - Benchmark for vocal conversational abilities covering semantics, acoustics, chat quality, robustness, and latency.
 - [MMSU](https://huggingface.co/datasets/ddwang2000/MMSU) - Multitask spoken language understanding and reasoning benchmark with 47 tasks across 17 speech datasets, covering instruction following, knowledge, reasoning, safety, and emotion recognition.
 - [VoiceBench](https://github.com/MatthewCYM/VoiceBench) ![stars](https://img.shields.io/github/stars/MatthewCYM/VoiceBench.svg?cacheSeconds=86400) - Comprehensive benchmark for evaluating LLM-based voice assistants.
@@ -433,7 +433,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 ### Speech LLM > End-to-End Speech Models
 
 - [Mini-Omni2](https://github.com/gpt-omni/mini-omni2) ![stars](https://img.shields.io/github/stars/gpt-omni/mini-omni2.svg?cacheSeconds=86400) - Omni-interactive model with end-to-end voice conversations, real-time speech output, and interruption-aware duplex interaction.
-- [Fun-Audio-Chat](https://github.com/FunAudioLLM/Fun-Audio-Chat) ![stars](https://img.shields.io/github/stars/FunAudioLLM/Fun-Audio-Chat.svg?cacheSeconds=86400) - Large audio language model for natural low-latency voice interaction, speech function calling, audio understanding, and spoken QA.
+- [Fun-Audio-Chat](https://github.com/QwenAudio/Fun-Audio-Chat) ![stars](https://img.shields.io/github/stars/QwenAudio/Fun-Audio-Chat.svg?cacheSeconds=86400) - Large audio language model for natural low-latency voice interaction, speech function calling, audio understanding, and spoken QA.
 - [Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni) ![stars](https://img.shields.io/github/stars/QwenLM/Qwen2.5-Omni.svg?cacheSeconds=86400) - End-to-end multimodal model with real-time streaming speech generation.
 - [Baichuan-Audio](https://github.com/baichuan-inc/Baichuan-Audio) ![stars](https://img.shields.io/github/stars/baichuan-inc/Baichuan-Audio.svg?cacheSeconds=86400) - End-to-end speech interaction framework (audio understanding + generation).
 - [LLaMA-Omni](https://github.com/ictnlp/LLaMA-Omni) ![stars](https://img.shields.io/github/stars/ictnlp/LLaMA-Omni.svg?cacheSeconds=86400) - Low-latency end-to-end speech interaction model built on Llama-3.1.
@@ -444,7 +444,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - [LLaSO](https://github.com/EIT-NLP/LLaSO) ![stars](https://img.shields.io/github/stars/EIT-NLP/LLaSO.svg?cacheSeconds=86400) - Reproducible research stack (data + benchmarks + reference models) for SpeechLM.
 - [Freeze-Omni](https://github.com/VITA-MLLM/Freeze-Omni) ![stars](https://img.shields.io/github/stars/VITA-MLLM/Freeze-Omni.svg?cacheSeconds=86400) - Low-latency speech-to-speech dialogue with frozen LLM.
 - [MooER](https://github.com/MooreThreads/MooER) ![stars](https://img.shields.io/github/stars/MooreThreads/MooER.svg?cacheSeconds=86400) - LLM-based ASR/AST with small-data pseudo-label training.
-- [ESPnet-SpeechLM](https://github.com/espnet/espnet/tree/master/egs2/speechlm) - ESPnet official SpeechLM toolkit.
+- [ESPnet-SpeechLM](https://github.com/espnet/espnet/tree/master/egs2/TEMPLATE/speechlm1) - ESPnet official SpeechLM toolkit.
 - [TADA](https://github.com/humeai/tada) ![stars](https://img.shields.io/github/stars/humeai/tada.svg?cacheSeconds=86400) - Hume AI TTS with Text-Acoustic Dual Alignment (real-time factor 0.09).
 - [speech-to-speech](https://github.com/huggingface/speech-to-speech) ![stars](https://img.shields.io/github/stars/huggingface/speech-to-speech.svg?cacheSeconds=86400) - Hugging Face end-to-end speech dialogue pipeline (STT+LLM+TTS).
 - [Voice Agent With NVIDIA Open Models](https://github.com/pipecat-ai/nemotron-january-2026) - Sample voice agent using Nemotron Speech ASR + Nemotron 3 Nano LLM + Magpie TTS (reference implementation).
@@ -517,7 +517,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - **VoxpopuliTTS: a large-scale multilingual TTS corpus for zero-shot speech generation** (2025), Liu et al. [pdf](https://aclanthology.org/2025.coling-main.685.pdf) - 30K-hour multilingual TTS corpus refined from VoxPopuli for zero-shot speech generation and related synthesis tasks.
 - **Fast F5-TTS / EPSS** (2025), [pdf](https://arxiv.org/pdf/2505.19931) - Training-free acceleration for Flow-Matching TTS via step pruning.
 - **DiTTo-TTS** (2025), ICLR, [pdf](https://proceedings.iclr.cc/paper_files/paper/2025/file/80e77d9ed2f74dcaf1a42cb1a2593559-Paper-Conference.pdf) - DiT-based TTS scalable to large data without phoneme/duration dependencies.
-- **CosyVoice 2** (2024), Du et al. [pdf](https://arxiv.org/abs/2412.10117) [code](https://github.com/FunAudioLLM/CosyVoice) - Scalable streaming/non-streaming LLM-based TTS with low latency.
+- **CosyVoice 2** (2024), Du et al. [pdf](https://arxiv.org/abs/2412.10117) [code](https://github.com/QwenAudio/CosyVoice) - Scalable streaming/non-streaming LLM-based TTS with low latency.
 - **VALL-E 2** (2024), Chen et al. [pdf](https://arxiv.org/abs/2406.05370) - Neural codec language model for zero-shot TTS reaching human parity.
 - **ARDiT-TTS** (2024), Liu et al. [pdf](https://arxiv.org/html/2406.05551v1) - Autoregressive diffusion Transformer for low-latency TTS.
 - **Parler-TTS** (2024), Lyth et al. [pdf](https://arxiv.org/abs/2402.01912) [code](https://github.com/huggingface/parler-tts) - High-fidelity TTS with natural language prompting.

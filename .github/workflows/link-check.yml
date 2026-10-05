@@ -9,7 +9,7 @@ on:
 jobs:
   check-links:
     runs-on: ubuntu-latest
-    # Never block other workflows; link failures are advisory only
+    # Never block other workflows; a red run flags broken links for maintainers
     continue-on-error: true
 
     steps:
@@ -23,16 +23,18 @@ jobs:
             --no-progress
             --exclude-mail
             --max-retries 3
-            --max-connections 4
+            --max-concurrency 4
             --timeout 30
             --accept 200,204,301,302,403,429
             --exclude-path node_modules
+            --exclude '^https?://(shields\.io|img\.shields\.io|arxiv\.org|doi\.org|scholar\.google\.com|ieeexplore\.ieee\.org|openreview\.net)'
             "**/*.md"
-          # Ignore hosts that rate-limit or block automated crawlers
-          # shields.io returns 403 to CI, arxiv.org rate-limits aggressively
-          LYCHEE_EXCLUDE: "^(https?://(shields\\.io|img\\.shields\\.io|arxiv\\.org|doi\\.org|scholar\\.google\\.com|ieeexplore\\.ieee\\.org|openreview\\.net))"
+          # Excluded hosts rate-limit or block automated crawlers
+          # (shields.io returns 403 to CI, arxiv.org rate-limits aggressively)
           lycheeVersion: "v0.18.1"
-          fail: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Report broken links as a failed (red) run; continue-on-error keeps it non-blocking
+          fail: true
 
       - name: Upload link report
         if: always()
