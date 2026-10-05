@@ -60,6 +60,11 @@ const zhToCanonical = new Map([
   ['Papers > 音频增强', 'Papers > Audio Enhancement'],
   ['Papers > 语音大模型', 'Papers > Speech LLM'],
   ['Papers > 综述', 'Papers > Surveys'],
+  ['TTS > 声码器', 'TTS > Vocoders'],
+  ['TTS > 文本前端（G2P/文本归一化）', 'TTS > Text Frontend (G2P / Text Normalization)'],
+  ['ASR > 唤醒词/关键词检测', 'ASR > Wake Word / Keyword Spotting'],
+  ['ASR > 说话人验证/识别', 'ASR > Speaker Verification / Recognition'],
+  ['ASR > 强制对齐', 'ASR > Forced Alignment'],
   ['贡献指南', 'Contributing'],
 ]);
 
