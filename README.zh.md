@@ -25,14 +25,14 @@
 
 - [ESPnet](https://github.com/espnet/espnet) ![stars](https://img.shields.io/github/stars/espnet/espnet.svg?cacheSeconds=86400) - 端到端语音处理工具箱（ASR/TTS/翻译/增强）。
 - [FunASR](https://github.com/modelscope/FunASR) ![stars](https://img.shields.io/github/stars/modelscope/FunASR.svg?cacheSeconds=86400) - 端到端语音工具箱，覆盖 ASR、VAD、标点恢复、说话人分离与部署流程。
-- [NVIDIA NeMo](https://github.com/NVIDIA-NeMo/NeMo) ![stars](https://img.shields.io/github/stars/NVIDIA-NeMo/NeMo.svg?cacheSeconds=86400) - NVIDIA Speech AI 框架（训练+部署：ASR/TTS/说话人等）。
+- [NVIDIA NeMo](https://github.com/NVIDIA-NeMo/Speech) ![stars](https://img.shields.io/github/stars/NVIDIA-NeMo/Speech.svg?cacheSeconds=86400) - NVIDIA Speech AI 框架（训练+部署：ASR/TTS/说话人等）。
 - [SpeechBrain](https://github.com/speechbrain/speechbrain) ![stars](https://img.shields.io/github/stars/speechbrain/speechbrain.svg?cacheSeconds=86400) - 基于 PyTorch 的语音工具箱（ASR/说话人/增强/分离等）。
 - [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech) ![stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleSpeech.svg?cacheSeconds=86400) - 语音工具箱，覆盖 ASR/TTS/说话人/KWS，提供 recipes 与部署工具。
 
 ### 自监督预训练
 
 - [S3PRL](https://github.com/s3prl/s3prl) ![stars](https://img.shields.io/github/stars/s3prl/s3prl.svg?cacheSeconds=86400) - 自监督语音预训练与表征学习工具链。
-- [fairseq](https://github.com/facebookresearch/fairseq) ![stars](https://img.shields.io/github/stars/facebookresearch/fairseq.svg?cacheSeconds=86400) - 序列建模工具箱，包含常用语音 SSL 实现（如 wav2vec 2.0 / HuBERT）。
+- [fairseq](https://github.com/facebookresearch/fairseq) ![stars](https://img.shields.io/github/stars/facebookresearch/fairseq.svg?cacheSeconds=86400) - 序列建模工具箱，包含常用语音 SSL 实现（如 wav2vec 2.0 / HuBERT）（已归档）。
 - [UniSpeech](https://github.com/microsoft/UniSpeech) ![stars](https://img.shields.io/github/stars/microsoft/UniSpeech.svg?cacheSeconds=86400) - Microsoft 语音 SSL 研究代码库（UniSpeech / UniSpeech-SAT）。
 - [WavLM（UniLM 仓库内）](https://github.com/microsoft/unilm/tree/master/wavlm) ![stars](https://img.shields.io/github/stars/microsoft/unilm.svg?cacheSeconds=86400) - WavLM 相关代码与资源（位于 UniLM 仓库）。
 
@@ -46,7 +46,7 @@
 - [StyleTTS 2](https://github.com/yl4579/StyleTTS2) ![stars](https://img.shields.io/github/stars/yl4579/StyleTTS2.svg?cacheSeconds=86400) - 基于 style diffusion + adversarial training 的 TTS 实现。
 - [Tortoise-TTS](https://github.com/neonbjb/tortoise-tts) ![stars](https://img.shields.io/github/stars/neonbjb/tortoise-tts.svg?cacheSeconds=86400) - 多说话人 TTS 参考实现（推理速度相对较慢）。
 - [Amphion](https://github.com/open-mmlab/Amphion) ![stars](https://img.shields.io/github/stars/open-mmlab/Amphion.svg?cacheSeconds=86400) - 音频/音乐/语音生成工具箱，含多种 TTS 配方和模型。
-- [CosyVoice](https://github.com/FunAudioLLM/CosyVoice) ![stars](https://img.shields.io/github/stars/FunAudioLLM/CosyVoice.svg?cacheSeconds=86400) - 基于 LLM 的多语言/流式 TTS 全栈（训练/推理/部署）。
+- [CosyVoice](https://github.com/QwenAudio/CosyVoice) ![stars](https://img.shields.io/github/stars/QwenAudio/CosyVoice.svg?cacheSeconds=86400) - 基于 LLM 的多语言/流式 TTS 全栈（训练/推理/部署）。
 - [Parler-TTS](https://github.com/huggingface/parler-tts) ![stars](https://img.shields.io/github/stars/huggingface/parler-tts.svg?cacheSeconds=86400) - 自然语言提示控制的 TTS 实现。
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS) ![stars](https://img.shields.io/github/stars/myshell-ai/MeloTTS.svg?cacheSeconds=86400) - 多语言 TTS 库。
 - [Fish Speech](https://github.com/fishaudio/fish-speech) ![stars](https://img.shields.io/github/stars/fishaudio/fish-speech.svg?cacheSeconds=86400) - 多语言/表现力 TTS。
@@ -60,7 +60,7 @@
 ### TTS > 零样本/少样本
 
 - [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) ![stars](https://img.shields.io/github/stars/QwenLM/Qwen3-TTS.svg?cacheSeconds=86400) - 开源 TTS 模型，支持语音克隆与流式/推理工具链.
-- [VALL-E X](https://github.com/Plachtaa/VALL-E-X) ![stars](https://img.shields.io/github/stars/Plachtaa/VALL-E-X.svg?cacheSeconds=86400) - 零样本 TTS 复现（非官方），支持跨语言语音克隆.
+- [VALL-E X](https://github.com/Plachtaa/VALL-E-X) ![stars](https://img.shields.io/github/stars/Plachtaa/VALL-E-X.svg?cacheSeconds=86400) - 零样本 TTS 复现（非官方），支持跨语言语音克隆（已归档）。
 - [Zonos](https://github.com/Zyphra/Zonos) ![stars](https://img.shields.io/github/stars/Zyphra/Zonos.svg?cacheSeconds=86400) - 开源多语言 TTS，表现力强。
 - [Index-TTS](https://github.com/index-tts/index-tts) ![stars](https://img.shields.io/github/stars/index-tts/index-tts.svg?cacheSeconds=86400) - 工业级可控零样本 TTS。
 - [VoxCPM](https://github.com/OpenBMB/VoxCPM) ![stars](https://img.shields.io/github/stars/OpenBMB/VoxCPM.svg?cacheSeconds=86400) - 无 tokenizer TTS：连续空间建模，5 秒语音克隆.
@@ -88,11 +88,11 @@
 - [parler-tts-fastapi](https://github.com/parisneo/parler-tts-fastapi) ![stars](https://img.shields.io/github/stars/parisneo/parler-tts-fastapi.svg?cacheSeconds=86400) - Parler-TTS 的 FastAPI 服务（含流式响应）。
 - [Qwen3-TTS OpenAI FastAPI](https://github.com/groxaxo/Qwen3-TTS-Openai-Fastapi) ![stars](https://img.shields.io/github/stars/groxaxo/Qwen3-TTS-Openai-Fastapi.svg?cacheSeconds=86400) - Qwen3-TTS 的 OpenAI 兼容接口服务端（FastAPI）。
 - [faster-qwen3-tts](https://github.com/andimarafioti/faster-qwen3-tts) ![stars](https://img.shields.io/github/stars/andimarafioti/faster-qwen3-tts.svg?cacheSeconds=86400) - Qwen3-TTS 的实时推理加速实现（CUDA Graph，MIT）。
-- [Wyoming Piper](https://github.com/rhasspy/wyoming-piper) ![stars](https://img.shields.io/github/stars/rhasspy/wyoming-piper.svg?cacheSeconds=86400) - Piper 的 Wyoming 协议服务端（Home Assistant 集成）。
+- [Wyoming Piper](https://github.com/OHF-Voice/wyoming-piper) ![stars](https://img.shields.io/github/stars/OHF-Voice/wyoming-piper.svg?cacheSeconds=86400) - Piper 的 Wyoming 协议服务端（Home Assistant 集成）。
 - [TTS-WebUI](https://github.com/rsxdalv/TTS-WebUI) ![stars](https://img.shields.io/github/stars/rsxdalv/TTS-WebUI.svg?cacheSeconds=86400) - 单一 WebUI 聚合多种 TTS/VC/Audio 模型（扩展式）。
 - [Mimic 3](https://github.com/MycroftAI/mimic3) ![stars](https://img.shields.io/github/stars/MycroftAI/mimic3.svg?cacheSeconds=86400) - Mycroft 生态的本地神经 TTS 引擎（端侧/离线部署友好）。
 - [Piper (维护版)](https://github.com/OHF-Voice/piper1-gpl) ![stars](https://img.shields.io/github/stars/OHF-Voice/piper1-gpl.svg?cacheSeconds=86400) - 快速本地 TTS 引擎。
-- [VibeVoice](https://github.com/vibevoice-community/VibeVoice) ![stars](https://img.shields.io/github/stars/vibevoice-community/VibeVoice.svg?cacheSeconds=86400) - 长对话 TTS，支持 90 分钟对话与 4 个说话人.
+- [VibeVoice](https://github.com/microsoft/VibeVoice) ![stars](https://img.shields.io/github/stars/microsoft/VibeVoice.svg?cacheSeconds=86400) - 长对话 TTS，支持 90 分钟对话与 4 个说话人.
 - [Parler-tts-streaming (SSE)](https://github.com/inferless/Parler-tts-streaming) ![stars](https://img.shields.io/github/stars/inferless/Parler-tts-streaming.svg?cacheSeconds=86400) - Parler-TTS 的 SSE 流式音频输出示例。
 - [Home Assistant Piper Add-on](https://github.com/home-assistant/addons/tree/master/piper) ![stars](https://img.shields.io/github/stars/home-assistant/addons.svg?cacheSeconds=86400) - Home Assistant 官方 Piper 插件。
 - [StyleTTS-WebUI](https://github.com/JarodMica/StyleTTS-WebUI) ![stars](https://img.shields.io/github/stars/JarodMica/StyleTTS-WebUI.svg?cacheSeconds=86400) - StyleTTS2 的 WebUI 封装。
@@ -104,7 +104,7 @@
 
 - [Whisper](https://github.com/openai/whisper) ![stars](https://img.shields.io/github/stars/openai/whisper.svg?cacheSeconds=86400) - 通用 ASR 基础模型，支持多语言和翻译能力.
 - [Canary-1B-v2](https://huggingface.co/nvidia/canary-1b-v2) - NVIDIA 官方多语言 ASR + 语音翻译基础模型，支持词级时间戳与语言识别。
-- [SenseVoice](https://github.com/FunAudioLLM/SenseVoice) ![stars](https://img.shields.io/github/stars/FunAudioLLM/SenseVoice.svg?cacheSeconds=86400) - 语音基础模型，支持多语言 ASR、语种识别、情感识别与音频事件检测，并强调低延迟推理。
+- [SenseVoice](https://github.com/QwenAudio/SenseVoice) ![stars](https://img.shields.io/github/stars/QwenAudio/SenseVoice.svg?cacheSeconds=86400) - 语音基础模型，支持多语言 ASR、语种识别、情感识别与音频事件检测，并强调低延迟推理。
 - [Kaldi](https://github.com/kaldi-asr/kaldi) ![stars](https://img.shields.io/github/stars/kaldi-asr/kaldi.svg?cacheSeconds=86400) - 经典 ASR 工具箱，学术/工业生态丰富.
 - [WeNet](https://github.com/wenet-e2e/wenet) ![stars](https://img.shields.io/github/stars/wenet-e2e/wenet.svg?cacheSeconds=86400) - 面向生产的端到端 ASR 工具箱，覆盖流式/非流式配方.
 - [Vosk](https://github.com/alphacep/vosk-api) ![stars](https://img.shields.io/github/stars/alphacep/vosk-api.svg?cacheSeconds=86400) - 离线 ASR API，多语言，小模型，支持流式.
@@ -125,10 +125,10 @@
 ### ASR > 端侧优化
 
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) ![stars](https://img.shields.io/github/stars/ggml-org/whisper.cpp.svg?cacheSeconds=86400) - C/C++ 端侧 Whisper 推理，CPU/Metal 支持，含实时麦克风示例.
-- [WhisperKit](https://github.com/argmaxinc/WhisperKit) ![stars](https://img.shields.io/github/stars/argmaxinc/WhisperKit.svg?cacheSeconds=86400) - 面向 Apple Silicon 的端侧语音 AI 工具栈，提供 WhisperKit 转写、本地流式推理与基于 CoreML 的部署能力。
+- [WhisperKit](https://github.com/argmaxinc/argmax-oss-swift) ![stars](https://img.shields.io/github/stars/argmaxinc/argmax-oss-swift.svg?cacheSeconds=86400) - 面向 Apple Silicon 的端侧语音 AI 工具栈，提供 WhisperKit 转写、本地流式推理与基于 CoreML 的部署能力。
 - [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) ![stars](https://img.shields.io/github/stars/k2-fsa/sherpa-onnx.svg?cacheSeconds=86400) - 端侧/离线/流式 ASR+TTS+VAD+增强一体化（ONNX，无需联网）。
 - [sherpa-ncnn](https://github.com/k2-fsa/sherpa-ncnn) ![stars](https://img.shields.io/github/stars/k2-fsa/sherpa-ncnn.svg?cacheSeconds=86400) - 端侧实时 ASR + VAD + TTS（ncnn，移动端友好，无需联网）。
-- [Moonshine](https://github.com/usefulsensors/moonshine) ![stars](https://img.shields.io/github/stars/usefulsensors/moonshine.svg?cacheSeconds=86400) - 面向端侧设备优化的 ASR 模型与工具.
+- [Moonshine](https://github.com/moonshine-ai/moonshine) ![stars](https://img.shields.io/github/stars/moonshine-ai/moonshine.svg?cacheSeconds=86400) - 面向端侧设备优化的 ASR 模型与工具.
 
 ### ASR > 多语言
 
@@ -152,8 +152,8 @@
 - [pyannote-audio](https://github.com/pyannote/pyannote-audio) ![stars](https://img.shields.io/github/stars/pyannote/pyannote-audio.svg?cacheSeconds=86400) - 说话人分离/变更/重叠检测工具箱，生态成熟.
 - [diart](https://github.com/juanmc2005/diart) ![stars](https://img.shields.io/github/stars/juanmc2005/diart.svg?cacheSeconds=86400) - 面向流式和低延迟音频应用的实时说话人分离工具包。
 - [simple_diarizer](https://github.com/cvqluu/simple_diarizer) ![stars](https://img.shields.io/github/stars/cvqluu/simple_diarizer.svg?cacheSeconds=86400) - 使用预训练 VAD 与说话人表示模型的极简说话人分离 pipeline，可快速把音频文件转成 diarized segments。
-- [diarize](https://github.com/FoxNoseTech/diarize) ![stars](https://img.shields.io/github/stars/FoxNoseTech/diarize.svg?cacheSeconds=86400) - CPU-only 说话人分离（who spoke when），ONNX 推理。
-- [3D-Speaker / CAM++](https://github.com/alibaba-damo-academy/3D-Speaker) ![stars](https://img.shields.io/github/stars/alibaba-damo-academy/3D-Speaker.svg?cacheSeconds=86400) - 阿里 DAMO 大规模说话人验证数据集与基准模型（CAM++、ERes2Net），覆盖多设备多距离场景。
+- [diarize](https://github.com/notch-up/diarize) ![stars](https://img.shields.io/github/stars/notch-up/diarize.svg?cacheSeconds=86400) - CPU-only 说话人分离（who spoke when），ONNX 推理。
+- [3D-Speaker / CAM++](https://github.com/modelscope/3D-Speaker) ![stars](https://img.shields.io/github/stars/modelscope/3D-Speaker.svg?cacheSeconds=86400) - 阿里 DAMO 大规模说话人验证数据集与基准模型（CAM++、ERes2Net），覆盖多设备多距离场景。
 
 ### ASR > 服务端/部署工具
 
@@ -202,8 +202,8 @@
 - [RVC WebUI](https://github.com/rvc-project/retrieval-based-voice-conversion-webui) ![stars](https://img.shields.io/github/stars/rvc-project/retrieval-based-voice-conversion-webui.svg?cacheSeconds=86400) - 基于检索的语音转换：训练 + 实时变声/歌声转换 WebUI.
 - [DDSP-SVC](https://github.com/yxlllc/DDSP-SVC) ![stars](https://img.shields.io/github/stars/yxlllc/DDSP-SVC.svg?cacheSeconds=86400) - 基于 DDSP 的端到端实时歌声转换系统，强调较低硬件成本。
 - [NeuCoSVC](https://github.com/thuhcsi/NeuCoSVC) ![stars](https://img.shields.io/github/stars/thuhcsi/NeuCoSVC.svg?cacheSeconds=86400) - 官方 any-to-any 歌声转换系统，结合 neural concatenative 建模与基于 WavLM 的特征匹配。
-- [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) ![stars](https://img.shields.io/github/stars/svc-develop-team/so-vits-svc.svg?cacheSeconds=86400) - 歌声转换 SVC（SoftVC VITS），1分钟语音训练，零样本5秒推理。
-- [Seed-VC](https://github.com/Plachtaa/seed-vc) ![stars](https://img.shields.io/github/stars/Plachtaa/seed-vc.svg?cacheSeconds=86400) - 零样本语音转换与歌声转换，支持实时.
+- [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) ![stars](https://img.shields.io/github/stars/svc-develop-team/so-vits-svc.svg?cacheSeconds=86400) - 歌声转换 SVC（SoftVC VITS），1分钟语音训练，零样本5秒推理（已归档）。
+- [Seed-VC](https://github.com/Plachtaa/seed-vc) ![stars](https://img.shields.io/github/stars/Plachtaa/seed-vc.svg?cacheSeconds=86400) - 零样本语音转换与歌声转换，支持实时（已归档）。
 - [SoulX-Singer-SVC](https://github.com/Soul-AILab/SoulX-Singer) ![stars](https://img.shields.io/github/stars/Soul-AILab/SoulX-Singer.svg?cacheSeconds=86400) - 零样本歌声转换模型，支持多语言音色/风格迁移与免转录 audio-to-audio 推理。
 
 ## 音频增强
@@ -253,7 +253,7 @@
 - [aec-rs](https://github.com/thewh1teagle/aec) ![stars](https://img.shields.io/github/stars/thewh1teagle/aec.svg?cacheSeconds=86400) - 基于 speexdsp 的 Rust AEC 库。
 - [webrtcaec3.js](https://github.com/ennuicastr/webrtcaec3.js) ![stars](https://img.shields.io/github/stars/ennuicastr/webrtcaec3.js.svg?cacheSeconds=86400) - WebRTC AEC3 的 WebAssembly/JavaScript 移植。
 - [aec3-rs](https://github.com/RubyBit/aec3-rs) ![stars](https://img.shields.io/github/stars/RubyBit/aec3-rs.svg?cacheSeconds=86400) - WebRTC AEC3 的 Rust 移植。
-- [DTLN-aec](https://github.com/shiguredo/dtln-aec) ![stars](https://img.shields.io/github/stars/shiguredo/dtln-aec.svg?cacheSeconds=86400) - 基于深度学习的 AEC（浏览器端用例）。
+- [DTLN-aec](https://github.com/shiguredo/dtln-aec) ![stars](https://img.shields.io/github/stars/shiguredo/dtln-aec.svg?cacheSeconds=86400) - 基于深度学习的 AEC（浏览器端用例）（已归档）。
 - [NKF-AEC](https://github.com/fjiang9/NKF-AEC) ![stars](https://img.shields.io/github/stars/fjiang9/NKF-AEC.svg?cacheSeconds=86400) - 官方低复杂度神经 Kalman filtering 声学回声消除实现，提供预训练推理代码。
 
 ### 音频增强 > 去混响 (Dereverb)
@@ -278,7 +278,7 @@
 
 - [EnCodec](https://github.com/facebookresearch/encodec) ![stars](https://img.shields.io/github/stars/facebookresearch/encodec.svg?cacheSeconds=86400) - Meta 开源的高保真神经音频编解码器，支持 24 kHz 单声道与 48 kHz 立体声压缩（基于 RVQ）。
 - [Descript Audio Codec (DAC)](https://github.com/descriptinc/descript-audio-codec) ![stars](https://img.shields.io/github/stars/descriptinc/descript-audio-codec.svg?cacheSeconds=86400) - 高保真神经音频编解码器，支持 44.1/24/16 kHz 单声道与立体声，压缩倍率达 90 倍。
-- [SpeechTokenizer](https://github.com/zhangxinbo1993/SpeechTokenizer) ![stars](https://img.shields.io/github/stars/zhangxinbo1993/SpeechTokenizer.svg?cacheSeconds=86400) - 统一语音 tokenizer（ICLR 2024），通过残差向量量化桥接语义与声学表征。
+- [SpeechTokenizer](https://github.com/ZhangXInFD/SpeechTokenizer) ![stars](https://img.shields.io/github/stars/ZhangXInFD/SpeechTokenizer.svg?cacheSeconds=86400) - 统一语音 tokenizer（ICLR 2024），通过残差向量量化桥接语义与声学表征。
 - [SAC](https://github.com/Soul-AILab/SAC) ![stars](https://img.shields.io/github/stars/Soul-AILab/SAC.svg?cacheSeconds=86400) - 语义-声学双流神经语音编解码器，公开训练与推理资源，用于不同码率下的离散语音表征。
 - [SiTok](https://github.com/HeCheng0625/Diffusion-Speech-Tokenizer) ![stars](https://img.shields.io/github/stars/HeCheng0625/Diffusion-Speech-Tokenizer.svg?cacheSeconds=86400) - 基于扩散自编码器的语音 tokenizer，学习富语义表征并提供开放实现。
 
@@ -303,14 +303,14 @@
 
 - [DiffSinger](https://github.com/openvpi/DiffSinger) ![stars](https://img.shields.io/github/stars/openvpi/DiffSinger.svg?cacheSeconds=86400) - 高保真可控 SVS 系统，浅层扩散机制。
 - [NNSVS](https://github.com/nnsvs/nnsvs) ![stars](https://img.shields.io/github/stars/nnsvs/nnsvs.svg?cacheSeconds=86400) - 研究向歌声合成工具箱，含完整 recipes，可自建 voicebank.
-- [OpenUtau](https://github.com/stakira/OpenUtau) ![stars](https://img.shields.io/github/stars/stakira/OpenUtau.svg?cacheSeconds=86400) - 开源 UTAU 编辑器/歌声合成平台（跨平台 GUI），支持 DiffSinger 集成.
+- [OpenUtau](https://github.com/openutau/OpenUtau) ![stars](https://img.shields.io/github/stars/openutau/OpenUtau.svg?cacheSeconds=86400) - 开源 UTAU 编辑器/歌声合成平台（跨平台 GUI），支持 DiffSinger 集成.
 - [Sinsy](https://github.com/r9y9/sinsy) ![stars](https://img.shields.io/github/stars/r9y9/sinsy.svg?cacheSeconds=86400) - 经典 HMM/DNN 歌声合成系统（Sinsy 系）。
 - [TuneLab](https://github.com/LiuYunPlayer/TuneLab) ![stars](https://img.shields.io/github/stars/LiuYunPlayer/TuneLab.svg?cacheSeconds=86400) - 歌声合成/调音编辑器（工程软件工具）。
 - [utaformatix3](https://github.com/sdercolin/utaformatix3) ![stars](https://img.shields.io/github/stars/sdercolin/utaformatix3.svg?cacheSeconds=86400) - 多歌声合成软件工程文件格式互转。
 
 ### 音频工程 > 可视化与数据分析
 
-- [librosa](https://github.com/bmcfee/librosa) ![stars](https://img.shields.io/github/stars/bmcfee/librosa.svg?cacheSeconds=86400) - 音频/音乐分析库（特征提取/可视化/工具集）。
+- [librosa](https://github.com/librosa/librosa) ![stars](https://img.shields.io/github/stars/librosa/librosa.svg?cacheSeconds=86400) - 音频/音乐分析库（特征提取/可视化/工具集）。
 - [openSMILE](https://github.com/audeering/opensmile) ![stars](https://img.shields.io/github/stars/audeering/opensmile.svg?cacheSeconds=86400) - 面向离线与实时处理的开源语音/音频特征提取与分析工具箱，适用于副语言分析与机器学习流程。
 - [Praat](https://github.com/praat/praat) ![stars](https://img.shields.io/github/stars/praat/praat.svg?cacheSeconds=86400) - 语音学“做语音分析的工具箱”，支持语音分析/标注/可视化。
 - [Parselmouth](https://github.com/YannickJadoul/Parselmouth) ![stars](https://img.shields.io/github/stars/YannickJadoul/Parselmouth.svg?cacheSeconds=86400) - Praat 的 Python 接口：以 Pythonic 方式调用 Praat 语音分析算法。
@@ -319,7 +319,7 @@
 ### 音频工程 > 数据增强
 
 - [audiomentations](https://github.com/iver56/audiomentations) ![stars](https://img.shields.io/github/stars/iver56/audiomentations.svg?cacheSeconds=86400) - Python 音频数据增强库。
-- [torch-audiomentations](https://github.com/asteroid-team/torch-audiomentations) ![stars](https://img.shields.io/github/stars/asteroid-team/torch-audiomentations.svg?cacheSeconds=86400) - PyTorch 音频数据增强库。
+- [torch-audiomentations](https://github.com/iver56/torch-audiomentations) ![stars](https://img.shields.io/github/stars/iver56/torch-audiomentations.svg?cacheSeconds=86400) - PyTorch 音频数据增强库。
 - [AugLy](https://github.com/facebookresearch/AugLy) ![stars](https://img.shields.io/github/stars/facebookresearch/AugLy.svg?cacheSeconds=86400) - Meta 开源的多模态增强库，含专门的音频模块、可组合变换与变换元数据，适合鲁棒性训练与评测。
 - [WavAugment](https://github.com/facebookresearch/WavAugment) ![stars](https://img.shields.io/github/stars/facebookresearch/WavAugment.svg?cacheSeconds=86400) - 已归档的 Meta 时域音频/语音数据增强库，基于 PyTorch 与 libsox。
 
@@ -344,12 +344,12 @@
 
 - [Emilia Dataset](https://huggingface.co/datasets/amphion/Emilia-Dataset) - 大规模多语种语音生成数据集（6种语言，101k+小时），含 Emilia-Pipe 预处理工具.
 - [LibriSpeech](https://www.openslr.org/12) - 英语 ASR 数据集（语音-文本对齐），常用于训练与评测.
-- [Libri-Light](https://www.openslr.org/60) - 大规模未标注英语语音数据集，常用于自监督预训练.
+- [Libri-Light](https://github.com/facebookresearch/libri-light) ![stars](https://img.shields.io/github/stars/facebookresearch/libri-light.svg?cacheSeconds=86400) - 大规模未标注英语语音数据集，常用于自监督预训练（已归档）。
 - [Common Voice](https://github.com/common-voice/common-voice) ![stars](https://img.shields.io/github/stars/common-voice/common-voice.svg?cacheSeconds=86400) - 社区驱动的多语种语音数据集。
 - [FLEURS](https://huggingface.co/datasets/google/fleurs) - 多语种语音数据集（覆盖多语言），常用于 ASR 评测.
 - [Multilingual LibriSpeech (MLS)](https://www.openslr.org/94) - 大规模多语种语音数据集（ASR）。
 - [VCTK Corpus](https://datashare.ed.ac.uk/handle/10283/3443) - 经典英语多说话人语音语料，覆盖 110 位不同口音说话人与约 400 句每人录音，常用于 TTS 与语音克隆。
-- [VoxPopuli](https://github.com/facebookresearch/voxpopuli) ![stars](https://img.shields.io/github/stars/facebookresearch/voxpopuli.svg?cacheSeconds=86400) - 多语种语音语料（欧盟议会录音），常用于 ASR/语音翻译研究.
+- [VoxPopuli](https://github.com/facebookresearch/voxpopuli) ![stars](https://img.shields.io/github/stars/facebookresearch/voxpopuli.svg?cacheSeconds=86400) - 多语种语音语料（欧盟议会录音），常用于 ASR/语音翻译研究（已归档）。
 - [VoxpopuliTTS](https://voxpopulitts.github.io/) - 基于 VoxPopuli 精炼得到的 30K 小时多语种 TTS 语料，适用于零样本语音生成及相关合成任务。
 - [AISHELL-1](https://www.openslr.org/33) - 普通话语音识别数据集.
 - [GigaSpeech](https://github.com/SpeechColab/GigaSpeech) ![stars](https://img.shields.io/github/stars/SpeechColab/GigaSpeech.svg?cacheSeconds=86400) - 大规模英语语音语料，用于 ASR/SLU 研究.
@@ -370,7 +370,7 @@
 - [DNS Challenge](https://github.com/microsoft/DNS-Challenge) - 深度噪声抑制挑战赛数据集，用于语音增强评测.
 - [AEC Challenge](https://github.com/microsoft/AEC-Challenge) ![stars](https://img.shields.io/github/stars/microsoft/AEC-Challenge.svg?cacheSeconds=86400) - 官方声学回声消除挑战数据集，包含来自海量设备、说话人与真实环境的真实与合成录音。
 - [Clarity Enhancement Challenge (CEC)](https://claritychallenge.org/docs/cec3/cec3_intro) - 官方助听器语音增强挑战系列，提供可下载数据集、真实/模拟场景与面向可懂度/音质的评测赛道。
-- [WHAM! / WHAMR!](https://wham.whisper.ai/) - 经典带噪/带混响语音分离数据集，在 WSJ0-2mix 基础上引入真实环境噪声与房间混响。
+- [WHAM! / WHAMR!](http://wham.whisper.ai/) - 经典带噪/带混响语音分离数据集，在 WSJ0-2mix 基础上引入真实环境噪声与房间混响。
 - [VoiceBank + DEMAND (VBD)](https://datashare.ed.ac.uk/handle/10283/2791) - 经典成对干净/带噪数据集，常用于语音增强.
 - [LibriCSS](https://github.com/chenzhuo1011/libri_css) ![stars](https://img.shields.io/github/stars/chenzhuo1011/libri_css.svg?cacheSeconds=86400) - 面向长时重叠远场 LibriSpeech 风格录音的连续语音分离 benchmark 与评测流水线。
 - [RIR-Mega-Speech](https://huggingface.co/datasets/mandipgoswami/rir-mega-speech) - 带逐文件声学元数据的混响语音语料库，适合稳健 ASR 与去混响评测。
@@ -380,7 +380,7 @@
 
 ### 数据集与评测 > 评测基准与指标
 
-- [SUPERB](https://superbbenchmark.org/) - 自监督语音表征评测基准套件，覆盖多任务.
+- [SUPERB](https://superbbenchmark.github.io/) - 自监督语音表征评测基准套件，覆盖多任务.
 - [HEAR Benchmark](https://hearbenchmark.com/) - 音频表征评测基准套件，覆盖多种下游任务.
 - [SpeechEval](https://huggingface.co/datasets/Hui519/SpeechEval) - 大规模多语种可解释语音质量评测基准，覆盖质量评估、成对比较、改进建议与深伪检测。
 - [MCL-MLAAD](https://github.com/xuanxixi/Multilingual-Source-Tracing) ![stars](https://img.shields.io/github/stars/xuanxixi/Multilingual-Source-Tracing.svg?cacheSeconds=86400) - 面向语音深伪源追踪的多语种基准，覆盖 6 种语言下的单语与跨语种评测协议。
@@ -389,13 +389,13 @@
 - [ASVspoof](https://www.asvspoof.org/) - 语音深伪检测与防伪说话人验证领域的经典 anti-spoofing 基准与评测协议，配套官方 baseline 与 scoring package。
 - [TidyVoice 2026 Challenge](https://tidyvoice2026.github.io/) - 基于多语言 TidyVoiceX 数据集的 Interspeech 2026 跨语言说话人验证基准，提供公开评测协议、baseline 与 leaderboard。
 - [UltraEval-Audio](https://github.com/OpenBMB/UltraEval-Audio) ![stars](https://img.shields.io/github/stars/OpenBMB/UltraEval-Audio.svg?cacheSeconds=86400) - 面向语音理解与语音生成模型的统一评测框架，覆盖 34+ 基准任务。
-- [CV3-Eval](https://github.com/FunAudioLLM/CV3-Eval) ![stars](https://img.shields.io/github/stars/FunAudioLLM/CV3-Eval.svg?cacheSeconds=86400) - 面向真实场景零样本语音合成的开源评测基准与工具包，覆盖多语言、跨语言与情感克隆设置。
+- [CV3-Eval](https://github.com/QwenAudio/CV3-Eval) ![stars](https://img.shields.io/github/stars/QwenAudio/CV3-Eval.svg?cacheSeconds=86400) - 面向真实场景零样本语音合成的开源评测基准与工具包，覆盖多语言、跨语言与情感克隆设置。
 - [Open ASR Leaderboard](https://github.com/huggingface/open_asr_leaderboard) ![stars](https://img.shields.io/github/stars/huggingface/open_asr_leaderboard.svg?cacheSeconds=86400) - 可复现 ASR 基准与排行榜，覆盖英语短音频、长音频和多语种赛道，并统一 WER / RTFx 评测。
 - [SCTK](https://github.com/usnistgov/SCTK) ![stars](https://img.shields.io/github/stars/usnistgov/SCTK.svg?cacheSeconds=86400) - NIST 官方评分工具箱，提供 `sclite`、`asclite`、`rover` 等 ASR 假设与参考文本比对评测工具。
 - [JiWER](https://github.com/jitsi/jiwer) ![stars](https://img.shields.io/github/stars/jitsi/jiwer.svg?cacheSeconds=86400) - 轻量级 Python ASR 误差评测工具，覆盖 WER、MER、WIL、WIP 与 CER，并基于快速最小编辑距离计算。
 - [MeetEval](https://github.com/fgnt/meeteval) ![stars](https://img.shields.io/github/stars/fgnt/meeteval.svg?cacheSeconds=86400) - 面向会议转写评测的工具箱，覆盖 cpWER、ORC WER、MIMO WER、时间约束变体与 DER 包装器。
 - [pyannote.metrics](https://github.com/pyannote/pyannote-metrics) ![stars](https://img.shields.io/github/stars/pyannote/pyannote-metrics.svg?cacheSeconds=86400) - 面向说话人分离系统的可复现评测、诊断与误差分析工具箱，覆盖检测、分段与 diarization 等任务。
-- [DIHARD Challenge](https://dihardchallenge.github.io/) - 说话人分离领域的经典 hard-domain benchmark/challenge 系列，覆盖多域音频、标准化评分协议与 shared-task 排行。
+- [DIHARD Challenge](https://dihardchallenge.github.io/dihard3/) - 说话人分离领域的经典 hard-domain benchmark/challenge 系列，覆盖多域音频、标准化评分协议与 shared-task 排行。
 - [VocalBench](https://github.com/SJTU-OmniAgent/VocalBench) ![stars](https://img.shields.io/github/stars/SJTU-OmniAgent/VocalBench.svg?cacheSeconds=86400) - 语音交互模型口语对话能力评测基准，覆盖语义、声学、聊天质量、鲁棒性与延迟。
 - [MMSU](https://huggingface.co/datasets/ddwang2000/MMSU) - 多任务口语理解与推理评测基准，覆盖 17 个语音数据集上的 47 项任务，包含指令跟随、知识理解、推理、安全与情感识别。
 - [VoiceBench](https://github.com/MatthewCYM/VoiceBench) ![stars](https://img.shields.io/github/stars/MatthewCYM/VoiceBench.svg?cacheSeconds=86400) - LLM语音助手综合评测基准.
@@ -433,7 +433,7 @@
 ### 语音大模型 > 端到端语音模型
 
 - [Mini-Omni2](https://github.com/gpt-omni/mini-omni2) ![stars](https://img.shields.io/github/stars/gpt-omni/mini-omni2.svg?cacheSeconds=86400) - 全模态交互模型，支持端到端语音对话、实时语音输出，以及可打断的 duplex 语音交互。
-- [Fun-Audio-Chat](https://github.com/FunAudioLLM/Fun-Audio-Chat) ![stars](https://img.shields.io/github/stars/FunAudioLLM/Fun-Audio-Chat.svg?cacheSeconds=86400) - 面向自然低延迟语音交互的大型音频语言模型，支持语音 function calling、音频理解与口语问答。
+- [Fun-Audio-Chat](https://github.com/QwenAudio/Fun-Audio-Chat) ![stars](https://img.shields.io/github/stars/QwenAudio/Fun-Audio-Chat.svg?cacheSeconds=86400) - 面向自然低延迟语音交互的大型音频语言模型，支持语音 function calling、音频理解与口语问答。
 - [Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni) ![stars](https://img.shields.io/github/stars/QwenLM/Qwen2.5-Omni.svg?cacheSeconds=86400) - 端到端多模态模型，支持实时流式语音生成.
 - [Baichuan-Audio](https://github.com/baichuan-inc/Baichuan-Audio) ![stars](https://img.shields.io/github/stars/baichuan-inc/Baichuan-Audio.svg?cacheSeconds=86400) - 端到端语音交互框架（理解+生成一体）。
 - [LLaMA-Omni](https://github.com/ictnlp/LLaMA-Omni) ![stars](https://img.shields.io/github/stars/ictnlp/LLaMA-Omni.svg?cacheSeconds=86400) - 基于 Llama-3.1 的低延迟端到端语音交互模型。
@@ -444,7 +444,7 @@
 - [LLaSO](https://github.com/EIT-NLP/LLaSO) ![stars](https://img.shields.io/github/stars/EIT-NLP/LLaSO.svg?cacheSeconds=86400) - 可复现实验栈：开放数据+基准+参考模型。
 - [Freeze-Omni](https://github.com/VITA-MLLM/Freeze-Omni) ![stars](https://img.shields.io/github/stars/VITA-MLLM/Freeze-Omni.svg?cacheSeconds=86400) - 冻结 LLM 的低延迟语音对话。
 - [MooER](https://github.com/MooreThreads/MooER) ![stars](https://img.shields.io/github/stars/MooreThreads/MooER.svg?cacheSeconds=86400) - 基于 LLM 的 ASR/AST，小数据伪标签训练.
-- [ESPnet-SpeechLM](https://github.com/espnet/espnet/tree/master/egs2/speechlm) - ESPnet 官方 SpeechLM 工具包。
+- [ESPnet-SpeechLM](https://github.com/espnet/espnet/tree/master/egs2/TEMPLATE/speechlm1) - ESPnet 官方 SpeechLM 工具包。
 - [TADA](https://github.com/humeai/tada) ![stars](https://img.shields.io/github/stars/humeai/tada.svg?cacheSeconds=86400) - Hume AI TTS，Text-Acoustic Dual Alignment（实时系数 0.09）。
 - [speech-to-speech](https://github.com/huggingface/speech-to-speech) ![stars](https://img.shields.io/github/stars/huggingface/speech-to-speech.svg?cacheSeconds=86400) - Hugging Face 端到端语音对话管线（STT+LLM+TTS）。
 - [Voice Agent With NVIDIA Open Models](https://github.com/pipecat-ai/nemotron-january-2026) - 使用 Nemotron Speech ASR + Nemotron 3 Nano LLM + Magpie TTS 的语音 Agent 样例工程（参考实现）。
@@ -517,7 +517,7 @@
 - **VoxpopuliTTS: a large-scale multilingual TTS corpus for zero-shot speech generation** (2025), Liu et al. [pdf](https://aclanthology.org/2025.coling-main.685.pdf) - 基于 VoxPopuli 精炼得到的 30K 小时多语种 TTS 语料，面向零样本语音生成及相关合成任务。
 - **Fast F5-TTS / EPSS** (2025), [pdf](https://arxiv.org/pdf/2505.19931) - 通过步数剪枝实现 Flow-Matching TTS 的无训练加速.
 - **DiTTo-TTS** (2025), ICLR, [pdf](https://proceedings.iclr.cc/paper_files/paper/2025/file/80e77d9ed2f74dcaf1a42cb1a2593559-Paper-Conference.pdf) - 基于 DiT 的 TTS，可扩展到大数据无需音素/时长依赖.
-- **CosyVoice 2** (2024), Du et al. [pdf](https://arxiv.org/abs/2412.10117) [code](https://github.com/FunAudioLLM/CosyVoice) - 可扩展流式/非流式 LLM-TTS（低延迟）。
+- **CosyVoice 2** (2024), Du et al. [pdf](https://arxiv.org/abs/2412.10117) [code](https://github.com/QwenAudio/CosyVoice) - 可扩展流式/非流式 LLM-TTS（低延迟）。
 - **VALL-E 2** (2024), Chen et al. [pdf](https://arxiv.org/abs/2406.05370) - Neural codec LM 零样本 TTS 达到“human parity”。
 - **ARDiT-TTS** (2024), Liu et al. [pdf](https://arxiv.org/html/2406.05551v1) - 自回归扩散 Transformer 的低延迟 TTS.
 - **Parler-TTS** (2024), Lyth et al. [pdf](https://arxiv.org/abs/2402.01912) [code](https://github.com/huggingface/parler-tts) - 自然语言提示控制的高保真 TTS.
