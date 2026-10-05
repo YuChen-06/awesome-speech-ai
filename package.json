@@ -10,6 +10,7 @@
     "lint:awesome": "awesome-lint README.md",
     "check:readme-structure": "node scripts/check-readme-structure.mjs",
     "check:readme-entries": "node scripts/check-readme-entries.mjs",
+    "check:public-boundary": "node scripts/check-public-boundary.mjs",
     "validate": "node scripts/validate-maintenance.mjs"
   },
   "devDependencies": {
