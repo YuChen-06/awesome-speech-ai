@@ -1,0 +1,33 @@
+name: Report a broken or outdated entry
+description: A link is dead, a repo moved or was archived, or a description is wrong.
+title: "[Fix] "
+labels: ["bug"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry name and section
+      placeholder: e.g. librosa in Audio Engineering > I/O & Format Processing
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Problem
+      options:
+        - Link is dead (404 / domain gone)
+        - Repository moved or renamed
+        - Repository archived or unmaintained
+        - Description or category is wrong
+        - English and Chinese README are out of sync
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement URL (if any)
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
