@@ -392,6 +392,16 @@
 - [Lyra](https://github.com/google/lyra) ![stars](https://img.shields.io/github/stars/google/lyra.svg?cacheSeconds=86400) - Google 开源的超低码率实时语音编解码器，适用于实时语音通信与端侧场景。
 - [Opus codec](https://github.com/xiph/opus) ![stars](https://img.shields.io/github/stars/xiph/opus.svg?cacheSeconds=86400) - 低延迟音频编解码器，用于 VoIP/WebRTC 实时传输.
 
+### 音频工程 > 水印与防伪检测
+
+- [AudioSeal](https://github.com/facebookresearch/audioseal) ![stars](https://img.shields.io/github/stars/facebookresearch/audioseal.svg?cacheSeconds=86400) - Meta 开源的 AI 生成语音局部水印方案，可在样本级定位带水印片段（MIT）。
+- [WavMark](https://github.com/wavmark/wavmark) ![stars](https://img.shields.io/github/stars/wavmark/wavmark.svg?cacheSeconds=86400) - 神经网络音频水印工具，可抵抗噪声、MP3 压缩、滤波和变速等攻击（MIT）。
+- [SilentCipher](https://github.com/sony/silentcipher) ![stars](https://img.shields.io/github/stars/sony/silentcipher.svg?cacheSeconds=86400) - Sony 开源的深度音频水印方法，支持 16 kHz 和 44.1 kHz 音频，可通过 PyPI 安装（MIT）。
+- [Perth](https://github.com/resemble-ai/Perth) ![stars](https://img.shields.io/github/stars/resemble-ai/Perth.svg?cacheSeconds=86400) - Resemble AI 开源的音频水印 Python 库与命令行工具，用于嵌入和检测不可感知的水印（MIT）。
+- [AASIST](https://github.com/clovaai/aasist) ![stars](https://img.shields.io/github/stars/clovaai/aasist.svg?cacheSeconds=86400) - 官方实现的频谱-时序图注意力防伪检测模型，常用作 ASVspoof 基线（MIT）。
+- [SSL_Anti-spoofing](https://github.com/TakHemlata/SSL_Anti-spoofing) ![stars](https://img.shields.io/github/stars/TakHemlata/SSL_Anti-spoofing.svg?cacheSeconds=86400) - 以 wav2vec 2.0 为前端、AASIST 为后端并结合数据增强的语音伪造与 deepfake 检测（MIT）。
+- [deepfake-whisper-features](https://github.com/piotrkawa/deepfake-whisper-features) ![stars](https://img.shields.io/github/stars/piotrkawa/deepfake-whisper-features.svg?cacheSeconds=86400) - 利用 Whisper 编码器特征进行音频 deepfake 检测，对应 Interspeech 2023 论文（MIT）。
+
 ## 数据集与评测基准
 
 ### 数据集与评测 > 语音数据集
@@ -706,6 +716,21 @@
 - **SpeechGPT** (2023), Zhang et al. [pdf](https://arxiv.org/abs/2305.11000) [code](https://github.com/0nutation/SpeechGPT) - 跨模态对话能力的 SpeechLM.
 - **AudioLM** (2022), Borsos et al. [pdf](https://arxiv.org/abs/2209.03143) - 音频 token + LM 生成式音频框架（无文本语音生成）。
 - **SpeechT5** (2022), Ao et al. [pdf](https://arxiv.org/abs/2110.07205) [code](https://github.com/microsoft/SpeechT5) - 统一语音/文本多任务预训练.
+
+### Papers > 水印与防伪
+
+- **The Vulnerability of Neural Audio Watermarks under Speech Enhancement** (2026), Zhong et al. [pdf](https://arxiv.org/abs/2609.29040) - 表明加噪后再经语音增强模型处理，可去除 AudioSeal、WavMark、SilentCipher 等六种神经水印。
+- **SPADE: A Multilingual Dataset for Speech Partial Deepfake Detection and Localization** (2026), Tseng et al. [pdf](https://arxiv.org/abs/2609.25197) - SLT 2026 多语言数据集，用于检测并定位部分篡改的语音。
+- **GenTraceBench: A Benchmark for Tracing Audio Deepfakes Across Pre- and Post-training Stages** (2026), Wang et al. [pdf](https://arxiv.org/abs/2609.21738) - ISCSLP 2026 基准，检验 TTS 指纹在 SFT、DPO、GRPO 微调后是否仍可溯源。
+- **CRAW: Codec Robust Audio Watermarking** (2026), Chernin et al. [pdf](https://arxiv.org/abs/2609.03107) [code](https://github.com/DavidC1212/craw) - 面向神经编解码器和降噪处理仍可保留的音频水印方法。
+- **On the Robustness of Audio Deepfake Detection under Audio Watermarking** (2026), Yong et al. [pdf](https://arxiv.org/abs/2608.24159) - 把音频水印作为非对抗扰动，评估其对 deepfake 检测器的影响。
+- **VoxWatermark: A Large-Scale Benchmark for Audio Watermark Detection under Perturbations** (2026), Sedaghati et al. [pdf](https://arxiv.org/abs/2606.15187) - Interspeech 2026 基准，在无盒、黑盒、白盒扰动下比较 10 种水印方法。
+- **Proactive Detection of Voice Cloning with Localized Watermarking** (2024), San Roman et al. [pdf](https://arxiv.org/abs/2401.17264) [code](https://github.com/facebookresearch/audioseal) - ICML 2024 AudioSeal 论文，用局部水印检测语音克隆内容。
+- **SilentCipher: Deep Audio Watermarking** (2024), Singh et al. [pdf](https://arxiv.org/abs/2406.03822) [code](https://github.com/sony/silentcipher) - 无需感知损失即可稳定训练的深度音频水印方法。
+- **WavMark: Watermarking for Audio Generation** (2023), Chen et al. [pdf](https://arxiv.org/abs/2308.12770) [code](https://github.com/wavmark/wavmark) - 面向生成音频标记的神经水印框架。
+- **Improved DeepFake Detection Using Whisper Features** (2023), Kawa et al. [pdf](https://arxiv.org/abs/2306.01428) [code](https://github.com/piotrkawa/deepfake-whisper-features) - Interspeech 2023 论文，使用 Whisper 编码器特征检测音频 deepfake。
+- **Automatic speaker verification spoofing and deepfake detection using wav2vec 2.0 and data augmentation** (2022), Tak et al. [pdf](https://arxiv.org/abs/2202.12233) [code](https://github.com/TakHemlata/SSL_Anti-spoofing) - Odyssey 2022 论文，将 wav2vec 2.0 特征与 AASIST 结合用于防伪检测。
+- **AASIST: Audio Anti-Spoofing using Integrated Spectro-Temporal Graph Attention Networks** (2021), Jung et al. [pdf](https://arxiv.org/abs/2110.01200) [code](https://github.com/clovaai/aasist) - ICASSP 2022 图注意力防伪检测模型。
 
 ### Papers > 综述
 

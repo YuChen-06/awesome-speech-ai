@@ -392,6 +392,16 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - [Lyra](https://github.com/google/lyra) ![stars](https://img.shields.io/github/stars/google/lyra.svg?cacheSeconds=86400) - Google's ultra-low-bitrate speech codec for real-time voice communication and on-device usage.
 - [Opus codec](https://github.com/xiph/opus) ![stars](https://img.shields.io/github/stars/xiph/opus.svg?cacheSeconds=86400) - Low-latency audio codec for VoIP/WebRTC real-time transmission.
 
+### Audio Engineering > Watermarking & Anti-Spoofing
+
+- [AudioSeal](https://github.com/facebookresearch/audioseal) ![stars](https://img.shields.io/github/stars/facebookresearch/audioseal.svg?cacheSeconds=86400) - Meta's localized watermarking for AI-generated speech, detecting watermarked segments at sample level (MIT).
+- [WavMark](https://github.com/wavmark/wavmark) ![stars](https://img.shields.io/github/stars/wavmark/wavmark.svg?cacheSeconds=86400) - Neural audio watermarking tool robust to noise, MP3 compression, filtering, and speed changes (MIT).
+- [SilentCipher](https://github.com/sony/silentcipher) ![stars](https://img.shields.io/github/stars/sony/silentcipher.svg?cacheSeconds=86400) - Sony's deep audio watermarking for 16 kHz and 44.1 kHz audio, installable from PyPI (MIT).
+- [Perth](https://github.com/resemble-ai/Perth) ![stars](https://img.shields.io/github/stars/resemble-ai/Perth.svg?cacheSeconds=86400) - Resemble AI's Python library and CLI for embedding and detecting imperceptible audio watermarks (MIT).
+- [AASIST](https://github.com/clovaai/aasist) ![stars](https://img.shields.io/github/stars/clovaai/aasist.svg?cacheSeconds=86400) - Official spectro-temporal graph attention network for audio anti-spoofing, a common ASVspoof baseline (MIT).
+- [SSL_Anti-spoofing](https://github.com/TakHemlata/SSL_Anti-spoofing) ![stars](https://img.shields.io/github/stars/TakHemlata/SSL_Anti-spoofing.svg?cacheSeconds=86400) - Wav2vec 2.0 front end with AASIST back end and data augmentation for spoofing and deepfake detection (MIT).
+- [deepfake-whisper-features](https://github.com/piotrkawa/deepfake-whisper-features) ![stars](https://img.shields.io/github/stars/piotrkawa/deepfake-whisper-features.svg?cacheSeconds=86400) - Audio deepfake detection using Whisper encoder features, from the Interspeech 2023 paper (MIT).
+
 ## Datasets & Benchmarks
 
 ### Datasets & Benchmarks > Speech Datasets
@@ -706,6 +716,21 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - **SpeechGPT** (2023), Zhang et al. [pdf](https://arxiv.org/abs/2305.11000) [code](https://github.com/0nutation/SpeechGPT) - SpeechLM with cross-modal dialogue capabilities (discrete speech representations + instruction tuning).
 - **AudioLM** (2022), Borsos et al. [pdf](https://arxiv.org/abs/2209.03143) - Audio token + LM generative audio framework (textless speech generation).
 - **SpeechT5** (2022), Ao et al. [pdf](https://arxiv.org/abs/2110.07205) [code](https://github.com/microsoft/SpeechT5) - Unified speech-text multitask pretraining (ASR/TTS/VC/enhancement).
+
+### Papers > Watermarking & Anti-Spoofing
+
+- **The Vulnerability of Neural Audio Watermarks under Speech Enhancement** (2026), Zhong et al. [pdf](https://arxiv.org/abs/2609.29040) - Shows that noise plus speech enhancement models can strip six neural watermarks including AudioSeal, WavMark, and SilentCipher.
+- **SPADE: A Multilingual Dataset for Speech Partial Deepfake Detection and Localization** (2026), Tseng et al. [pdf](https://arxiv.org/abs/2609.25197) - SLT 2026 multilingual dataset for detecting and localizing partially manipulated speech.
+- **GenTraceBench: A Benchmark for Tracing Audio Deepfakes Across Pre- and Post-training Stages** (2026), Wang et al. [pdf](https://arxiv.org/abs/2609.21738) - ISCSLP 2026 benchmark testing whether TTS fingerprints survive SFT, DPO, and GRPO adaptation.
+- **CRAW: Codec Robust Audio Watermarking** (2026), Chernin et al. [pdf](https://arxiv.org/abs/2609.03107) [code](https://github.com/DavidC1212/craw) - Audio watermarking designed to survive neural codecs and denoisers.
+- **On the Robustness of Audio Deepfake Detection under Audio Watermarking** (2026), Yong et al. [pdf](https://arxiv.org/abs/2608.24159) - Evaluates how audio watermarking affects deepfake detectors as a non-adversarial perturbation.
+- **VoxWatermark: A Large-Scale Benchmark for Audio Watermark Detection under Perturbations** (2026), Sedaghati et al. [pdf](https://arxiv.org/abs/2606.15187) - Interspeech 2026 benchmark of 10 watermarking methods under no-box, black-box, and white-box perturbations.
+- **Proactive Detection of Voice Cloning with Localized Watermarking** (2024), San Roman et al. [pdf](https://arxiv.org/abs/2401.17264) [code](https://github.com/facebookresearch/audioseal) - ICML 2024 AudioSeal paper on localized speech watermarking for voice cloning detection.
+- **SilentCipher: Deep Audio Watermarking** (2024), Singh et al. [pdf](https://arxiv.org/abs/2406.03822) [code](https://github.com/sony/silentcipher) - Deep audio watermarking that removes the need for perceptual losses for stable training.
+- **WavMark: Watermarking for Audio Generation** (2023), Chen et al. [pdf](https://arxiv.org/abs/2308.12770) [code](https://github.com/wavmark/wavmark) - Neural watermarking framework for tagging generated audio.
+- **Improved DeepFake Detection Using Whisper Features** (2023), Kawa et al. [pdf](https://arxiv.org/abs/2306.01428) [code](https://github.com/piotrkawa/deepfake-whisper-features) - Interspeech 2023 study using Whisper encoder features for audio deepfake detection.
+- **Automatic speaker verification spoofing and deepfake detection using wav2vec 2.0 and data augmentation** (2022), Tak et al. [pdf](https://arxiv.org/abs/2202.12233) [code](https://github.com/TakHemlata/SSL_Anti-spoofing) - Odyssey 2022 paper combining wav2vec 2.0 features with AASIST for spoofing detection.
+- **AASIST: Audio Anti-Spoofing using Integrated Spectro-Temporal Graph Attention Networks** (2021), Jung et al. [pdf](https://arxiv.org/abs/2110.01200) [code](https://github.com/clovaai/aasist) - ICASSP 2022 graph attention model for unified spoofing detection.
 
 ### Papers > Surveys
 
