@@ -184,6 +184,10 @@
 - [simple_diarizer](https://github.com/cvqluu/simple_diarizer) ![stars](https://img.shields.io/github/stars/cvqluu/simple_diarizer.svg?cacheSeconds=86400) - 使用预训练 VAD 与说话人表示模型的极简说话人分离 pipeline，可快速把音频文件转成 diarized segments。
 - [diarize](https://github.com/notch-up/diarize) ![stars](https://img.shields.io/github/stars/notch-up/diarize.svg?cacheSeconds=86400) - CPU-only 说话人分离（who spoke when），ONNX 推理。
 - [3D-Speaker / CAM++](https://github.com/modelscope/3D-Speaker) ![stars](https://img.shields.io/github/stars/modelscope/3D-Speaker.svg?cacheSeconds=86400) - 阿里 DAMO 大规模说话人验证数据集与基准模型（CAM++、ERes2Net），覆盖多设备多距离场景。
+- [DiariZen](https://github.com/BUTSpeechFIT/DiariZen) ![stars](https://img.shields.io/github/stars/BUTSpeechFIT/DiariZen.svg?cacheSeconds=86400) - BUT 开源的说话人分离工具包，基于 Pyannote 3.1，使用 WavLM 驱动的局部端到端神经 diarization，并提供模型剪枝配方。
+- [whisper-diarization](https://github.com/MahmoudAshraf97/whisper-diarization) ![stars](https://img.shields.io/github/stars/MahmoudAshraf97/whisper-diarization.svg?cacheSeconds=86400) - 基于 Whisper 的转写流水线，结合说话人分离输出带说话人标签的转写。
+- [Streaming Sortformer](https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2) - NVIDIA NeMo 流式说话人分离模型（最多 4 人），使用按到达顺序排列的说话人缓存（CC-BY-4.0）。
+- [pyannote community-1](https://huggingface.co/pyannote/speaker-diarization-community-1) - pyannote.audio 发布的开放权重说话人分离流水线，CC-BY-4.0 许可。
 
 ### ASR > 说话人验证/识别
 
@@ -204,6 +208,11 @@
 
 - [Montreal Forced Aligner](https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner) ![stars](https://img.shields.io/github/stars/MontrealCorpusTools/Montreal-Forced-Aligner.svg?cacheSeconds=86400) - 基于 Kaldi 的命令行强制对齐工具，输出词级与音素级时间戳。
 - [ctc-forced-aligner](https://github.com/MahmoudAshraf97/ctc-forced-aligner) ![stars](https://img.shields.io/github/stars/MahmoudAshraf97/ctc-forced-aligner.svg?cacheSeconds=86400) - 基于 CTC 强制对齐的文本-语音对齐工具，支持多语言 wav2vec2 / MMS 模型。
+
+### ASR > 语音翻译
+
+- [VideoLingo](https://github.com/Huanshere/VideoLingo) ![stars](https://img.shields.io/github/stars/Huanshere/VideoLingo.svg?cacheSeconds=86400) - 自动化视频字幕切分、翻译、对齐与配音流水线。
+- [pyvideotrans](https://github.com/jianchang512/pyvideotrans) ![stars](https://img.shields.io/github/stars/jianchang512/pyvideotrans.svg?cacheSeconds=86400) - 视频翻译工具，可完成语音识别、翻译、配音并嵌入字幕（GPL-3.0）。
 
 ### ASR > 训练与配方
 
@@ -589,6 +598,12 @@
 
 ### Papers > ASR
 
+- **DiaScriber: A Speech LLM for Joint Diarization and Transcription in Multi-Speaker Scenarios** (2026), Mu et al. [pdf](https://arxiv.org/abs/2608.22796) - 端到端语音大模型，联合预测转写内容、说话人身份与时间戳（谁在何时说了什么）。
+- **The Second MLC-SLM Challenge: Multilingual Conversational Speech Diarization, Recognition, and Understanding** (2026), Mu et al. [pdf](https://arxiv.org/abs/2609.27514) - Interspeech 2026 挑战赛总结，发布真实多语言对话语音数据集、评测协议与基线系统。
+- **Speech Language Models for Full-Meeting Speaker Diarization: Capabilities and Limitations** (2026), Li et al. [pdf](https://arxiv.org/abs/2609.23114) - IEEE SLT 2026 研究，以 ESPnet-SpeechLM 作为基于 token 的说话人分离骨干，并独立于 ASR 评测分离性能。
+- **Indic DiarBench** (2026), Mehendale et al. [pdf](https://arxiv.org/abs/2607.23808) - Interspeech 2026 基准，约 108 小时，覆盖印度全部 22 种法定语言的说话人分离与 ASR 联合评测。
+- **SoulX-Transcriber: A Robust End-to-End Framework for Multi-Speaker Speech Transcription** (2026), Dai et al. [pdf](https://arxiv.org/abs/2606.02400) - 端到端多说话人转写框架，针对相似音色、快速话轮切换和重叠语音。
+- **DM-ASR: Diarization-aware Multi-speaker ASR with Large Language Models** (2026), Li et al. [pdf](https://arxiv.org/abs/2604.22467) - 基于语音大模型的多说话人 ASR，利用说话人分离结果作为显式结构引导。
 - **AfriVoices-KE** (2026), Wanzare et al. [pdf](https://arxiv.org/abs/2604.08448) - 覆盖肯尼亚多语言的脚本式与自发语音数据集，面向包容性 ASR 与 TTS 研究。
 - **LoASR-Bench** (2026), Chen et al. [pdf](https://arxiv.org/abs/2603.20042) - 低资源 ASR 基准，覆盖 25 种语言、9 个语系，用于评测现代 SpeechLM 的跨语系泛化能力。
 - **Uni-ASR** (2026), Xia et al. [pdf](https://arxiv.org/abs/2603.11123) - 统一 LLM-ASR 框架：同时支持非流式与流式识别.
@@ -608,6 +623,9 @@
 - **Voxlect** (2025), Feng et al. [pdf](https://arxiv.org/abs/2508.01691) [code](https://github.com/tiantiaf0627/voxlect) - 面向全球方言与区域语言建模的评测基准，利用 30 个公开语料衡量语音基础模型能力。
 - **ContextASR-Bench** (2025), Wang et al. [pdf](https://arxiv.org/abs/2507.05727) [code](https://github.com/MrSupW/ContextASR-Bench) - 面向上下文感知识别的大规模 ASR 基准，含富命名实体输入与多种评测设置。
 - **Voice of a Continent: Mapping Africa's Speech Technology Frontier** (2025), Elmadany et al. [pdf](https://aclanthology.org/2025.emnlp-main.559/) [code](https://github.com/UBC-NLP/simba) - 提出 SimbaBench 与 Simba 模型族，覆盖非洲多语种 ASR、TTS 与口语语种识别评测。
+- **Streaming Sortformer: Speaker Cache-Based Online Speaker Diarization with Arrival-Time Ordering** (2025), Medennikov et al. [pdf](https://arxiv.org/abs/2507.18446) - Interspeech 2025，Sortformer 的流式扩展，使用按到达顺序排列的说话人缓存实现在线说话人分离。
+- **Sortformer: A Novel Approach for Permutation-Resolved Speaker Supervision in Speech-to-Text Systems** (2024), Park et al. [pdf](https://arxiv.org/abs/2409.06656) - ICML 2025，基于编码器的说话人分离模型，用 Sort Loss 解决说话人排列问题，用于带说话人标签的语音转文本。
+- **Leveraging Self-Supervised Learning for Speaker Diarization** (2024), Han et al. [pdf](https://arxiv.org/abs/2409.09408) [code](https://github.com/BUTSpeechFIT/DiariZen) - 在 Pyannote 流水线中使用 WavLM 改进局部端到端神经说话人分离（DiariZen）。
 - **Codec-ASR** (2024), Dhawan et al. [pdf](https://arxiv.org/html/2407.03495v1) - 使用离散 codec 表征训练 ASR 的系统性研究与 pipeline.
 - **Streaming Decoder-Only ASR** (2024), Chen et al. [pdf](https://arxiv.org/abs/2406.18862) - 离散语音单元 + decoder-only 的流式识别.
 - **Speech ReaLLM** (2024), Seide et al. [pdf](https://arxiv.org/abs/2406.09569) - 面向实时连续输入的 decoder-only 流式 ASR 范式.
@@ -616,6 +634,18 @@
 - **Transformer Transducer** (2020), Zhang et al. [pdf](https://arxiv.org/abs/2002.02562) - 可流式 Transformer-RNNT.
 - **Conformer** (2020), Gulati et al. [pdf](https://arxiv.org/abs/2005.08100) - 卷积增强的 Transformer ASR 架构.
 - **Emformer** (2020), Shi et al. [pdf](https://arxiv.org/abs/2010.10759) - 低延迟流式 ASR 的高效记忆 Transformer.
+
+### Papers > 语音翻译
+
+- **Learning When to Commit from Partial Speech for End-to-End Simultaneous Speech Translation** (2026), Hoang et al. [pdf](https://arxiv.org/abs/2610.02612) - 利用模型自身生成的前缀监督，将整句语音语言模型改造为同传语音翻译模型，无需转写或人工译文。
+- **DuraS2ST: Chain-of-Thought and Reinforcement Learning for Duration-Aligned Speech-to-Speech Translation** (2026), Deng et al. [pdf](https://arxiv.org/abs/2609.33742) - EMNLP 2026，时长对齐的语音到语音翻译，借助思维链与强化学习进行时长规划，适用于视频配音等场景。
+- **Kraken: LLM-based Speech-to-Speech Translation via Low-bitrate VQ and Dual-path Source Conditioning** (2026), Futami et al. [pdf](https://arxiv.org/abs/2609.13045) - 基于 LLM 的语音到语音翻译，使用低码率单层 VQ 语音 token 与双路径源条件。
+- **CVSS-X: A Multilingual Speech-to-Speech Translation Corpus for 28 Languages** (2026), Gris et al. [pdf](https://arxiv.org/abs/2609.13413) - 超过 16,000 小时的合成语音到语音翻译语料，将 CVSS 扩展为英语到 28 种目标语言。
+- **SimulS2ST-Omni: Data-Efficient Streaming Speech-to-Speech Translation via Explicit Trajectory Supervision** (2026), He et al. [pdf](https://arxiv.org/abs/2607.19810) - 数据高效的流式语音到语音翻译训练配方，仅用约 2k 小时配对数据支持句级与长音频流式翻译。
+- **STEB: A Speech-to-Speech Translation Expressiveness Benchmark for Evaluating Beyond Translation Fidelity** (2026), Cheng et al. [pdf](https://arxiv.org/abs/2606.25529) - 32.6 小时中英基准，评测语音到语音翻译对情感、风格与非语言发声的保留。
+- **High-Fidelity Simultaneous Speech-To-Speech Translation** (2025), Labiausse et al. [pdf](https://arxiv.org/abs/2502.03382) [code](https://github.com/kyutai-labs/hibiki) - Hibiki：仅解码器的多流语言模型，支持同传语音到文本与语音到语音翻译。
+- **StreamSpeech: Simultaneous Speech-to-Speech Translation with Multi-task Learning** (2024), Zhang et al. [pdf](https://arxiv.org/abs/2406.03049) [code](https://github.com/ictnlp/StreamSpeech) - ACL 2024，基于多任务学习的直接同传语音到语音翻译模型。
+- **Seamless: Multilingual Expressive and Streaming Speech Translation** (2023), Meta AI [pdf](https://arxiv.org/abs/2312.05187) [code](https://github.com/facebookresearch/seamless_communication) - SeamlessM4T v2 以及富表现力和流式翻译模型，面向多语言语音翻译。
 
 ### Papers > Voice Cloning
 

@@ -184,6 +184,10 @@ For multilingual ASR foundation models, see Whisper and Vosk above.
 - [simple_diarizer](https://github.com/cvqluu/simple_diarizer) ![stars](https://img.shields.io/github/stars/cvqluu/simple_diarizer.svg?cacheSeconds=86400) - Simplified speaker diarization pipeline using pretrained VAD and speaker embedding models to turn audio files into diarized segments quickly.
 - [diarize](https://github.com/notch-up/diarize) ![stars](https://img.shields.io/github/stars/notch-up/diarize.svg?cacheSeconds=86400) - CPU-only speaker diarization (who spoke when) with ONNX inference.
 - [3D-Speaker / CAM++](https://github.com/modelscope/3D-Speaker) ![stars](https://img.shields.io/github/stars/modelscope/3D-Speaker.svg?cacheSeconds=86400) - Large-scale speaker verification dataset and benchmark models (CAM++, ERes2Net) from Alibaba DAMO Academy.
+- [DiariZen](https://github.com/BUTSpeechFIT/DiariZen) ![stars](https://img.shields.io/github/stars/BUTSpeechFIT/DiariZen.svg?cacheSeconds=86400) - Speaker diarization toolkit from BUT built on Pyannote 3.1, with WavLM-based local end-to-end neural diarization and pruning recipes.
+- [whisper-diarization](https://github.com/MahmoudAshraf97/whisper-diarization) ![stars](https://img.shields.io/github/stars/MahmoudAshraf97/whisper-diarization.svg?cacheSeconds=86400) - Whisper-based transcription pipeline combined with speaker diarization for speaker-attributed transcripts.
+- [Streaming Sortformer](https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2) - NVIDIA NeMo streaming diarization model for up to 4 speakers using an arrival-order speaker cache (CC-BY-4.0).
+- [pyannote community-1](https://huggingface.co/pyannote/speaker-diarization-community-1) - Open-weight pyannote.audio speaker diarization pipeline released under CC-BY-4.0.
 
 ### ASR > Speaker Verification / Recognition
 
@@ -204,6 +208,11 @@ For multilingual ASR foundation models, see Whisper and Vosk above.
 
 - [Montreal Forced Aligner](https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner) ![stars](https://img.shields.io/github/stars/MontrealCorpusTools/Montreal-Forced-Aligner.svg?cacheSeconds=86400) - Kaldi-based command-line forced aligner producing word- and phone-level timestamps.
 - [ctc-forced-aligner](https://github.com/MahmoudAshraf97/ctc-forced-aligner) ![stars](https://img.shields.io/github/stars/MahmoudAshraf97/ctc-forced-aligner.svg?cacheSeconds=86400) - Text-to-speech alignment using CTC forced alignment with multilingual wav2vec2 / MMS models.
+
+### ASR > Speech Translation
+
+- [VideoLingo](https://github.com/Huanshere/VideoLingo) ![stars](https://img.shields.io/github/stars/Huanshere/VideoLingo.svg?cacheSeconds=86400) - Automated video subtitle segmentation, translation, alignment, and dubbing pipeline.
+- [pyvideotrans](https://github.com/jianchang512/pyvideotrans) ![stars](https://img.shields.io/github/stars/jianchang512/pyvideotrans.svg?cacheSeconds=86400) - Video translation tool that transcribes, translates, and re-dubs videos with embedded subtitles (GPL-3.0).
 
 ### ASR > Training / Recipes
 
@@ -589,6 +598,12 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 
 ### Papers > ASR
 
+- **DiaScriber: A Speech LLM for Joint Diarization and Transcription in Multi-Speaker Scenarios** (2026), Mu et al. [pdf](https://arxiv.org/abs/2608.22796) - End-to-end speech LLM that jointly predicts transcripts, speaker identities, and timestamps (who spoke what and when).
+- **The Second MLC-SLM Challenge: Multilingual Conversational Speech Diarization, Recognition, and Understanding** (2026), Mu et al. [pdf](https://arxiv.org/abs/2609.27514) - Interspeech 2026 challenge summary with a real-world multilingual conversational dataset, evaluation protocols, and baselines.
+- **Speech Language Models for Full-Meeting Speaker Diarization: Capabilities and Limitations** (2026), Li et al. [pdf](https://arxiv.org/abs/2609.23114) - IEEE SLT 2026 study using ESPnet-SpeechLM as a token-based backbone for speaker diarization evaluated independently of ASR.
+- **Indic DiarBench** (2026), Mehendale et al. [pdf](https://arxiv.org/abs/2607.23808) - Interspeech 2026 benchmark of about 108 hours for joint diarization and ASR across all 22 scheduled languages of India.
+- **SoulX-Transcriber: A Robust End-to-End Framework for Multi-Speaker Speech Transcription** (2026), Dai et al. [pdf](https://arxiv.org/abs/2606.02400) - End-to-end multi-speaker transcription framework targeting similar voices, rapid turn-taking, and overlapping speech.
+- **DM-ASR: Diarization-aware Multi-speaker ASR with Large Language Models** (2026), Li et al. [pdf](https://arxiv.org/abs/2604.22467) - Speech-LLM multi-speaker ASR that uses speaker diarization as explicit structural guidance.
 - **AfriVoices-KE** (2026), Wanzare et al. [pdf](https://arxiv.org/abs/2604.08448) - Multilingual Kenyan speech dataset with scripted and spontaneous audio designed for inclusive ASR and TTS research.
 - **LoASR-Bench** (2026), Chen et al. [pdf](https://arxiv.org/abs/2603.20042) - Low-resource ASR benchmark spanning 25 languages across 9 language families for evaluating modern SpeechLMs.
 - **Uni-ASR** (2026), Xia et al. [pdf](https://arxiv.org/abs/2603.11123) - Unified LLM-ASR framework supporting both non-streaming and streaming recognition.
@@ -608,6 +623,9 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - **Voxlect** (2025), Feng et al. [pdf](https://arxiv.org/abs/2508.01691) [code](https://github.com/tiantiaf0627/voxlect) - Global benchmark for dialect and regional-language modeling with speech foundation models across 30 public corpora.
 - **ContextASR-Bench** (2025), Wang et al. [pdf](https://arxiv.org/abs/2507.05727) [code](https://github.com/MrSupW/ContextASR-Bench) - Massive contextual ASR benchmark with named-entity-rich inputs and multiple evaluation modes for context-aware recognition.
 - **Voice of a Continent: Mapping Africa's Speech Technology Frontier** (2025), Elmadany et al. [pdf](https://aclanthology.org/2025.emnlp-main.559/) [code](https://github.com/UBC-NLP/simba) - Introduces SimbaBench, a large-scale African speech benchmark and model suite spanning ASR, TTS, and spoken language identification.
+- **Streaming Sortformer: Speaker Cache-Based Online Speaker Diarization with Arrival-Time Ordering** (2025), Medennikov et al. [pdf](https://arxiv.org/abs/2507.18446) - Interspeech 2025 streaming extension of Sortformer with an arrival-order speaker cache for online diarization.
+- **Sortformer: A Novel Approach for Permutation-Resolved Speaker Supervision in Speech-to-Text Systems** (2024), Park et al. [pdf](https://arxiv.org/abs/2409.06656) - ICML 2025 encoder-based diarization model whose Sort Loss resolves speaker permutation for speaker-attributed speech-to-text.
+- **Leveraging Self-Supervised Learning for Speaker Diarization** (2024), Han et al. [pdf](https://arxiv.org/abs/2409.09408) [code](https://github.com/BUTSpeechFIT/DiariZen) - WavLM-based local end-to-end neural diarization within the Pyannote pipeline (DiariZen).
 - **Codec-ASR** (2024), Dhawan et al. [pdf](https://arxiv.org/html/2407.03495v1) - Systematic study of training ASR with discrete codec representations.
 - **Streaming Decoder-Only ASR** (2024), Chen et al. [pdf](https://arxiv.org/abs/2406.18862) - Streaming ASR using discrete speech units with decoder-only modeling.
 - **Speech ReaLLM** (2024), Seide et al. [pdf](https://arxiv.org/abs/2406.09569) - Decoder-only streaming ASR paradigm for real-time continuous input.
@@ -616,6 +634,18 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - **Transformer Transducer** (2020), Zhang et al. [pdf](https://arxiv.org/abs/2002.02562) - Streamable Transformer-RNNT for ASR.
 - **Conformer** (2020), Gulati et al. [pdf](https://arxiv.org/abs/2005.08100) - Convolution-augmented Transformer architecture for ASR.
 - **Emformer** (2020), Shi et al. [pdf](https://arxiv.org/abs/2010.10759) - Efficient memory Transformer for low-latency streaming ASR.
+
+### Papers > Speech Translation
+
+- **Learning When to Commit from Partial Speech for End-to-End Simultaneous Speech Translation** (2026), Hoang et al. [pdf](https://arxiv.org/abs/2610.02612) - Adapts a full-utterance speech LM to simultaneous speech translation with self-derived prefix supervision, without transcripts or human translations.
+- **DuraS2ST: Chain-of-Thought and Reinforcement Learning for Duration-Aligned Speech-to-Speech Translation** (2026), Deng et al. [pdf](https://arxiv.org/abs/2609.33742) - EMNLP 2026 duration-aligned S2ST that plans timing with chain-of-thought and reinforcement learning for uses such as video dubbing.
+- **Kraken: LLM-based Speech-to-Speech Translation via Low-bitrate VQ and Dual-path Source Conditioning** (2026), Futami et al. [pdf](https://arxiv.org/abs/2609.13045) - LLM-based S2ST using low-bitrate single-layer VQ speech tokens and dual-path source conditioning.
+- **CVSS-X: A Multilingual Speech-to-Speech Translation Corpus for 28 Languages** (2026), Gris et al. [pdf](https://arxiv.org/abs/2609.13413) - Synthetic S2ST corpus of over 16,000 hours extending CVSS from English into 28 target languages.
+- **SimulS2ST-Omni: Data-Efficient Streaming Speech-to-Speech Translation via Explicit Trajectory Supervision** (2026), He et al. [pdf](https://arxiv.org/abs/2607.19810) - Data-efficient recipe for sentence-level and long-form streaming S2ST with a speech LM using about 2k hours of paired data.
+- **STEB: A Speech-to-Speech Translation Expressiveness Benchmark for Evaluating Beyond Translation Fidelity** (2026), Cheng et al. [pdf](https://arxiv.org/abs/2606.25529) - 32.6-hour Chinese-English benchmark for emotion, style, and nonverbal vocalization preservation in S2ST.
+- **High-Fidelity Simultaneous Speech-To-Speech Translation** (2025), Labiausse et al. [pdf](https://arxiv.org/abs/2502.03382) [code](https://github.com/kyutai-labs/hibiki) - Hibiki, a decoder-only multistream LM for simultaneous speech-to-text and speech-to-speech translation.
+- **StreamSpeech: Simultaneous Speech-to-Speech Translation with Multi-task Learning** (2024), Zhang et al. [pdf](https://arxiv.org/abs/2406.03049) [code](https://github.com/ictnlp/StreamSpeech) - ACL 2024 direct simultaneous S2ST model trained with multi-task learning.
+- **Seamless: Multilingual Expressive and Streaming Speech Translation** (2023), Meta AI [pdf](https://arxiv.org/abs/2312.05187) [code](https://github.com/facebookresearch/seamless_communication) - SeamlessM4T v2 plus expressive and streaming translation models for multilingual speech translation.
 
 ### Papers > Voice Cloning
 
