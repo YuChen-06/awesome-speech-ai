@@ -1,152 +1,67 @@
 # Contributing
 
-Thanks for contributing to Awesome Speech AI.
+Thanks for contributing to Awesome Speech AI. This is a curated list, not an exhaustive directory.
 
-## Principles
+## What to Add
 
-- This is a curated list, not an exhaustive directory.
-- Every entry must meet the quality bar:
-  - Verifiable (the link is accessible and the project/paper exists)
-  - Unique (no duplicates: same repo / same paper / same alias)
-  - Readable (a clear one-line description)
-  - Correctly categorized (follow the README taxonomy)
-- Keep entries in a section in a consistent order (recommended: alphabetical).
-- Prefer official sources (GitHub repo, official website, arXiv/publisher PDF) over re-uploads or aggregators.
-- Treat X/Twitter, blogs, news, and community posts as discovery leads only; final entries need an official long-lived source plus a second official or near-official source.
+- Public open-source projects, models, datasets, papers, and reusable tools that materially serve Speech AI.
+- Every entry must be:
+  - **Verifiable**: the link works and the project or paper exists.
+  - **Unique**: no duplicate repo, paper, arXiv ID, or alias anywhere in the list.
+  - **Well categorized**: it fits the README taxonomy, and you explain why it belongs in that section.
+  - **Clearly licensed**: license or access terms are public.
+- Use one canonical URL, preferably the upstream repository. Back it with a second official or near-official source, such as docs, a model card, a dataset page, or the paper.
+- Blogs, news, X/Twitter, and community posts are discovery leads only. They do not count as sources.
+- Popularity or a recent announcement alone is not enough. Explain what the entry adds.
+- Do not submit commercial-only landing pages, directories, affiliate pages, or ads. A project with paid hosting is fine if its core is publicly available under a clear license.
 
-## Scope and Eligibility
+## Entry Format
 
-- Add public open-source projects, models, datasets, papers, and reusable tools that materially serve Speech AI.
-- A project may offer commercial hosting or support, but its qualifying core must have a verifiable official public source repository or other durable technical source with clear license or access information.
-- Do not submit a commercial-only landing page, directory, affiliate page, or product advertisement as an open-source project.
-- Use one canonical project URL. Prefer the upstream repository; use official documentation, model cards, dataset pages, or papers as supporting evidence.
-- Do not invent GitHub star badges. Add a star badge only when the canonical URL is a GitHub repository; omit it for websites, papers, and non-GitHub model or dataset pages.
-- Do not add an entry only because it is popular or newly announced. Explain its incremental value and why its category is the best fit.
-
-## Local Validation
-
-Before opening a PR, run:
-
-```bash
-npm ci
-npm run validate
-```
-
-`npm ci` is preferred because it follows the committed lockfile. Use `npm install` only when intentionally refreshing dependencies.
-
-If your local shell wrapper around `npm` is unstable, run the same checks directly through Node:
-
-```bash
-node scripts/validate-maintenance.mjs
-```
-
-This repository validates:
-
-- awesome-list formatting via `awesome-lint`
-- README / README.zh structural isomorphism, including curated-entry URL order
-- duplicate README entries across sections
-- public-boundary validation for tracked or staged private maintenance paths
-
-If validation fails:
-
-- Leave the relevant validation checkbox unchecked.
-- Include the exact failing command, first actionable error, and the base commit in the PR description.
-- Separate a pre-existing baseline failure from a failure introduced by the PR; do not label a failed run as passed.
-- Do not weaken or bypass a gate to make a README-only change appear green.
-
-## Local Hooks
-
-Git hooks are optional maintainer-local tooling and are not installed by `npm ci` or `npm install`. Contributors should rely on `npm run validate` and must not commit generated `.husky/` files.
-
-## Repository Hygiene
-
-Track only the canonical repository assets:
-
-- `README.md` and `README.zh.md`
-- contributor and rules documents
-- lightweight maintenance assets such as `.github/` and `scripts/`
-- minimal package and lint configuration required to run validation
-
-Do not add local-only state or generated artifacts such as:
-
-- local agent workspace files
-- `.husky/` locally generated hook files
-- dependency directories and caches
-- logs, temporary files, or downloaded intermediate data
-- one-off personal notes or ad-hoc script output
-
-## Where to submit
-
-- Submit a Pull Request that updates `README.md`.
-- If the entry belongs in both language versions, update `README.md` and `README.zh.md` in the same PR.
-- Maintainers will review evidence, scope, duplication, category fit, bilingual alignment, and validation output; they may request details, defer, or reject an entry.
-
-## Entry format
-
-### Tools / Projects
+Tools and projects:
 
 ```markdown
-- [Project Name](link) - One-line description.
+- [Project Name](https://github.com/owner/repo) ![stars](https://img.shields.io/github/stars/owner/repo.svg?cacheSeconds=86400) - One-line description.
 ```
 
-- Keep the description short and concrete.
+- Add the star badge only for GitHub repositories, and omit it for websites, papers, and non-GitHub model or dataset pages.
+- Start the description with a capital letter and keep it short and concrete. Mark archived projects with `(archived)`.
+- Keep a consistent order within a section.
 
-### Papers
+Papers:
 
 ```markdown
 - **Paper Title** (Year), Authors et al. [pdf](link) [code](optional)
 ```
 
-- Year is required; prefer arXiv or the publisher's official PDF.
+## Bilingual Sync
 
-## De-duplication
+`README.md` (English) and `README.zh.md` (Chinese) must stay structurally identical. CI checks this.
 
-Before submitting, please check:
+- Make every add, remove, or reorder in both files in the same PR.
+- Keep curated `- [title](URL)` entries in the same order with the same URLs in both files.
+- To add a section, open an Issue first. Then add the heading at the same position in both files, update both `Contents` tables if it is a `##` heading, and register the Chinese heading in `zhToCanonical` in `scripts/check-readme-structure.mjs`.
 
-- Whether the same repository already exists
-- Whether the same paper already exists (same title / same arXiv ID)
-- Whether the same entry is already linked in another section; prefer a cross-reference note over duplicating it
+## Validate Before Opening a PR
 
-## Adding a New Section
+```bash
+npm ci
+npm run validate   # or: node scripts/validate-maintenance.mjs
+```
 
-1. Open an Issue first describing the proposed section and why it belongs in the list.
-2. Add the new `##` or `###` heading to **both** `README.md` and `README.zh.md` in the same position.
-3. Update the `Contents` table in `README.md` (and its Chinese counterpart in `README.zh.md`).
-4. If adding a Chinese heading, register its canonical mapping in `scripts/check-readme-structure.mjs`.
-5. Run `npm run validate` to confirm bilingual headings and curated-entry URL order pass.
+This runs `awesome-lint`, the bilingual structure check, the duplicate-entry check, and the public-boundary check.
 
-## Bilingual Sync Requirements
+If a check fails, leave its checkbox unchecked in the PR template. Paste the failing command, the first actionable error, and the base commit, and say whether the failure already exists on `main`. Never weaken a gate to make a PR look green.
 
-This repository maintains parallel English (`README.md`) and Chinese (`README.zh.md`) versions. CI enforces **structural isomorphism**: every heading in `README.md` must have a corresponding heading in `README.zh.md` at the same position and nesting level.
+## Repository Hygiene
 
-Rules:
+Commit only the READMEs, the contributor and maintenance docs, `.github/`, `scripts/`, and the package and lint config. Do not commit dependency directories, caches, logs, temporary output, personal notes, local agent workspace files, or generated `.husky/` hooks. Git hooks are optional and not installed by npm.
 
-- When you add, remove, or reorder a section in one file, do the same in the other.
-- New Chinese headings must be registered in the `zhToCanonical` map in `scripts/check-readme-structure.mjs`.
-- Curated entries with `- [title](URL)` must keep normalized URL order aligned across both files; headings and entry counts must stay in sync.
-- The structure check runs automatically via `npm run validate` and in CI on every push/PR.
+## Link Checks
 
-## Link Check Policy
+A monthly [lychee](https://github.com/lycheeverse/lychee) workflow (`link-check`) checks every link. It turns red on broken links but never blocks PRs. Maintainers replace or remove dead links from its report. A link that is only temporarily failing (429/503) is watched across runs first.
 
-Broken links are checked monthly via [lychee](https://github.com/lycheeverse/lychee) in CI (`link-check` workflow). This check is **advisory only** -- it does not block PRs.
+Hosts that block or rate-limit CI (shields.io, arXiv, DOI, Google Scholar, IEEE Xplore, OpenReview) are skipped. To skip a new host, add it to the `--exclude` regex in `.github/workflows/link-check.yml`. See [docs/maintenance.md](docs/maintenance.md) for details.
 
-When broken links are found:
+## Review
 
-1. Maintainers review the report artifact uploaded to the workflow run.
-2. Permanently dead links are replaced or removed in a follow-up PR.
-3. Temporarily unavailable links (429, 503) are monitored across runs before action.
-
-## Rate Limit Handling
-
-Some hosts aggressively rate-limit or block automated requests. The link checker pre-excludes these domains:
-
-- `shields.io` / `img.shields.io` (badge CDN returns 403 to CI)
-- `arxiv.org` (rate-limits aggressively)
-- `doi.org`, `scholar.google.com`, `ieeexplore.ieee.org`, `openreview.net`
-
-If you add links from a new rate-limited domain, add it to the `LYCHEE_EXCLUDE` pattern in `.github/workflows/link-check.yml`.
-
-## Discussion
-
-- If you want to add a new subcategory, please open an Issue first.
-- Maintainers may request extra details before merging.
+Maintainers review evidence, scope, duplication, category fit, bilingual alignment, and validation output. They may ask for details, defer an entry, or reject it.
