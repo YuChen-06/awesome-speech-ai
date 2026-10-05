@@ -1,0 +1,60 @@
+name: Suggest an entry
+description: Propose an open-source Speech AI project, model, dataset, or paper for the list.
+title: "[Entry] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please read [CONTRIBUTING.md](https://github.com/YuChen-06/awesome-speech-ai/blob/main/CONTRIBUTING.md) first. Commercial-only products, directories, and ads will be closed.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: e.g. WhisperX
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Canonical URL
+      description: Upstream repository, official model card, dataset page, or arXiv abstract.
+    validations:
+      required: true
+  - type: input
+    id: second-source
+    attributes:
+      label: Second official or near-official source
+      description: Docs, paper, model card, or project page that confirms the entry.
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Target README section
+      placeholder: e.g. ASR > Speaker Diarization
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License or access terms
+      placeholder: e.g. MIT, Apache-2.0, CC-BY-NC-4.0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description (English, and Chinese if you can)
+      description: Start with a capital letter. Explain what it adds over existing entries.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched README.md and confirmed this entry (repo, paper, or alias) is not already listed.
+          required: true
+        - label: This is publicly available and not a commercial-only product or advertisement.
+          required: true
