@@ -62,7 +62,7 @@
 - [OuteTTS](https://github.com/edwko/OuteTTS) ![stars](https://img.shields.io/github/stars/edwko/OuteTTS.svg?cacheSeconds=86400) - Pure language-model TTS with voice cloning and llama.cpp / Transformers / vLLM backends.
 - [Llasa](https://github.com/zhenye234/LLaSA_training) ![stars](https://img.shields.io/github/stars/zhenye234/LLaSA_training.svg?cacheSeconds=86400) - LLaMA-based TTS on single-codebook X-Codec2 tokens, studying train- and inference-time compute scaling.
 - [SoulX-Podcast](https://github.com/Soul-AILab/SoulX-Podcast) ![stars](https://img.shields.io/github/stars/Soul-AILab/SoulX-Podcast.svg?cacheSeconds=86400) - Multi-speaker, multi-dialect podcast-style long-form dialogue speech generation.
-- [Step-Audio-EditX](https://github.com/stepfun-ai/Step-Audio-EditX) ![stars](https://img.shields.io/github/stars/stepfun-ai/Step-Audio-EditX.svg?cacheSeconds=86400) - 3B LLM-based audio editing model for emotion, speaking style, and paralinguistic editing plus zero-shot TTS.
+- [Step-Audio-EditX](https://github.com/stepfun-ai/Step-Audio-EditX) ![stars](https://img.shields.io/github/stars/stepfun-ai/Step-Audio-EditX.svg?cacheSeconds=86400) - A 3B LLM-based audio editing model for emotion, speaking style, and paralinguistic editing plus zero-shot TTS.
 
 ### TTS > Zero-Shot / Few-Shot
 
@@ -524,7 +524,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - [TEN Framework](https://github.com/TEN-framework/ten-framework) ![stars](https://img.shields.io/github/stars/TEN-framework/ten-framework.svg?cacheSeconds=86400) - Open-source framework for real-time conversational voice agents with RTC/WebSocket transport, turn detection, and speech pipelines.
 - [Vocode Core](https://github.com/vocodedev/vocode-core) ![stars](https://img.shields.io/github/stars/vocodedev/vocode-core.svg?cacheSeconds=86400) - Build voice-based LLM agents (telephony/meeting integrations).
 - [VoxServe](https://github.com/vox-serve/vox-serve) ![stars](https://img.shields.io/github/stars/vox-serve/vox-serve.svg?cacheSeconds=86400) - Streaming-native serving engine for low-latency, high-throughput inference of TTS and speech-to-speech models.
-- [vLLM-Omni](https://github.com/vllm-project/vllm-omni) ![stars](https://img.shields.io/github/stars/vllm-project/vllm-omni.svg?cacheSeconds=86400) - vLLM-based framework for efficient inference and serving of omni-modality models, including speech.
+- [vLLM-Omni](https://github.com/vllm-project/vllm-omni) ![stars](https://img.shields.io/github/stars/vllm-project/vllm-omni.svg?cacheSeconds=86400) - Framework built on vLLM for efficient inference and serving of omni-modality models, including speech.
 - [SGLang-Omni](https://github.com/sgl-project/sglang-omni) ![stars](https://img.shields.io/github/stars/sgl-project/sglang-omni.svg?cacheSeconds=86400) - SGLang-based high-performance serving for TTS, ASR, and unified multimodal models.
 
 ### Speech LLM > Turn-taking & Ecosystem Components
