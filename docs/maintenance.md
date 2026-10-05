@@ -1,6 +1,6 @@
 # Maintenance Guide
 
-Internal reference for maintainers of Awesome Speech AI.
+Internal reference for maintainers of Awesome Speech AI. Contributor rules (entry format, bilingual sync, hygiene) live in [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Link Check Strategy
 
@@ -40,21 +40,6 @@ To add a new exclusion, edit the `--exclude` regex in the lychee `args` in `.git
 
 Every run uploads a `link-check-report` artifact (retained 30 days). Review it to identify broken links that need fixing.
 
-## Update Workflow: Adding Resources
-
-1. **Fork and branch** from `main`.
-2. **Add the entry** to `README.md` following the format in `CONTRIBUTING.md`.
-3. **Mirror the change** in `README.zh.md` at the same structural position.
-4. If adding a new section heading, register the Chinese mapping in `scripts/check-readme-structure.mjs`.
-5. **Run locally**:
-
-   ```bash
-   npm run validate
-   ```
-
-6. **Open a PR**. CI will run `awesome-lint`, structural isomorphism check, and entry dedup check.
-7. **Maintainer review** and merge.
-
 ## CI/CD Pipeline
 
 ### `quality` (on every push and PR)
@@ -70,16 +55,4 @@ All four must pass for the workflow to succeed.
 
 ### `link-check` (monthly + manual)
 
-Advisory link validation (see above). Does not block merges.
-
-## Release / Changelog Habits
-
-This repository does not use versioned releases or a changelog file. Updates are continuous:
-
-- New entries are merged as PRs to `main`.
-- Significant structural changes (new top-level sections, taxonomy shifts) are noted in the PR description.
-- If a release tag becomes useful in the future, adopt [Keep a Changelog](https://keepachangelog.com/) format and tag with semver.
-
-## Local Hook Setup
-
-Git hooks are optional maintainer-local tooling. `npm ci` and `npm install` do not modify Git configuration or install hooks; generated `.husky/` state remains ignored and must not be committed. Contributors can run `npm run validate` directly.
+Non-blocking link validation (see above). A red run means broken links to fix; it never blocks merges.
