@@ -67,6 +67,8 @@ const zhToCanonical = new Map([
   ['ASR > 强制对齐', 'ASR > Forced Alignment'],
   ['ASR > 语音翻译', 'ASR > Speech Translation'],
   ['Papers > 语音翻译', 'Papers > Speech Translation'],
+  ['音频工程 > 水印与防伪检测', 'Audio Engineering > Watermarking & Anti-Spoofing'],
+  ['Papers > 水印与防伪', 'Papers > Watermarking & Anti-Spoofing'],
   ['贡献指南', 'Contributing'],
 ]);
 
