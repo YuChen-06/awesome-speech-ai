@@ -106,6 +106,7 @@
 - [TTS-WebUI](https://github.com/rsxdalv/TTS-WebUI) ![stars](https://img.shields.io/github/stars/rsxdalv/TTS-WebUI.svg?cacheSeconds=86400) - 单一 WebUI 聚合多种 TTS/VC/Audio 模型（扩展式）。
 - [Mimic 3](https://github.com/MycroftAI/mimic3) ![stars](https://img.shields.io/github/stars/MycroftAI/mimic3.svg?cacheSeconds=86400) - Mycroft 生态的本地神经 TTS 引擎（端侧/离线部署友好）。
 - [Piper (维护版)](https://github.com/OHF-Voice/piper1-gpl) ![stars](https://img.shields.io/github/stars/OHF-Voice/piper1-gpl.svg?cacheSeconds=86400) - 快速本地 TTS 引擎。
+- [Tsubaki TTS Engine](https://github.com/MrHryhorii/SmartStack/tree/main/ONNX_Runner) ![stars](https://img.shields.io/github/stars/MrHryhorii/SmartStack.svg?cacheSeconds=86400) - 本地 C#/.NET TTS 服务端，结合 Piper 语音合成与 OpenVoice V2 声音克隆，支持实时流式输出、OpenAI 兼容 API，并可在 Windows 和 Linux 上运行。
 - [VibeVoice](https://github.com/microsoft/VibeVoice) ![stars](https://img.shields.io/github/stars/microsoft/VibeVoice.svg?cacheSeconds=86400) - 长对话 TTS，支持 90 分钟对话与 4 个说话人.
 - [Parler-tts-streaming (SSE)](https://github.com/inferless/Parler-tts-streaming) ![stars](https://img.shields.io/github/stars/inferless/Parler-tts-streaming.svg?cacheSeconds=86400) - Parler-TTS 的 SSE 流式音频输出示例。
 - [Home Assistant Piper Add-on](https://github.com/home-assistant/addons/tree/master/piper) ![stars](https://img.shields.io/github/stars/home-assistant/addons.svg?cacheSeconds=86400) - Home Assistant 官方 Piper 插件。
