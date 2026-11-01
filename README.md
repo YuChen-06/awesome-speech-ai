@@ -370,6 +370,7 @@ See also [VALL-E X](#tts--zero-shot--few-shot), [OpenVoice](#voice-cloning--zero
 - [Praat](https://github.com/praat/praat) ![stars](https://img.shields.io/github/stars/praat/praat.svg?cacheSeconds=86400) - Phonetics-by-computer tool for speech analysis, annotation, and visualization.
 - [Parselmouth](https://github.com/YannickJadoul/Parselmouth) ![stars](https://img.shields.io/github/stars/YannickJadoul/Parselmouth.svg?cacheSeconds=86400) - Praat in Python: Pythonic interface to Praat's speech analysis algorithms.
 - [Sonic Visualiser](https://github.com/sonic-visualiser/sonic-visualiser) ![stars](https://img.shields.io/github/stars/sonic-visualiser/sonic-visualiser.svg?cacheSeconds=86400) - Audio (incl. speech) visualization, analysis, and annotation desktop app.
+- [AudioLens](https://github.com/SimZhou/vscode-audiolens) ![stars](https://img.shields.io/github/stars/SimZhou/vscode-audiolens.svg?cacheSeconds=86400) - VS Code audio inspection extension with per-channel waveforms, spectrograms, raw PCM parameters, and Remote SSH support for speech dataset debugging (Apache-2.0).
 
 ### Audio Engineering > Data Augmentation
 

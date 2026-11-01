@@ -370,6 +370,7 @@
 - [Praat](https://github.com/praat/praat) ![stars](https://img.shields.io/github/stars/praat/praat.svg?cacheSeconds=86400) - 语音学“做语音分析的工具箱”，支持语音分析/标注/可视化。
 - [Parselmouth](https://github.com/YannickJadoul/Parselmouth) ![stars](https://img.shields.io/github/stars/YannickJadoul/Parselmouth.svg?cacheSeconds=86400) - Praat 的 Python 接口：以 Pythonic 方式调用 Praat 语音分析算法。
 - [Sonic Visualiser](https://github.com/sonic-visualiser/sonic-visualiser) ![stars](https://img.shields.io/github/stars/sonic-visualiser/sonic-visualiser.svg?cacheSeconds=86400) - 音频（含语音）可视化/分析/标注桌面工具。
+- [AudioLens](https://github.com/SimZhou/vscode-audiolens) ![stars](https://img.shields.io/github/stars/SimZhou/vscode-audiolens.svg?cacheSeconds=86400) - VS Code 音频检查扩展，支持逐声道波形、频谱、原始 PCM 参数及 Remote SSH，适用于语音数据集排障（Apache-2.0）。
 
 ### 音频工程 > 数据增强
 
