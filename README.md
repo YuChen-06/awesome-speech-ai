@@ -112,6 +112,7 @@
 - [Home Assistant Piper Add-on](https://github.com/home-assistant/addons/tree/master/piper) ![stars](https://img.shields.io/github/stars/home-assistant/addons.svg?cacheSeconds=86400) - Official Home Assistant add-on for Piper.
 - [StyleTTS-WebUI](https://github.com/JarodMica/StyleTTS-WebUI) ![stars](https://img.shields.io/github/stars/JarodMica/StyleTTS-WebUI.svg?cacheSeconds=86400) - WebUI wrapper for StyleTTS2.
 - [StyleTTS2_GUI](https://github.com/effusiveperiscope/StyleTTS2_GUI) ![stars](https://img.shields.io/github/stars/effusiveperiscope/StyleTTS2_GUI.svg?cacheSeconds=86400) - Windows GUI packaging for StyleTTS2.
+- [SilentVoice](https://github.com/blaite164/SilentVoice-TTS) ![stars](https://img.shields.io/github/stars/blaite164/SilentVoice-TTS.svg?cacheSeconds=86400) - Windows real-time TTS desktop app aggregating local CPU/GPU TTS models, OpenVoice v2, and cloud APIs with local/cloud LLM typo correction, game overlay, and OBS subtitles.
 
 ### TTS > Text Frontend (G2P / Text Normalization)
 
