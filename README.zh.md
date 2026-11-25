@@ -135,6 +135,7 @@
 - [FireRedASR2S](https://github.com/FireRedTeam/FireRedASR2S) ![stars](https://img.shields.io/github/stars/FireRedTeam/FireRedASR2S.svg?cacheSeconds=86400) - 一体化 ASR 系统，公开 ASR、VAD、语种识别与标点模块，提供可下载权重并覆盖多种中文方言/口音。
 - [FireRedASR](https://github.com/FireRedTeam/FireRedASR) ![stars](https://img.shields.io/github/stars/FireRedTeam/FireRedASR.svg?cacheSeconds=86400) - 工业级普通话、中文方言与英语 ASR 模型（AED 与 LLM 两种结构），并支持歌词识别。
 - [Distil-Whisper](https://github.com/huggingface/distil-whisper) ![stars](https://img.shields.io/github/stars/huggingface/distil-whisper.svg?cacheSeconds=86400) - Whisper 蒸馏版本，速度约快 6 倍、体积减半，WER 差距在 1% 以内。
+- [Oruk Fourier 2B](https://huggingface.co/oruk/oruk-fourier-2b) - 2B 参数英语语音识别开放权重模型（Qwen3-ASR 架构，CC BY-NC 4.0），在 Open ASR v1.16.3 上取得 5.52% 平均 WER，提供 BF16、GGUF、ONNX 与 MLX 权重。
 
 ### ASR > 实时/流式
 

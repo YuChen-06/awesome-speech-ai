@@ -135,6 +135,7 @@
 - [FireRedASR2S](https://github.com/FireRedTeam/FireRedASR2S) ![stars](https://img.shields.io/github/stars/FireRedTeam/FireRedASR2S.svg?cacheSeconds=86400) - All-in-one ASR system with released ASR, VAD, language-identification, and punctuation modules, downloadable weights, and broad Chinese dialect coverage.
 - [FireRedASR](https://github.com/FireRedTeam/FireRedASR) ![stars](https://img.shields.io/github/stars/FireRedTeam/FireRedASR.svg?cacheSeconds=86400) - Industrial-grade Mandarin, Chinese dialect, and English ASR models (AED and LLM variants) with lyrics recognition.
 - [Distil-Whisper](https://github.com/huggingface/distil-whisper) ![stars](https://img.shields.io/github/stars/huggingface/distil-whisper.svg?cacheSeconds=86400) - Distilled Whisper variants that are about 6x faster and 50% smaller within 1% WER.
+- [Oruk Fourier 2B](https://huggingface.co/oruk/oruk-fourier-2b) - Open-weight 2B English ASR model (Qwen3-ASR architecture, CC BY-NC 4.0) with 5.52% Open ASR v1.16.3 average WER and BF16, GGUF, ONNX, and MLX weights.
 
 ### ASR > Real-time / Streaming
 
